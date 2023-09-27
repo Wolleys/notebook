@@ -1,11 +1,8 @@
-import styles from "./page.module.css";
+import { FC } from "react";
+import Home from "./home";
 
-const Home = () => {
-  return (
-    <main className={styles.main}>
-      <h1>Notebook</h1>
-    </main>
-  );
+const HomePage: FC = () => {
+  return <Home />;
 };
 
-export default Home;
+export default HomePage;
