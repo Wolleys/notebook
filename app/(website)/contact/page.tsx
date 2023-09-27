@@ -3,7 +3,7 @@ import Contact from "./contact";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact – Notebook",
   description: "This is the notebook app contact us page",
 };
 

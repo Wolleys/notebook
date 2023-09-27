@@ -3,7 +3,7 @@ import About from "./about";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Notebook",
+  title: "About – Notebook",
   description: "This is the notebook app about page",
 };
 
