@@ -1,0 +1,45 @@
+.navBar {
+  top: 0;
+  width: 100%;
+  height: 57px;
+  z-index: 999;
+  padding: 0 24px;
+  position: sticky;
+  align-items: center;
+  display: var(--displayFlex);
+  background-color: var(--navBarBgColor);
+  border-bottom: 1px solid var(--navBarBorderColor);
+}
+
+.navBarLeft,
+.navBarRight {
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+  display: var(--displayFlex);
+}
+
+.navBarCenter {
+  flex: 6;
+  align-items: center;
+  justify-content: center;
+  display: var(--displayFlex);
+}
+
+.navBarLeft {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navBarList {
+    gap: 20px;
+    list-style: none;
+    justify-content: center; 
+    display: var(--displayFlex); 
+}
+
+.navBarListItem {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--navBarListItemColor);
+}
