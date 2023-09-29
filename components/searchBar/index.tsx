@@ -1,14 +1,21 @@
-import { FC, InputHTMLAttributes } from "react";
+"use client";
+
+import { FC, ChangeEvent } from "react";
 import styles from "./searchbar.module.css";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name?: string;
-}
+const SearchBar: FC = () => {
+  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
 
-const SearchBar: FC<InputProps> = ({ name, ...otherProps }) => {
   return (
     <div className={styles.searchBar}>
-      <input name={name} {...otherProps} className={styles.input} />
+      <input
+        type="text"
+        onChange={handleSearch}
+        className={styles.input}
+        placeholder="Search Notebook"
+      />
       <button type="submit">
         <i
           className={`fa-solid fa-magnifying-glass ${styles["searchBarIcon"]}`}

@@ -10,19 +10,15 @@ const NavBar: FC = () => {
         <Link href="/">Notebook</Link>
       </div>
       <div className={styles.navBarCenter}>
-        <SearchBar placeholder="Search Notebook" />
+        <SearchBar />
       </div>
       <div className={styles.navBarRight}>
         <ul className={styles.navBarList}>
           <li className={styles.navBarListItem}>
-            <Link href="/auth/login">
-              Sign in
-            </Link>
+            <Link href="/auth/login">Sign in</Link>
           </li>
           <li className={styles.navBarListItem}>
-            <Link href="/auth/register">
-              Sign up
-            </Link>
+            <Link href="/auth/register">Sign up</Link>
           </li>
         </ul>
       </div>
