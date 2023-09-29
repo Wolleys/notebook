@@ -19,6 +19,30 @@
   --navBarListItemColor-dark: #e6edf3;
   --navBarListItemColor-light: #242424;
   --navBarListItemColor: var(--navBarListItemColor-light);
+  /* Searchbar border color */
+  --searchBarBorderColor-dark: #30363d;
+  --searchBarBorderColor-light: #e5e7eb;
+  --searchBarBorderColor: var(--searchBarBorderColor-light);
+  /* Searchbar border focus color */
+  --searchBarBorderFocusColor-dark: #374151;
+  --searchBarBorderFocusColor-light: #d4d4d4;
+  --searchBarBorderFocusColor: var(--searchBarBorderFocusColor-light);
+  /* Searchbar color */
+  --searchBarColor-dark: #e6edf3;
+  --searchBarColor-light: #1f2328;
+  --searchBarColor: var(--searchBarColor-light);
+  /* Searchbar placeholder */
+  --searchBarPlaceholder-dark: #6e7681;
+  --searchBarPlaceholder-light: #777;
+  --searchBarPlaceholder: var(--searchBarPlaceholder-light);
+  /* Searchbar icon */
+  --searchBarIcon-dark: #6e7681;
+  --searchBarIcon-light: #e5e7eb;
+  --searchBarIcon: var(--searchBarIcon-light);
+  /* Searchbar icon focus */
+  --searchBarIconFocus-dark: #7d8590;
+  --searchBarIconFocus-light: #d4d4d4;
+  --searchBarIconFocus: var(--searchBarIconFocus-light);
 }
 
 [data-theme="dark"] {
@@ -26,6 +50,12 @@
   --navBarBgColor: var(--navBarBgColor-dark);
   --navBarBorderColor: var(--navBarBorderColor-dark);
   --navBarListItemColor: var(--navBarListItemColor-dark);
+  --searchBarBorderColor: var(--searchBarBorderColor-dark);
+  --searchBarBorderFocusColor: var(--searchBarBorderFocusColor-dark);
+  --searchBarColor: var(--searchBarColor-dark);
+  --searchBarPlaceholder: var(--searchBarPlaceholder-dark);
+  --searchBarIcon: var(--searchBarIcon-dark);
+  --searchBarIconFocus: var(--searchBarIconFocus-dark);
 }
 
 * {

@@ -1,0 +1,52 @@
+.searchBar {
+  width: 300px;
+  position: relative;
+  background: inherit;
+}
+
+.searchBar input {
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  transition: 80ms;
+  line-height: 20px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin: 0.2rem 0rem;
+  background-color: inherit;
+  color: var(--searchBarColor);
+  border: 1px solid var(--searchBarBorderColor);
+}
+
+.searchBar button {
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  margin: 4px 0px;
+  position: absolute;
+  display: inline-block;
+  background: transparent;
+  padding: 8px 10px 7px 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.searchBar input:focus {
+  background-color: inherit;
+  border: 1px solid var(--searchBarBorderFocusColor);
+}
+
+.searchBar input::placeholder {
+  opacity: 0.9;
+  color: var(--searchBarPlaceholder);
+}
+
+.searchBarIcon {
+  font-size: 14px;
+  color: var(--searchBarIcon);
+}
+
+.searchBar input:focus + button .searchBarIcon {
+  opacity: 1;
+  color: var(--searchBarIconFocus);
+}
