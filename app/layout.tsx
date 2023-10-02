@@ -30,8 +30,12 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
       </head>
       <body className={inter.className}>
         <Providers>
-          <NavBar />
-          {children}
+          <div className="container">
+            <div className="wrapper">
+              {/* <NavBar /> */}
+              {children}
+            </div>
+          </div>
         </Providers>
       </body>
     </html>
