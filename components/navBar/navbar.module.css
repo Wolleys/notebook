@@ -28,6 +28,10 @@
   justify-content: flex-end;
 }
 
+.linksIcon{
+  font-size: 18px;
+}
+
 .links img {
   width: 32px;
   height: 32px;

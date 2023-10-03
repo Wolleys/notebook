@@ -5,8 +5,9 @@ import AuthLinks from "../authLinks";
 // import SearchBar from "../searchBar";
 import styles from "./navbar.module.css";
 
-
 const NavBar: FC = () => {
+  const status = false;
+
   return (
     <nav className={styles.container}>
       <div className={styles.logo}>
@@ -14,14 +15,29 @@ const NavBar: FC = () => {
       </div>
       <div className={styles.searchBar}>{/* <SearchBar /> */} SearchBar</div>
       <div className={styles.links}>
-        <AuthLinks />
-        <Link href="/new-post">
-          <i className="fa-regular fa-pen-to-square fa-lg fa-fw"></i> Write
-        </Link>
-        <Link href="/me/notifications">
-          <i className="fa-regular fa-bell fa-lg fa-fw"></i>
-        </Link>
-        <Image src="/profile-pic.png" alt="profile" width={32} height={32} />
+        {!status ? (
+          <AuthLinks />
+        ) : (
+          <>
+            <Link href="/new-post">
+              <i
+                className={`fa-regular fa-pen-to-square fa-fw ${styles["linksIcon"]}`}
+              ></i>
+              Write
+            </Link>
+            <Link href="/me/notifications">
+              <i
+                className={`fa-regular fa-bell fa-fw ${styles["linksIcon"]}`}
+              ></i>
+            </Link>
+            <Image
+              src="/profile-pic.png"
+              alt="profile"
+              width={32}
+              height={32}
+            />
+          </>
+        )}
       </div>
     </nav>
   );
