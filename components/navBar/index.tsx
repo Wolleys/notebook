@@ -1,26 +1,27 @@
 import { FC } from "react";
 import Link from "next/link";
-import SearchBar from "../searchBar";
+import Image from "next/image";
+import AuthLinks from "../authLinks";
+// import SearchBar from "../searchBar";
 import styles from "./navbar.module.css";
+
 
 const NavBar: FC = () => {
   return (
-    <nav className={styles.navBar}>
-      <div className={styles.navBarLeft}>
+    <nav className={styles.container}>
+      <div className={styles.logo}>
         <Link href="/">Notebook</Link>
       </div>
-      <div className={styles.navBarCenter}>
-        <SearchBar />
-      </div>
-      <div className={styles.navBarRight}>
-        <ul className={styles.navBarList}>
-          <li className={styles.navBarListItem}>
-            <Link href="/auth/login">Sign in</Link>
-          </li>
-          <li className={styles.navBarListItem}>
-            <Link href="/auth/register">Sign up</Link>
-          </li>
-        </ul>
+      <div className={styles.searchBar}>{/* <SearchBar /> */} SearchBar</div>
+      <div className={styles.links}>
+        <AuthLinks />
+        <Link href="/new-post">
+          <i className="fa-regular fa-pen-to-square fa-lg fa-fw"></i> Write
+        </Link>
+        <Link href="/me/notifications">
+          <i className="fa-regular fa-bell fa-lg fa-fw"></i>
+        </Link>
+        <Image src="/profile-pic.png" alt="profile" width={32} height={32} />
       </div>
     </nav>
   );

@@ -32,7 +32,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         <Providers>
           <div className="container">
             <div className="wrapper">
-              {/* <NavBar /> */}
+              <NavBar />
               {children}
             </div>
           </div>
