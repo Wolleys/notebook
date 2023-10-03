@@ -10,10 +10,10 @@
   font-size: 14px;
   transition: 80ms;
   line-height: 20px;
-  padding: 5px 12px;
   border-radius: 6px;
   margin: 0.2rem 0rem;
   background-color: inherit;
+  padding: 5px 30px 5px 12px;
   color: var(--searchBarColor);
   border: 1px solid var(--searchBarBorderColor);
 }
@@ -27,7 +27,7 @@
   position: absolute;
   display: inline-block;
   background: transparent;
-  padding: 8px 10px 7px 10px;
+  padding: 9px 10px 8px 10px;
   border-radius: 0 6px 6px 0;
 }
 

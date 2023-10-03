@@ -18,6 +18,12 @@
   justify-content: center;
 }
 
+.searchIcon {
+  display: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .links {
   flex: 1;
   gap: 20px;
@@ -28,17 +34,57 @@
   justify-content: flex-end;
 }
 
-.linksIcon{
+.linksIcon {
   font-size: 18px;
 }
 
-.links img {
+.write {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile img {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  margin-right: 8px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .links {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .write {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .searchBar {
+    display: none;
+  }
+
+  .searchIcon {
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    gap: 18px;
+  }
 }
 
 /* .navBar {
