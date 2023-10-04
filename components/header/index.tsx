@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import SearchBar from "../searchBar";
 import styles from "./header.module.css";
+import HeaderAvatar from "../headerAvatar";
 
 const Header: FC = () => {
   const status = true;
@@ -37,7 +37,10 @@ const Header: FC = () => {
             ) : (
               <>
                 <li>
-                  <span className={styles.searchIcon} style={{marginRight:"-20px"}}>
+                  <span
+                    className={styles.searchIcon}
+                    style={{ marginRight: "-20px" }}
+                  >
                     <i
                       className={`fa-solid fa-magnifying-glass fa-fw ${styles["linksIcon"]}`}
                     ></i>
@@ -61,14 +64,7 @@ const Header: FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <div className={styles.profile}>
-                    <Image
-                      src="/profile-pic.png"
-                      alt="profile"
-                      width={32}
-                      height={32}
-                    />
-                  </div>
+                  <HeaderAvatar />
                 </li>
               </>
             )}

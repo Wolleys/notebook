@@ -47,6 +47,18 @@
   --logoColor-dark: #e6edf3;
   --logoColor-light: #242424;
   --logoColor: var(--logoColor-light);
+  /* Settings menu */
+  --settingsMenuBg-dark: #161b22;
+  --settingsMenuBg-light: #ffffff;
+  --settingsMenuBg: var(--settingsMenuBg-light);
+  /* Settings menu border*/
+  --settingsMenuBorder-dark: #30363d;
+  --settingsMenuBorder-light: #e5e7eb;
+  --settingsMenuBorder: var(--settingsMenuBorder-light);
+  /* Settings menu before*/
+  --settingsMenuBefore-dark: #30363d;
+  --settingsMenuBefore-light: #e5e7eb;
+  --settingsMenuBefore: var(--settingsMenuBefore-light);
 }
 
 [data-theme="dark"] {
@@ -61,6 +73,9 @@
   --searchBarIcon: var(--searchBarIcon-dark);
   --searchBarIconFocus: var(--searchBarIconFocus-dark);
   --logoColor: var(--logoColor-dark);
+  --settingsMenuBg: var(--settingsMenuBg-dark);
+  --settingsMenuBorder: var(--settingsMenuBorder-dark);
+  --settingsMenuBefore: var(--settingsMenuBefore-dark);
 }
 
 * {
