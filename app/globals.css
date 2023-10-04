@@ -43,6 +43,10 @@
   --searchBarIconFocus-dark: #7d8590;
   --searchBarIconFocus-light: #d4d4d4;
   --searchBarIconFocus: var(--searchBarIconFocus-light);
+  /* Logo color */
+  --logoColor-dark: #e6edf3;
+  --logoColor-light: #242424;
+  --logoColor: var(--logoColor-light);
 }
 
 [data-theme="dark"] {
@@ -56,6 +60,7 @@
   --searchBarPlaceholder: var(--searchBarPlaceholder-dark);
   --searchBarIcon: var(--searchBarIcon-dark);
   --searchBarIconFocus: var(--searchBarIconFocus-dark);
+  --logoColor: var(--logoColor-dark);
 }
 
 * {
@@ -72,7 +77,7 @@ body {
 
 body {
   font-family: var(--font-sans);
-  /* background: var(--bodyBgColor); */
+  background: var(--bodyBgColor);
 }
 
 a {
@@ -82,8 +87,7 @@ a {
 
 .container {
   min-height: 100vh;
-  background-color: var(----bodyBgColor);
-  color: var(--textColor);
+  /* background-color: var(----bodyBgColor); */
 }
 
 .wrapper {

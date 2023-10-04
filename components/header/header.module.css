@@ -1,0 +1,187 @@
+.container {
+  width: 100%;
+  height: 57px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: var(--navBarBgColor);
+  border-bottom: 1px solid var(--navBarBorderColor);
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  padding: 0 24px;
+  background-color: inherit;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--logoColor);
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--navBarListItemColor);
+}
+
+.write {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linksIcon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.searchIcon {
+  display: none;
+  color: inherit;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .header {
+    padding: 0 14px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .searchBar {
+    display: none;
+  }
+  .searchIcon {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .write {
+    display: none;
+  }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .nav ul {
+    gap: 25px;
+  }
+  .linksIcon {
+    font-size: 20px;
+  }
+  .write {
+    display: none;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .nav ul {
+    gap: 22px;
+  }
+}
+
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    font-size: 1.35rem;
+  }
+  .nav ul {
+    gap: 22px;
+  }
+  .nav a {
+    font-size: 14px;
+  }
+  .linksIcon {
+    font-size: 20px;
+  }
+  .profile img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .nav ul {
+    gap: 22px;
+  }
+  .nav a {
+    font-size: 14px;
+  }
+  .linksIcon {
+    font-size: 20px;
+  }
+  .profile img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+  .container {
+    height: 100px;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .nav a {
+    font-size: 24px;
+  }
+  .linksIcon {
+    font-size: 36px;
+  }
+  .profile img {
+    width: 64px;
+    height: 64px;
+  }
+}

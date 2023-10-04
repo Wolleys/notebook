@@ -4,6 +4,7 @@ import Providers from "./providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/navBar";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,12 +31,8 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
       </head>
       <body className={inter.className}>
         <Providers>
-          <div className="container">
-            <div className="wrapper">
-              <NavBar />
-              {children}
-            </div>
-          </div>
+          <Header />
+          <div className="wrapper">{children}</div>
         </Providers>
       </body>
     </html>
