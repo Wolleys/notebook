@@ -5,7 +5,7 @@ import SearchBar from "../searchBar";
 import styles from "./header.module.css";
 
 const Header: FC = () => {
-  const status = false;
+  const status = true;
 
   return (
     <div className={styles.container}>
