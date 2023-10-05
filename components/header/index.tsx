@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import SearchBar from "../searchBar";
+import SearchIcon from "../searchIcon";
 import styles from "./header.module.css";
 import HeaderAvatar from "../headerAvatar";
 
@@ -18,9 +19,9 @@ const Header: FC = () => {
         </div>
         {!status && (
           <span className={styles.searchIcon}>
-            <i
-              className={`fa-solid fa-magnifying-glass fa-fw ${styles["linksIcon"]}`}
-            ></i>
+            <span className={styles.linksIcon}>
+              <SearchIcon />
+            </span>
           </span>
         )}
         <nav className={styles.nav}>
@@ -41,9 +42,9 @@ const Header: FC = () => {
                     className={styles.searchIcon}
                     style={{ marginRight: "-20px" }}
                   >
-                    <i
-                      className={`fa-solid fa-magnifying-glass fa-fw ${styles["linksIcon"]}`}
-                    ></i>
+                    <span className={styles.linksIcon}>
+                      <SearchIcon />
+                    </span>
                   </span>
                 </li>
                 <li>

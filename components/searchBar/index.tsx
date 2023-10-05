@@ -28,7 +28,7 @@ const SearchBar: FC = () => {
       />
       <button type="submit">
         <i
-          className={`fa-solid fa-magnifying-glass ${styles["searchBarIcon"]}`}
+          className={`fa-solid fa-magnifying-glass fa-fw ${styles["searchBarIcon"]}`}
         ></i>
       </button>
     </form>

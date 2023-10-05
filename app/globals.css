@@ -8,7 +8,7 @@
   --bodyBgColor-light: #ffffff;
   --bodyBgColor: var(--bodyBgColor-light);
   /* Navbar background color */
-  --navBarBgColor-dark: #010409;
+  --navBarBgColor-dark: #0f172a;
   --navBarBgColor-light: #ffffff;
   --navBarBgColor: var(--navBarBgColor-light);
   /* Navbar border color */
@@ -48,7 +48,7 @@
   --logoColor-light: #242424;
   --logoColor: var(--logoColor-light);
   /* Settings menu */
-  --settingsMenuBg-dark: #161b22;
+  --settingsMenuBg-dark: #0f172a;
   --settingsMenuBg-light: #ffffff;
   --settingsMenuBg: var(--settingsMenuBg-light);
   /* Settings menu border*/
