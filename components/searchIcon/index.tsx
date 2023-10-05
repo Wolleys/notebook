@@ -1,15 +1,24 @@
 "use client";
 
-import { FC } from "react";
+import { FC, useRef } from "react";
 import SearchBar from "../searchBar";
 import useToggle from "@/hooks/useToggle";
 import styles from "./searchicon.module.css";
+import useClickOutside from "@/hooks/useClickOutside";
 
 const SearchIcon: FC = () => {
+  const searchIconRef = useRef(null);
   const { value, toggle } = useToggle(false);
 
+  const closeSearchBar = (): void => {
+    if (value) {
+      toggle();
+    }
+  };
+  useClickOutside(searchIconRef, closeSearchBar);
+
   return (
-    <>
+    <span ref={searchIconRef}>
       <i
         className={
           value
@@ -23,7 +32,7 @@ const SearchIcon: FC = () => {
           <SearchBar />
         </div>
       )}
-    </>
+    </span>
   );
 };
 
