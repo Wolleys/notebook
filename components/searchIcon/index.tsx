@@ -1,26 +1,24 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC } from "react";
 import SearchBar from "../searchBar";
+import useToggle from "@/hooks/useToggle";
 import styles from "./searchicon.module.css";
 
 const SearchIcon: FC = () => {
-  const [open, setOpen] = useState<Boolean>(false);
-  const handleToggle = (): void => {
-    setOpen(!open);
-  };
+  const { value, toggle } = useToggle(false);
 
   return (
     <>
       <i
         className={
-          open
+          value
             ? `fa-solid fa-xmark fa-fw ${styles["icon"]}`
             : `fa-solid fa-magnifying-glass fa-fw ${styles["icon"]}`
         }
-        onClick={handleToggle}
+        onClick={toggle}
       ></i>
-      {open && (
+      {value && (
         <div className={styles.content}>
           <SearchBar />
         </div>

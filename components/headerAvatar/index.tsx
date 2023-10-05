@@ -1,21 +1,19 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC } from "react";
 import Image from "next/image";
+import useToggle from "@/hooks/useToggle";
 import styles from "./headeravatar.module.css";
 
 const HeaderAvatar: FC = () => {
-  const [open, setOpen] = useState<Boolean>(false);
-  const handleToggle = () => {
-    setOpen(!open);
-  };
+  const { value, toggle } = useToggle(false);
 
   return (
     <>
-      <div className={styles.profile} onClick={handleToggle}>
+      <div className={styles.profile} onClick={toggle}>
         <Image src="/profile-pic.png" alt="profile" width={32} height={32} />
       </div>
-      {open && <div className={styles.settingsMenu}></div>}
+      {value && <div className={styles.settingsMenu}></div>}
     </>
   );
 };
