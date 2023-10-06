@@ -1,5 +1,4 @@
 :root {
-  --displayFlex: flex;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -91,8 +90,9 @@ body {
 }
 
 body {
-  font-family: var(--font-sans);
+  line-height: 1.5;
   background: var(--bodyBgColor);
+  font-family: "Muli", sans-serif;
 }
 
 a {
@@ -100,52 +100,34 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0 20px;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-}
-
-/* Extra small devices */
-@media (min-width: 481px) and (max-width: 767px) {
-  .wrapper {
-    padding: 0 30px;
-    max-width: 767px;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
 
-/* Small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-    padding: 0 40px;
-    max-width: 991px;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
   }
 }
 
-/* Large tablets/laptops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    padding: 0 80px;
-    max-width: 1199px;
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
 }
 
-/* Desktops */
-@media (min-width: 1200px) and (max-width: 1919px) {
-  .wrapper {
-    padding: 0 60px;
-    max-width: 1200px;
-  }
-}
-
-/* Extra large screens */
-@media (min-width: 1920px) {
-  .wrapper {
-    padding: 0 80px;
-    max-width: none;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }

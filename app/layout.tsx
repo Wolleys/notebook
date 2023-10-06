@@ -1,12 +1,9 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
 import { FC, ReactNode } from "react";
 import Providers from "./providers";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import NavBar from "@/components/navBar";
 import Header from "@/components/header";
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -28,11 +25,16 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp%7CMuli:400,600,700,800,900&amp;display=swap"
+          media="all"
+        ></link>
       </head>
-      <body className={inter.className}>
+      <body>
         <Providers>
           <Header />
-          <div className="wrapper">{children}</div>
+          <div className="container">{children}</div>
         </Providers>
       </body>
     </html>

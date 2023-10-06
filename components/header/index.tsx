@@ -10,7 +10,7 @@ const Header: FC = () => {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
+      <div className={styles.header}>
         <div className={styles.logo}>
           <Link href="/">Notebook</Link>
         </div>
@@ -71,7 +71,7 @@ const Header: FC = () => {
             )}
           </ul>
         </nav>
-      </header>
+      </div>
     </div>
   );
 };
