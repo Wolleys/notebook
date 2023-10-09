@@ -22,11 +22,9 @@ const Featured: FC = () => {
             />
           </Link>
         </div>
-
         <div className={styles.textContainer}>
           <div className={styles.postBody}>
             <p className={styles.featuredPostTitle}>Featured Story</p>
-
             <h3 className={styles.featuredPostHeader}>
               <Link href="/">
                 Hostinger Becomes a Golden Partner of the Awwwards Conference

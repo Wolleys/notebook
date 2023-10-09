@@ -58,6 +58,22 @@
   --settingsMenuBefore-dark: #30363d;
   --settingsMenuBefore-light: #e5e7eb;
   --settingsMenuBefore: var(--settingsMenuBefore-light);
+  /* Featured post header*/
+  --featuredPostHeader-dark: #e2e8f0;
+  --featuredPostHeader-light: #2f1c6a;
+  --featuredPostHeader: var(--featuredPostHeader-light);
+  /* Featured post desc*/
+  --featuredPostDesc-dark: #d1d5db;
+  --featuredPostDesc-light: #727586;
+  --featuredPostDesc: var(--featuredPostDesc-light);
+  /* Featured author name*/
+  --featuredAuthorName-dark: #7d8590;
+  --featuredAuthorName-light: #2f1c6a;
+  --featuredAuthorName: var(--featuredAuthorName-light);
+   /* Featured modified date*/
+   --featuredModifiedDate-dark: #4D505C;
+   --featuredModifiedDate-light: #999999;
+   --featuredModifiedDate: var(--featuredModifiedDate-light);
 }
 
 [data-theme="dark"] {
@@ -75,6 +91,10 @@
   --settingsMenuBg: var(--settingsMenuBg-dark);
   --settingsMenuBorder: var(--settingsMenuBorder-dark);
   --settingsMenuBefore: var(--settingsMenuBefore-dark);
+  --featuredPostHeader: var(--featuredPostHeader-dark);
+  --featuredPostDesc: var(--featuredPostDesc-dark);
+  --featuredAuthorName: var(--featuredAuthorName-dark);
+  --featuredModifiedDate: var(--featuredModifiedDate-dark);
 }
 
 * {

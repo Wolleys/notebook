@@ -45,11 +45,11 @@
 }
 
 .featuredPostHeader {
-  font-weight: 700;
   font-size: 24px;
-  color: #2f1c6a;
+  font-weight: 700;
   line-height: 36px;
   margin-bottom: 10px;
+  color: var(--featuredPostHeader);
 }
 
 .featuredPostDesc {
@@ -57,12 +57,12 @@
   font-weight: 400;
   line-height: 25px;
   padding-top: 10px;
-  color: #727586;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  color: var(--featuredPostDesc);
 }
 
 .authorContainer {
@@ -89,13 +89,13 @@
 .authorName {
   font-size: 16px;
   font-weight: 800;
-  color: #2f1c6a;
+  color: var(--featuredAuthorName);
 }
 
 .modifiedDate {
   font-size: 17px;
   font-weight: 400;
-  color: #999;
+  color: var(--featuredModifiedDate);
 }
 
 @media (min-width: 576px) {
