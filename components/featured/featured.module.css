@@ -82,7 +82,7 @@
 
 .authorInfo {
   display: flex;
-  padding-left: 20px;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -121,6 +121,7 @@
   }
   .authorInfo {
     margin-top: 0;
+    padding-left: 20px;
     align-items: start;
   }
   .featuredPostDesc {
