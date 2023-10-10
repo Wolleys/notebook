@@ -60,6 +60,45 @@
   color: var(--postDesc);
 }
 
+.footer {
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.categories ul {
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.categories a {
+  font-size: 13px;
+  padding: 2px 8px;
+  color: var(--postCategory);
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--postCategoryBg);
+}
+
+.footerIcons {
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--postIcons);
+}
+
 .imageContainer {
   flex: 1;
   height: 112px;

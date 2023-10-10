@@ -10,6 +10,14 @@ tempora adipisci totam eaque voluptatibus itaque, pariatur ipsum sed
 maxime voluptatem laborum rerum fuga porro assumenda odit earum error
 nihil.`;
 
+const categories = [
+  { id: 1, name: "Love" },
+  { id: 2, name: "Faith" },
+  { id: 3, name: "Salvation" },
+  { id: 4, name: "Jesus" },
+  { id: 5, name: "Praying" },
+];
+
 const Post: FC = () => {
   return (
     <div className={styles.container}>
@@ -33,6 +41,22 @@ const Post: FC = () => {
           </Link>
         </h5>
         <p className={styles.postDesc}>{desc.substring(0, 160) + "..."}</p>
+        <div className={styles.footer}>
+          <span className={styles.categories}>
+            <ul>
+              {categories.slice(0, 2).map((item) => {
+                return (
+                  <li key={item.id}>
+                    <Link href="/">{item.name}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </span>
+          <span className={styles.footerIcons}>
+            <i className="fa-regular fa-bookmark fa-fw"></i>
+          </span>
+        </div>
       </div>
       <div className={styles.imageContainer}>
         <Link href="/">
