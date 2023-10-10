@@ -70,10 +70,18 @@
   --featuredAuthorName-dark: #7d8590;
   --featuredAuthorName-light: #2f1c6a;
   --featuredAuthorName: var(--featuredAuthorName-light);
-   /* Featured modified date*/
-   --featuredModifiedDate-dark: #4D505C;
-   --featuredModifiedDate-light: #999999;
-   --featuredModifiedDate: var(--featuredModifiedDate-light);
+  /* Featured modified date*/
+  --featuredModifiedDate-dark: #4d505c;
+  --featuredModifiedDate-light: #999999;
+  --featuredModifiedDate: var(--featuredModifiedDate-light);
+  /* Post header*/
+  --postHeader-dark: #ffffff;
+  --postHeader-light: #2f1c6a;
+  --postHeader: var(--postHeader-light);
+  /* Post desc*/
+  --postDesc-dark: #d1d5db;
+  --postDesc-light: #999999;
+  --postDesc: var(--postDesc-light);
 }
 
 [data-theme="dark"] {
@@ -95,6 +103,8 @@
   --featuredPostDesc: var(--featuredPostDesc-dark);
   --featuredAuthorName: var(--featuredAuthorName-dark);
   --featuredModifiedDate: var(--featuredModifiedDate-dark);
+  --postHeader: var(--postHeader-dark);
+  --postDesc: var(--postDesc-dark);
 }
 
 * {

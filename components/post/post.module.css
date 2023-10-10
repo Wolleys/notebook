@@ -1,0 +1,99 @@
+.container {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.textContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+
+.details {
+  display: flex;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authorAvatar {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.authorName {
+  font-weight: 600;
+  margin: 1px 0 0 10px;
+  color: var(--featuredAuthorName);
+}
+
+.postDate {
+  display: flex;
+  align-items: center;
+  color: var(--featuredModifiedDate);
+}
+
+.postHeader {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 10px;
+  color: var(--postHeader);
+}
+
+.postDesc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--postDesc);
+}
+
+.imageContainer {
+  flex: 1;
+  height: 112px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: end;
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 34px;
+    line-height: 120%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .postHeader {
+    font-size: 21px;
+    line-height: 140%;
+  }
+}
