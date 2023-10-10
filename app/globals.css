@@ -94,6 +94,10 @@
   --postIcons-dark: #7e869a;
   --postIcons-light: #b4b4b4;
   --postIcons: var(--postIcons-light);
+  /* post border color */
+  --postBorder-dark: #202021;
+  --postBorder-light: #f2f2f2;
+  --postBorder: var(--postBorder-light);
 }
 
 [data-theme="dark"] {
@@ -120,6 +124,7 @@
   --postCategoryBg: var(--postCategoryBg-dark);
   --postCategory: var(--postCategory-dark);
   --postIcons: var(--postIcons-dark);
+  --postBorder: var(--postBorder-dark);
 }
 
 * {

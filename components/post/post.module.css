@@ -2,7 +2,9 @@
   gap: 30px;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--postBorder);
 }
 
 .textContainer {
@@ -102,7 +104,7 @@
 .imageContainer {
   flex: 1;
   height: 112px;
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   border-radius: 10px;
@@ -124,6 +126,9 @@
     font-size: 34px;
     line-height: 120%;
     text-align: left;
+  }
+  .imageContainer {
+    display: flex;
   }
 }
 
