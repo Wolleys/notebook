@@ -62,7 +62,6 @@ const Post: FC = () => {
         <Link href="/">
           <Image
             alt=""
-            fill
             priority
             quality={100}
             src={postPic}
