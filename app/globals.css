@@ -98,6 +98,10 @@
   --postBorder-dark: #202021;
   --postBorder-light: #f2f2f2;
   --postBorder: var(--postBorder-light);
+  /* sidebar footer */
+  --sideBarFooter-dark: #7e869a;
+  --sideBarFooter-light: #6b6b6b;
+  --sideBarFooter: var(--sideBarFooter-light);
 }
 
 [data-theme="dark"] {
@@ -125,6 +129,7 @@
   --postCategory: var(--postCategory-dark);
   --postIcons: var(--postIcons-dark);
   --postBorder: var(--postBorder-dark);
+  --sideBarFooter: var(--sideBarFooter-dark);
 }
 
 * {

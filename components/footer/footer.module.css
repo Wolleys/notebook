@@ -1,0 +1,30 @@
+.sideBarFooter {
+  margin-top: 5px;
+  padding: 2px 8px;
+  color: var(--sideBarFooter);
+}
+
+.sideBarFooterLinks {
+  display: flex;
+  align-items: center;
+}
+
+.sideBarFooterLinks ul {
+  gap: 10px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.sideBarFooterLinks a {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.sideBarFooter p {
+  cursor: default;
+  font-size: 11px;
+  line-height: 16px;
+}
