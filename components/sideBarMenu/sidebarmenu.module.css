@@ -14,7 +14,15 @@
 
 @media (min-width: 992px) {
   .container {
+    top: 95px;
+    padding: 0;
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow-y: auto;
+    flex-direction: column;
+    height: calc(90vh - 75px);
+    background-color: #f0f0f0;
   }
 }
 

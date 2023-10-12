@@ -9,11 +9,10 @@ const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Featured />
-      <div className={styles.content}>
+      <main className={styles.main}>
         <PostsList />
         <SideBarMenu />
-      </div>
-
+      </main>
       <ThemeSwitch />
     </div>
   );
