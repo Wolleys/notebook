@@ -102,6 +102,10 @@
   --sideBarFooter-dark: #7e869a;
   --sideBarFooter-light: #6b6b6b;
   --sideBarFooter: var(--sideBarFooter-light);
+  /* sidebar title */
+  --sideBarTitle-dark: #e2e8f0;
+  --sideBarTitle-light: #2f1c6a;
+  --sideBarTitle: var(--sideBarTitle-light);
 }
 
 [data-theme="dark"] {
@@ -130,6 +134,7 @@
   --postIcons: var(--postIcons-dark);
   --postBorder: var(--postBorder-dark);
   --sideBarFooter: var(--sideBarFooter-dark);
+  --sideBarTitle: var(--sideBarTitle-dark);
 }
 
 * {
