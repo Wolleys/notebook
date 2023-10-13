@@ -179,6 +179,14 @@ img {
   padding-right: 15px;
 }
 
+.seeMore {
+  margin-top: 8px;
+  color: #4595d0;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import MostPopular from "../mostPopular";
+import TopCategories from "../topCategories";
 import styles from "./sidebarmenu.module.css";
 import SideBarFooter from "../footer/sideBar";
 
@@ -7,6 +8,7 @@ const SideBarMenu: FC = () => {
   return (
     <aside className={styles.container}>
       <MostPopular />
+      <TopCategories />
       <div className={styles.sticky}>
         <div className={styles.content}>
           <h3>Sticky Element</h3>
