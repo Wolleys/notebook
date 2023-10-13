@@ -106,6 +106,14 @@
   --sideBarTitle-dark: #e2e8f0;
   --sideBarTitle-light: #2f1c6a;
   --sideBarTitle: var(--sideBarTitle-light);
+  /* sidebar post title */
+  --sideBarPostTitle-dark: #ffffff;
+  --sideBarPostTitle-light: #242424;
+  --sideBarPostTitle: var(--sideBarPostTitle-light);
+  /* sidebar post details */
+  --sideBarPostDetails-dark: #7e869a;
+  --sideBarPostDetails-light: #6b6b6b;
+  --sideBarPostDetails: var(--sideBarPostDetails-light);
 }
 
 [data-theme="dark"] {
@@ -135,6 +143,8 @@
   --postBorder: var(--postBorder-dark);
   --sideBarFooter: var(--sideBarFooter-dark);
   --sideBarTitle: var(--sideBarTitle-dark);
+  --sideBarPostTitle: var(--sideBarPostTitle-dark);
+  --sideBarPostDetails: var(--sideBarPostDetails-dark);
 }
 
 * {
