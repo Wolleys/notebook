@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { FC, ChangeEvent } from "react";
+import styles from "./themeswitch.module.css";
 
 const ThemeSwitch: FC = () => {
   const { theme, setTheme } = useTheme();
@@ -11,7 +12,7 @@ const ThemeSwitch: FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <label htmlFor="theme-select">Select Theme:</label>
       <select id="theme-select" value={theme} onChange={handleChange}>
         <option value="system">System</option>

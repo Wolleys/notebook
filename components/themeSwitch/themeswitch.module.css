@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+}
+
+.container label {
+  margin-right: 8px;
+}
+
+.container select {
+  width: 100px;
+  padding: 3px;
+  outline: none;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: inherit;
+  border: 1px solid var(--navBarBorderColor);
+}
+
+.container option {
+  font-size: 13px;
+  background-color: var(--bodyBgColor);
+}

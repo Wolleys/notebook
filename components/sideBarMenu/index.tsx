@@ -1,4 +1,5 @@
 import { FC } from "react";
+import ThemeSwitch from "../themeSwitch";
 import MostPopular from "../mostPopular";
 import TopCategories from "../topCategories";
 import styles from "./sidebarmenu.module.css";
@@ -13,6 +14,11 @@ const SideBarMenu: FC = () => {
       <div className={styles.sticky}>
         <div className={styles.content}>
           <FeaturedWriters />
+
+          {/* Don't change the position of the theme switcher */}
+          <div className={styles.themeSwitcher}>
+            <ThemeSwitch />
+          </div>
         </div>
         <SideBarFooter />
       </div>
