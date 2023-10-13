@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--featuredPostHeader);
+}
+
+.titleIcon {
+  font-size: 14px;
+  margin-right: 8px;
+  color: var(--featuredPostHeader);
+}
+
+.writerContainer {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.writerAvatar {
+  display: flex;
+  align-items: center;
+}
+
+.writerAvatar img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.writerInfo {
+  flex: 2;
+  display: flex;
+  padding-left: 10px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.writerName {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--sideBarPostTitle);
+}
+
+.church {
+  font-size: 12px;
+  color: var(--sideBarPostDetails);
+}
+
+.button {
+  outline: 0;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 12px;
+  width: max-content;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: 1px solid var(--navBarBorderColor);
+}
