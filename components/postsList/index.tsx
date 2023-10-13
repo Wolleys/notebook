@@ -11,6 +11,10 @@ const PostsList: FC = () => {
         <Post />
         <Post />
         <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </div>
     </div>
   );
