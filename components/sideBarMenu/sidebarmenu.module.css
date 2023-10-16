@@ -18,13 +18,15 @@
 
 .sticky {
   top: 90px;
+  display: flex;
+  flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  height: calc(90vh - 75px);
+  height: calc(100vh - 75px);
 }
 
 .themeSwitcher {
-  bottom: 20px;
+  bottom: 0px;
   width: 100%;
   padding: 8px 0;
   position: absolute;
