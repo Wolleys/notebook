@@ -17,12 +17,12 @@
 }
 
 .sticky {
-  top: 90px;
+  top: 85px;
   display: flex;
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 85px);
 }
 
 .themeSwitcher {
