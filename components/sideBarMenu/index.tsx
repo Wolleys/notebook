@@ -16,9 +16,9 @@ const SideBarMenu: FC = () => {
           <FeaturedWriters />
 
           {/* Don't change the position of the theme switcher */}
-          <div className={styles.themeSwitcher}>
-            <ThemeSwitch />
-          </div>
+        </div>
+        <div className={styles.themeSwitcher}>
+          <ThemeSwitch />
         </div>
         <SideBarFooter />
       </div>
