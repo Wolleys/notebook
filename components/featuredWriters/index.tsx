@@ -25,7 +25,7 @@ const FeaturedWriters = () => {
         Featured Writers
       </h2>
 
-      {writers.map((item) => (
+      {writers.slice(0, 5).map((item) => (
         <div className={styles.writerContainer} key={item.id}>
           <div className={styles.writerAvatar}>
             <Image width={40} height={40} alt="writer" src={writerPic} />
