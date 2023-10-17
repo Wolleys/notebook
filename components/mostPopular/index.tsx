@@ -13,7 +13,7 @@ const MostPopular: FC = () => {
         Trending on Notebook
       </h2>
 
-      {mostPopular.splice(0, 5).map((item) => (
+      {mostPopular.slice(0, 5).map((item) => (
         <div className={styles.textContainer} key={item.id}>
           <h5 className={styles.postTitle}>
             <Link href="/">{item.title}</Link>
