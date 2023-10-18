@@ -1,13 +1,13 @@
 import { FC } from "react";
 import Post from "@/components/post";
 import SideBarMenu from "@/components/sideBarMenu";
-import FeedsTab from "../../../components/feedsTab";
+import FeedsTab from "../../../../components/feedsTab";
 import ParentContainer from "@/containers/ParentContainer";
 
-const Feed: FC = () => {
+const Following: FC = () => {
   return (
     <ParentContainer>
-      <FeedsTab activeTab="/feed">
+      <FeedsTab activeTab="/feed/following">
         <Post />
       </FeedsTab>
       <SideBarMenu />
@@ -15,4 +15,4 @@ const Feed: FC = () => {
   );
 };
 
-export default Feed;
+export default Following;
