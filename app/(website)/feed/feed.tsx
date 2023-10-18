@@ -6,7 +6,16 @@ import ParentContainer from "@/containers/ParentContainer";
 const Feed: FC = () => {
   return (
     <ParentContainer>
-      <FeedsTab />
+      <FeedsTab activeTab="/feed">
+        <h4>For You content</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
+          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
+          repellendus odio?
+        </p>
+        <br />
+      </FeedsTab>
       <SideBarMenu />
     </ParentContainer>
   );
