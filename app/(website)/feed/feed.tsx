@@ -1,15 +1,15 @@
 import { FC } from "react";
-import PostsList from "@/components/postsList";
 import SideBarMenu from "@/components/sideBarMenu";
+import FeedsTab from "../../../components/feedsTab";
 import ParentContainer from "@/containers/ParentContainer";
 
-const Home: FC = () => {
+const Feed: FC = () => {
   return (
-    <ParentContainer showFeatured={true}>
-      <PostsList />
+    <ParentContainer>
+      <FeedsTab />
       <SideBarMenu />
     </ParentContainer>
   );
 };
 
-export default Home;
+export default Feed;

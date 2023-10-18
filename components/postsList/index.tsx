@@ -8,13 +8,6 @@ const PostsList: FC = () => {
       <h2 className={styles.title}>Recent Posts</h2>
       <div className={styles.posts}>
         <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
       </div>
     </div>
   );
