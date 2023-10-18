@@ -5,11 +5,9 @@ import PostsList from "@/components/postsList";
 import SideBarMenu from "@/components/sideBarMenu";
 
 const Home: FC = () => {
-  const status = true;
-
   return (
     <div className={styles.container}>
-      {!status ? <Featured /> : null}
+      <Featured />
       <main className={styles.main}>
         <PostsList />
         <SideBarMenu />

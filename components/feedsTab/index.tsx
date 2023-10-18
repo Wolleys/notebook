@@ -14,7 +14,7 @@ const FeedsTab: FC = () => {
         <ul>
           <li>
             <Link
-              className={`${pathname === "/" ? styles.active : ""}`}
+              className={`${pathname === "/feed" ? styles.active : ""}`}
               href="/"
             >
               For you
