@@ -1,19 +1,19 @@
-"use client";
-
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Link from "next/link";
 import styles from "./feedstab.module.css";
-import { usePathname } from "next/navigation";
+
+interface FeedsTabProps {
+  activeTab: string;
+  children: ReactNode;
+}
 
 const navItems = [
   { path: "/feed", label: "For you" },
-  { path: "/feed=following", label: "Following" },
+  { path: "/feed/following", label: "Following" },
   { path: "/explore", label: "Explore" },
 ];
 
-const FeedsTab: FC = () => {
-  const pathname = usePathname();
-
+const FeedsTab: FC<FeedsTabProps> = ({ activeTab, children }) => {
   return (
     <div className={styles.container}>
       <div className={styles.tabs}>
@@ -21,7 +21,7 @@ const FeedsTab: FC = () => {
           {navItems.map((item, index) => (
             <li key={index}>
               <Link
-                className={`${pathname === item.path ? styles.active : ""}`}
+                className={`${activeTab === item.path ? styles.active : ""}`}
                 href={item.path}
               >
                 {item.label}
@@ -30,16 +30,7 @@ const FeedsTab: FC = () => {
           ))}
         </ul>
       </div>
-      <div className={styles.content}>
-        <h4>For You content</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
-        <br />
-      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };
