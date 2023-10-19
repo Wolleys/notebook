@@ -2,14 +2,25 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./post.module.css";
-import recentPosts from "../../mockup/recentPosts";
 import authorPic from "../../public/profile-pic.png";
 import postPic from "../../public/imgs/featured.webp";
 
-const Post: FC = () => {
+interface PostProps {
+  posts: {
+    id: number;
+    author: string;
+    updatedDate: string;
+    title: string;
+    desc: string;
+    categories: string | string[];
+    imageUrl: string;
+  }[];
+}
+
+const Post: FC<PostProps> = ({ posts }) => {
   return (
     <>
-      {recentPosts.map((item) => (
+      {posts.map((item) => (
         <div className={styles.container} key={item.id}>
           <div className={styles.textContainer}>
             <div className={styles.details}>
@@ -33,13 +44,21 @@ const Post: FC = () => {
             </p>
             <div className={styles.footer}>
               <span className={styles.categories}>
-                <ul>
-                  {item.categories.slice(0, 2).map((item, index) => (
-                    <li key={index}>
-                      <Link href="/">{item}</Link>
+                {Array.isArray(item.categories) ? (
+                  <ul>
+                    {item.categories.slice(0, 2).map((category, index) => (
+                      <li key={index}>
+                        <Link href="/">{category}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul>
+                    <li>
+                      <Link href="/">{item.categories}</Link>
                     </li>
-                  ))}
-                </ul>
+                  </ul>
+                )}
               </span>
               <span className={styles.footerIcons}>
                 <i className="fa-regular fa-bookmark fa-fw"></i>
