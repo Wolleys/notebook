@@ -1,19 +1,25 @@
 import { FC } from "react";
+import Link from "next/link";
+// import { Post } from "@/types";
+// import GetAllPosts from "@/lib/getAllPosts";
 import SideBarMenu from "@/components/sideBarMenu";
 import FeedsTab from "../../../components/feedsTab";
 import ParentContainer from "@/containers/ParentContainer";
 
-const Explore: FC = () => {
+const Explore: FC = async () => {
+  // const postsData: Promise<Post[]> = GetAllPosts();
+  // const posts = await postsData;
+
   return (
     <ParentContainer>
       <FeedsTab activeTab="/explore">
-        <h4>Explore content</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
+        <h4>Explore Posts</h4>
+
+        {/* {posts.map((item) => (
+          <p key={item.id}>
+            <Link href={`/posts/${item.slug}`}>{item.title}</Link>
+          </p>
+        ))} */}
         <br />
       </FeedsTab>
       <SideBarMenu />
