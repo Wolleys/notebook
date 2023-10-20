@@ -1,7 +1,7 @@
 import { FC } from "react";
 import PostsList from "@/components/postsList";
 import SideBarMenu from "@/components/sideBarMenu";
-import ParentContainer from "@/containers/ParentContainer";
+import ParentContainer from "@/containers/parentContainer";
 
 const Home: FC = () => {
   return (

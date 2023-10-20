@@ -4,7 +4,7 @@ import Link from "next/link";
 // import GetAllPosts from "@/lib/getAllPosts";
 import SideBarMenu from "@/components/sideBarMenu";
 import FeedsTab from "../../../components/feedsTab";
-import ParentContainer from "@/containers/ParentContainer";
+import ParentContainer from "@/containers/parentContainer";
 
 const Explore: FC = async () => {
   // const postsData: Promise<Post[]> = GetAllPosts();

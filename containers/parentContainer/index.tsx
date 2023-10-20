@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import styles from "./containers.module.css";
+import styles from "./parent.module.css";
 import Featured from "@/components/featured";
 
 interface ParentContainerProps {
