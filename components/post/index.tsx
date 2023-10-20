@@ -14,6 +14,7 @@ interface PostProps {
     desc: string;
     categories: string | string[];
     imageUrl: string;
+    username: string;
   }[];
 }
 
@@ -27,7 +28,7 @@ const Post: FC<PostProps> = ({ posts }) => {
               <div className={styles.authorAvatar}>
                 <Image width={24} height={24} alt="author" src={authorPic} />
                 <span className={styles.authorName}>
-                  <Link href="/">{item.author}</Link>
+                  <Link href={`/@${item.username}`}>{item.author}</Link>
                 </span>
               </div>
               <div className={styles.postDate}>
