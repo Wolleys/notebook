@@ -1,14 +1,23 @@
+"use client";
+
 import { FC } from "react";
-import styles from "./lists.module.css";
+import NavTabs from "@/components/navTabs";
+import { useParams } from "next/navigation";
+import { profileTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
+import { formatProfileTabs } from "@/utils/formatTabs";
 import ParentContainer from "@/containers/parentContainer";
 
 const Lists: FC = () => {
+  var { profile } = useParams();
+  profile = decodeURIComponent(profile.toString());
+  const tabs = formatProfileTabs(profile, profileTabs);
+
   return (
     <ParentContainer>
-      <div className={styles.container}>
-        <h3>Lists Page</h3>
-      </div>
+      <NavTabs activeTab={`/${profile}/lists`} navItems={tabs}>
+        <h3>{profile} Lists Page</h3>
+      </NavTabs>
       <SideBarMenu />
     </ParentContainer>
   );
