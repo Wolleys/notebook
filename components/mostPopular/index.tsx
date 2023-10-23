@@ -20,7 +20,7 @@ const MostPopular: FC = () => {
           </h5>
           <div className={styles.details}>
             <span className={styles.username}>
-              <Link href="/">{item.author}</Link>
+              <Link href={`/@${item.username}`}>{item.author}</Link>
             </span>
             <span className={styles.DetailIcon}>
               <i className="fa-regular fa-eye fa-fw"></i> {item.views}

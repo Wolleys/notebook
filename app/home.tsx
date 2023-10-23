@@ -1,13 +1,23 @@
 import { FC } from "react";
 import PostsList from "@/components/postsList";
 import SideBarMenu from "@/components/sideBarMenu";
-import ParentContainer from "@/containers/ParentContainer";
+import MostPopular from "@/components/mostPopular";
+import TopCategories from "@/components/topCategories";
+import FeaturedWriters from "@/components/featuredWriters";
+import ParentContainer from "@/containers/parentContainer";
 
 const Home: FC = () => {
+  const sections = [
+    <MostPopular key="mostPopular" />,
+    <TopCategories key="topCategories" />,
+  ];
+
   return (
     <ParentContainer showFeatured={true}>
       <PostsList />
-      <SideBarMenu />
+      <SideBarMenu sidebarSections={sections}>
+        <FeaturedWriters />
+      </SideBarMenu>
     </ParentContainer>
   );
 };

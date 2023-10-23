@@ -10,7 +10,7 @@ const SearchBar: FC = () => {
 
   const handleSearch = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    push(`/search/?query=${encodeURIComponent(searchQuery)}`);
+    push(`/search/?q=${encodeURIComponent(searchQuery)}`);
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
