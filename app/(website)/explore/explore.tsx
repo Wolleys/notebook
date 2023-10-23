@@ -5,9 +5,16 @@ import Link from "next/link";
 import NavTabs from "@/components/navTabs";
 import { feedsTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
+import MostPopular from "@/components/mostPopular";
+import TopCategories from "@/components/topCategories";
+import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
 
 const Explore: FC = async () => {
+  const sections = [
+    <MostPopular key="mostPopular" />,
+    <TopCategories key="topCategories" />,
+  ];
   // const postsData: Promise<Post[]> = GetAllPosts();
   // const posts = await postsData;
 
@@ -23,7 +30,9 @@ const Explore: FC = async () => {
         ))} */}
         <br />
       </NavTabs>
-      <SideBarMenu />
+      <SideBarMenu sidebarSections={sections}>
+        <FeaturedWriters />
+      </SideBarMenu>
     </ParentContainer>
   );
 };

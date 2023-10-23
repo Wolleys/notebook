@@ -4,15 +4,25 @@ import NavTabs from "@/components/navTabs";
 import { feedsTabs } from "@/utils/navItems";
 import recentPosts from "@/mockup/recentPosts";
 import SideBarMenu from "@/components/sideBarMenu";
+import MostPopular from "@/components/mostPopular";
+import TopCategories from "@/components/topCategories";
+import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
 
 const Following: FC = () => {
+  const sections = [
+    <MostPopular key="mostPopular" />,
+    <TopCategories key="topCategories" />,
+  ];
+
   return (
     <ParentContainer>
       <NavTabs activeTab="/feed/following" navItems={feedsTabs}>
         <Post posts={recentPosts} />
       </NavTabs>
-      <SideBarMenu />
+      <SideBarMenu sidebarSections={sections}>
+        <FeaturedWriters />
+      </SideBarMenu>
     </ParentContainer>
   );
 };
