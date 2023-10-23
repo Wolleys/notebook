@@ -22,7 +22,7 @@ const FeaturedWriters: FC = () => {
           </div>
           <div className={styles.writerInfo}>
             <h5 className={styles.writerName}>
-              <Link href="/">{item.name}</Link>
+              <Link href={`/@${item.username}`}>{item.name}</Link>
             </h5>
             <p className={styles.church}>{item.church}</p>
           </div>

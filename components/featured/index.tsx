@@ -40,7 +40,7 @@ const Featured: FC = () => {
               </div>
               <div className={styles.authorInfo}>
                 <p className={styles.authorName}>
-                  <Link href={`@${item.username}`}>{item.author}</Link>
+                  <Link href={`/@${item.username}`}>{item.author}</Link>
                 </p>
                 <p className={styles.modifiedDate}>{item.updatedDate}</p>
               </div>
