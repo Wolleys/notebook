@@ -7,6 +7,7 @@ import { profileTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
 import { formatProfileTabs } from "@/utils/formatTabs";
 import ParentContainer from "@/containers/parentContainer";
+import FeaturedWriters from "@/components/featuredWriters";
 
 const Lists: FC = () => {
   var { profile } = useParams();
@@ -18,7 +19,9 @@ const Lists: FC = () => {
       <NavTabs activeTab={`/${profile}/lists`} navItems={tabs}>
         <h3>{profile} Lists Page</h3>
       </NavTabs>
-      <SideBarMenu />
+      <SideBarMenu>
+        <FeaturedWriters />
+      </SideBarMenu>
     </ParentContainer>
   );
 };
