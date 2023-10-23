@@ -2,8 +2,9 @@ import { FC } from "react";
 import Link from "next/link";
 // import { Post } from "@/types";
 // import GetAllPosts from "@/lib/getAllPosts";
+import NavTabs from "@/components/navTabs";
+import { feedsTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
-import FeedsTab from "../../../components/feedsTab";
 import ParentContainer from "@/containers/parentContainer";
 
 const Explore: FC = async () => {
@@ -12,7 +13,7 @@ const Explore: FC = async () => {
 
   return (
     <ParentContainer>
-      <FeedsTab activeTab="/explore">
+      <NavTabs activeTab="/explore" navItems={feedsTabs}>
         <h4>Explore Posts</h4>
 
         {/* {posts.map((item) => (
@@ -21,7 +22,7 @@ const Explore: FC = async () => {
           </p>
         ))} */}
         <br />
-      </FeedsTab>
+      </NavTabs>
       <SideBarMenu />
     </ParentContainer>
   );
