@@ -1,16 +1,17 @@
 "use client";
 
 import { FC } from "react";
+import styles from "./search.module.css";
 import { useSearchParams } from "next/navigation";
 
 const Search: FC = () => {
   const { get } = useSearchParams();
-  const search = get("query");
+  const search = get("q");
 
   return (
-    <section>
+    <div className={styles.container}>
       <p>{`Search results for "${search}"`}</p>
-    </section>
+    </div>
   );
 };
 

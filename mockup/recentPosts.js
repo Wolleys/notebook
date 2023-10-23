@@ -9,6 +9,8 @@ const recentPosts = [
     author: "Júlia Araújo",
     updatedDate: "Oct 17, 2023",
     categories: ["Love", "Faith"],
+    imageUrl: "",
+    username: "júlia",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ const recentPosts = [
     author: "Evelyn Taylor",
     updatedDate: "Oct 16, 2023",
     categories: ["Devotionals", "Bible Study"],
+    imageUrl: "",
+    username: "taylor",
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ const recentPosts = [
     author: "John Doe",
     updatedDate: "Oct 15, 2023",
     categories: ["Prayer", "Love"],
+    imageUrl: "",
+    username: "john",
   },
   {
     id: 4,
@@ -42,6 +48,8 @@ const recentPosts = [
     author: "Jane Doe",
     updatedDate: "Oct 14, 2023",
     categories: ["Family"],
+    imageUrl: "",
+    username: "jane",
   },
   {
     id: 5,
@@ -53,6 +61,8 @@ const recentPosts = [
     author: "Nicolina Torres",
     updatedDate: "Oct 13, 2023",
     categories: ["Relationships", "Inspiration"],
+    imageUrl: "",
+    username: "nicolina",
   },
   {
     id: 6,
@@ -65,6 +75,8 @@ const recentPosts = [
     author: "Kiley Larsen",
     updatedDate: "Oct 12, 2023",
     categories: ["Youth", "Health", "Inspiration"],
+    imageUrl: "",
+    username: "larsen",
   },
 ];
 
