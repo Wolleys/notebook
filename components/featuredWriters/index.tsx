@@ -5,9 +5,9 @@ import styles from "./featuredwriters.module.css";
 import writerPic from "../../public/profile-pic.png";
 import featuredWriters from "../../mockup/featuredWriters";
 
-const FeaturedWriters = () => {
+const FeaturedWriters: FC = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2 className={styles.title}>
         <span className={styles.titleIcon}>
           <i className="fa-solid fa-wand-magic-sparkles fa-fw"></i>
@@ -32,7 +32,7 @@ const FeaturedWriters = () => {
       <Link href="/" className="seeMore">
         See more suggestions
       </Link>
-    </div>
+    </section>
   );
 };
 

@@ -1,21 +1,23 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import ThemeSwitch from "../themeSwitch";
-import MostPopular from "../mostPopular";
-import TopCategories from "../topCategories";
 import styles from "./sidebarmenu.module.css";
 import SideBarFooter from "../footer/sideBar";
-import FeaturedWriters from "../featuredWriters";
 
-const SideBarMenu: FC = () => {
+interface SideBarMenuProps {
+  children: ReactNode;
+  sidebarSections?: ReactNode[];
+}
+
+const SideBarMenu: FC<SideBarMenuProps> = ({ children, sidebarSections }) => {
   return (
     <aside className={styles.container}>
-      <MostPopular />
-      <TopCategories />
+      {sidebarSections &&
+        sidebarSections.map((component, index) => (
+          <section key={index}>{component}</section>
+        ))}
       <div className={styles.sticky}>
         <div className={styles.content}>
-          <FeaturedWriters />
-
-          {/* Don't change the position of the theme switcher */}
+          {children}
           <div className={styles.themeSwitcher}>
             <ThemeSwitch />
           </div>
