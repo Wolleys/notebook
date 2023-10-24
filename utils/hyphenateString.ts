@@ -1,3 +1,4 @@
-export const hyphenateString = (input: string): string => {
-  return input.replace(/\s+/g, "-");
+export const hyphenateString = (slug: string): string => {
+  const lowercasedSlug = slug.toLowerCase();
+  return lowercasedSlug.replace(/\s+/g, "-");
 };

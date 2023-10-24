@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./featured.module.css";
 import authorPic from "../../public/profile-pic.png";
 import featuredPosts from "../../mockup/featuredPosts";
+import { hyphenateString } from "@/utils/hyphenateString";
 import featuredPostPic from "../../public/imgs/featured1.webp";
 
 const Featured: FC = () => {
@@ -28,7 +29,9 @@ const Featured: FC = () => {
             <div className={styles.postBody}>
               <p className={styles.featuredPostTitle}>Featured Story</p>
               <h3 className={styles.featuredPostHeader}>
-                <Link href="/">{item.title}</Link>
+                <Link href={`/@${item.username}/${hyphenateString(item.slug)}`}>
+                  {item.title}
+                </Link>
               </h3>
               <p className={styles.featuredPostDesc}>
                 {item.desc.substring(0, 179) + "..."}
