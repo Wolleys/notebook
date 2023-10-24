@@ -44,25 +44,25 @@
   font-weight: 800;
   line-height: 17px;
   align-items: center;
-  color: #2f1c6a;
+  color: var(--featuredAuthorName);
 }
 
 .authorName {
   display: flex;
-  color: #2f1c6a;
   font-weight: 800;
   line-height: 17px;
   align-items: center;
+  color: var(--featuredAuthorName);
 }
 
 .postTitle {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
-  color: #2f1c6a;
   line-height: 120%;
   letter-spacing: 0;
   margin-bottom: 1.5rem;
   word-break: break-word;
+  color: var(--postHeader);
 }
 
 .socialContainer {
@@ -78,8 +78,8 @@
 .postData {
   gap: 20px;
   display: flex;
-  cursor: pointer;
   align-items: center;
+  color: var(--slugPostData);
 }
 
 .icons {
@@ -87,10 +87,10 @@
   font-size: 15px;
   margin-right: 4px;
   font-weight: 400px;
-  color: #6b6b6b;
 }
 
 .postNumbers {
+  cursor: pointer;
   font-size: 12px;
 }
 
@@ -113,10 +113,27 @@
   object-fit: cover;
 }
 
+.postDesc {
+  margin: 0;
+  font-size: 16px;
+  color: var(--singlePostDesc);
+}
+
+.postDesc p {
+  padding: 0 0 20px;
+}
+
+.postDesc img {
+  margin: 20px 0;
+}
+
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
+  .postTitle {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px) {

@@ -70,33 +70,39 @@ const Slug: FC = () => {
             className={styles.image}
           />
         </figure>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
-          molestias consectetur fuga, ut accusamus tenetur totam laborum minima
-          ad, numquam aperiam voluptatem molestiae veritatis ipsum fugit porro
-          repellendus odio?
-        </p>
+        <div className={styles.postDesc}>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+            molestias consectetur fuga, ut accusamus tenetur totam laborum
+            minima ad, numquam aperiam voluptatem molestiae veritatis ipsum
+            fugit porro repellendus odio?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+            molestias consectetur fuga, ut accusamus tenetur totam laborum
+            minima ad, numquam aperiam voluptatem molestiae veritatis ipsum
+            fugit porro repellendus odio?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+            molestias consectetur fuga, ut accusamus tenetur totam laborum
+            minima ad, numquam aperiam voluptatem molestiae veritatis ipsum
+            fugit porro repellendus odio?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+            molestias consectetur fuga, ut accusamus tenetur totam laborum
+            minima ad, numquam aperiam voluptatem molestiae veritatis ipsum
+            fugit porro repellendus odio?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quae
+            molestias consectetur fuga, ut accusamus tenetur totam laborum
+            minima ad, numquam aperiam voluptatem molestiae veritatis ipsum
+            fugit porro repellendus odio?
+          </p>
+          <br />
+        </div>
       </article>
     </div>
   );
