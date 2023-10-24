@@ -4,10 +4,12 @@ import Image from "next/image";
 import styles from "./post.module.css";
 import authorPic from "../../public/profile-pic.png";
 import postPic from "../../public/imgs/featured.webp";
+import { hyphenateString } from "@/utils/hyphenateString";
 
 interface PostProps {
   posts: {
     id: number;
+    slug: string;
     author: string;
     updatedDate: string;
     title: string;
@@ -38,7 +40,9 @@ const Post: FC<PostProps> = ({ posts }) => {
               </div>
             </div>
             <h5 className={styles.postHeader}>
-              <Link href="/">{item.title}</Link>
+              <Link href={`/@${item.username}/${hyphenateString(item.slug)}`}>
+                {item.title}
+              </Link>
             </h5>
             <p className={styles.postDesc}>
               {item.desc.substring(0, 160) + "..."}
