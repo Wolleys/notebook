@@ -122,6 +122,14 @@
   --feedsActiveTabLink-dark: #4595d0;
   --feedsActiveTabLink-light: #242424;
   --feedsActiveTabLink: var(--feedsActiveTabLink-light);
+  /* slug post data*/
+  --slugPostData-dark: #7e869a;
+  --slugPostData-light: #6b6b6b;
+  --slugPostData: var(--slugPostData-light);
+  /* single post desc*/
+  --singlePostDesc-dark: #d1d5db;
+  --singlePostDesc-light: #374151;
+  --singlePostDesc: var(--singlePostDesc-light);
 }
 
 [data-theme="dark"] {
@@ -155,6 +163,8 @@
   --sideBarPostDetails: var(--sideBarPostDetails-dark);
   --feedsTabNavLink: var(--feedsTabNavLink-dark);
   --feedsActiveTabLink: var(--feedsActiveTabLink-dark);
+  --slugPostData: var(--slugPostData-dark);
+  --singlePostDesc: var(--singlePostDesc-dark);
 }
 
 * {
