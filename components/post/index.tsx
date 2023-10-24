@@ -71,7 +71,7 @@ const Post: FC<PostProps> = ({ posts }) => {
             </div>
           </div>
           <div className={styles.imageContainer}>
-            <Link href="/">
+            <Link href={`/@${item.username}/${hyphenateString(item.slug)}`}>
               <Image
                 alt=""
                 priority
