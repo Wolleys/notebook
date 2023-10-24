@@ -13,7 +13,7 @@ const Featured: FC = () => {
       {featuredPosts.map((item) => (
         <div className={styles.featuredPost} key={item.id}>
           <div className={styles.postImage}>
-            <Link href="/">
+            <Link href={`/@${item.username}/${hyphenateString(item.slug)}`}>
               <Image
                 alt=""
                 priority
