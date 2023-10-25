@@ -26,12 +26,15 @@ const AuthorCard: FC = () => {
         Deep Learning operation at scale.
       </div>
       <div className={styles.containerFooter}>
-        <Link href={`/@joshua`} className="seeMore">
-          More from Joshua Wood
-        </Link>
-        <Link href="/" className={styles.followers}>
-          413 Followers
-        </Link>
+        <span>
+          <Link href={`/@joshua`} className="seeMore">
+            More from Joshua Wood
+          </Link>
+          <span className={styles.ball}>•</span>
+          <Link href="/" className="seeMore">
+            413 Followers
+          </Link>
+        </span>
       </div>
     </div>
   );

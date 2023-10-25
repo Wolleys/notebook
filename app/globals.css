@@ -130,6 +130,18 @@
   --singlePostDesc-dark: #d1d5db;
   --singlePostDesc-light: #374151;
   --singlePostDesc: var(--singlePostDesc-light);
+  /* author card*/
+  --authorCardBg-dark: #010514;
+  --authorCardBg-light: #f9f9f9;
+  --authorCardBg: var(--authorCardBg-light);
+  /* the author*/
+  --theAuthor-dark: #cccdd0;
+  --theAuthor-light: #2f1c6a;
+  --theAuthor: var(--theAuthor-light);
+  /* author bio*/
+  --authorBio-dark: #999999;
+  --authorBio-light: #737373;
+  --authorBio: var(--authorBio-light);
 }
 
 [data-theme="dark"] {
@@ -165,6 +177,9 @@
   --feedsActiveTabLink: var(--feedsActiveTabLink-dark);
   --slugPostData: var(--slugPostData-dark);
   --singlePostDesc: var(--singlePostDesc-dark);
+  --authorCardBg: var(--authorCardBg-dark);
+  --theAuthor: var(--theAuthor-dark);
+  --authorBio: var(--authorBio-dark);
 }
 
 * {
