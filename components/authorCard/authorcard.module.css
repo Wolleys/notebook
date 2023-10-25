@@ -1,4 +1,99 @@
 .container {
+  display: flex;
   margin-bottom: 16px;
+  padding: 20px 16px;
+  flex-direction: column;
   background-color: #f9f9f9;
+}
+
+.authorDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.authorAvatar img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.authorInfo {
+  flex: 1;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f1c6a;
+}
+
+.follow {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button {
+  outline: 0;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 12px;
+  width: max-content;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: 1px solid var(--navBarBorderColor);
+}
+
+.authorBio {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #737373;
+}
+
+.containerFooter {
+  gap: 25px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.containerFooter a {
+  margin-top: 0px;
+  text-decoration: none;
+}
+
+.containerFooter a:hover {
+  text-decoration: underline;
+}
+
+.followers {
+  font-size: 13px;
+  color: #242424;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
