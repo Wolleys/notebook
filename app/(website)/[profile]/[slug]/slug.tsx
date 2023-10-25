@@ -2,6 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./slug.module.css";
+import AuthorCard from "@/components/authorCard";
 import postPic from "../../../../public/imgs/featured.webp";
 
 const categories = { cats: ["Inspiration"] };
@@ -104,6 +105,7 @@ const Slug: FC = () => {
           <br />
         </div>
       </article>
+      <AuthorCard />
     </div>
   );
 };
