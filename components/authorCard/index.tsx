@@ -14,10 +14,11 @@ const AuthorCard: FC = () => {
         <div className={styles.authorInfo}>
           <h4 className={styles.author}>The Author</h4>
           <p className={styles.authorName}>Joshua Wood</p>
+          <div className={styles.follow}>
+            <button>Follow</button>
+          </div>
         </div>
-        <div className={styles.follow}>
-          <button className={styles.button}>Follow</button>
-        </div>
+        <button className={styles.button}>Follow</button>
       </div>
       <div className={styles.authorBio}>
         Joshua is a Microsoft Azure Certified Cloud Professional and a Google
