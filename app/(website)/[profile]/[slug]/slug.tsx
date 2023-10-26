@@ -2,6 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./slug.module.css";
+import Comments from "@/components/comments";
 import AuthorCard from "@/components/authorCard";
 import postPic from "../../../../public/imgs/featured.webp";
 
@@ -106,6 +107,7 @@ const Slug: FC = () => {
         </div>
       </article>
       <AuthorCard />
+      <Comments />
     </div>
   );
 };
