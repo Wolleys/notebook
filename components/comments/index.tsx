@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
+import Comment from "../comment";
 import TextArea from "../textArea";
 import styles from "./comments.module.css";
 
@@ -16,6 +17,9 @@ const Comments: FC = () => {
           Login to write a comment
         </Link>
       )}
+      <div className={styles.comments}>
+        <Comment />
+      </div>
     </div>
   );
 };
