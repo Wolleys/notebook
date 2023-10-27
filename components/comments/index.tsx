@@ -1,8 +1,9 @@
 import { FC } from "react";
 import Link from "next/link";
-import CommentCard from "../commentCard";
 import TextArea from "../textArea";
+import CommentCard from "../commentCard";
 import styles from "./comments.module.css";
+import commentsData from "../../mockup/commetsData";
 
 const Comments: FC = () => {
   const status = true;
@@ -18,7 +19,9 @@ const Comments: FC = () => {
         </Link>
       )}
       <div className={styles.comments}>
-        <CommentCard />
+        {commentsData.map((comment) => (
+          <CommentCard key={comment.id} comment={comment} />
+        ))}
       </div>
     </div>
   );
