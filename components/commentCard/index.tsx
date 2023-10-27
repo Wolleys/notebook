@@ -1,10 +1,10 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./comment.module.css";
+import styles from "./commentcard.module.css";
 import userPic from "../../public/profile-pic.png";
 
-const Comment: FC = () => {
+const CommentCard: FC = () => {
   return (
     <div className={styles.comment}>
       <div className={styles.userDetails}>
@@ -44,4 +44,4 @@ const Comment: FC = () => {
   );
 };
 
-export default Comment;
+export default CommentCard;
