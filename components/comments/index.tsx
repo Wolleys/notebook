@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import Link from "next/link";
 import TextArea from "../textArea";
@@ -8,11 +10,16 @@ import commentsData from "../../mockup/commetsData";
 const Comments: FC = () => {
   const status = true;
 
+  const handlePostComment = (text: string) => {
+    //Todo: Add logic to post a new comment, e.g., send data to the server
+    console.log("Posting new comment:", text);
+  };
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Comments</h2>
       {status ? (
-        <TextArea />
+        <TextArea isReply={false} onPost={handlePostComment} />
       ) : (
         <Link href="/auth/login" className="seeMore">
           Login to write a comment

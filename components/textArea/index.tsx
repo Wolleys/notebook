@@ -2,8 +2,13 @@
 
 import { FC, useState, ChangeEvent } from "react";
 import styles from "./textarea.module.css";
+interface TextAreaProps {
+  isReply: boolean;
+  replyingToUser?: string;
+  onPost: (text: string) => void;
+}
 
-const TextArea: FC = () => {
+const TextArea: FC<TextAreaProps> = ({ isReply, replyingToUser, onPost }) => {
   const [text, setText] = useState<string>("");
   const [postButton, setPostButton] = useState<boolean>(false);
 
@@ -16,7 +21,11 @@ const TextArea: FC = () => {
   };
 
   const postComment = () => {
-    console.log("Post button clicked!");
+    if (text && postButton) {
+      onPost(text);
+      setText("");
+      setPostButton(false);
+    }
   };
 
   return (
@@ -25,12 +34,14 @@ const TextArea: FC = () => {
         value={text}
         onChange={handleChange}
         className={styles.textarea}
-        placeholder="Write a comment..."
+        placeholder={
+          isReply ? `Replying to ${replyingToUser}` : "Write a comment..."
+        }
       />
       {postButton && (
         <div className={styles.post}>
           <button className={styles.button} onClick={postComment}>
-            Post
+            {isReply ? "Reply" : "Post"}
           </button>
         </div>
       )}
