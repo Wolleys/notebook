@@ -21,7 +21,11 @@ const Comments: FC = () => {
       {status ? (
         <TextArea isReply={false} onPost={handlePostComment} />
       ) : (
-        <Link href="/auth/login" className="seeMore">
+        <Link
+          href="/auth/login"
+          className="seeMore"
+          style={{ margin: "-20px 0 20px", display: "block" }}
+        >
           Login to write a comment
         </Link>
       )}

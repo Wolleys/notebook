@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import TextArea from "../textArea";
+import useToggle from "@/hooks/useToggle";
 import styles from "./commentcard.module.css";
 import userPic from "../../public/profile-pic.png";
 
@@ -19,6 +21,16 @@ interface CommentCardProps {
 
 const CommentCard: FC<CommentCardProps> = ({ comment }) => {
   const { username, date, content, likes, comments } = comment;
+  const { value: isReplying, toggle: toggleReply } = useToggle(false);
+
+  const handleReplyClick = () => toggleReply();
+
+  const handlePostReply = (text: string) => {
+    // Todo: Handle the logic for posting the reply (e.g., send data to the server)
+    console.log(`Replying with text: ${text}`);
+    toggleReply();
+  };
+
   return (
     <div className={styles.comment}>
       <div className={styles.userDetails}>
@@ -47,9 +59,20 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
           </span>
         </div>
         <>
-          <span className={styles.reply}>Reply</span>
+          <span className={styles.reply} onClick={handleReplyClick}>
+            Reply
+          </span>
         </>
       </div>
+      {isReplying && (
+        <div className={styles.replyTextArea}>
+          <TextArea
+            isReply={true}
+            replyingToUser={username}
+            onPost={handlePostReply}
+          />
+        </div>
+      )}
     </div>
   );
 };
