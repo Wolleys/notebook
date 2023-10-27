@@ -1,0 +1,79 @@
+.comment {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  flex-direction: column;
+  border-bottom: 1px solid var(--postBorder);
+}
+
+.comment:first-child {
+  padding-top: 0px;
+}
+
+.userDetails {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.userAvatar img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--featuredAuthorName);
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--featuredModifiedDate);
+}
+
+.desc {
+  margin: 8px 0;
+  font-size: 16px;
+  color: var(--singlePostDesc);
+}
+
+.dataContainer {
+  display: flex;
+  padding: 0px 8px;
+  align-items: center;
+  color: var(--slugPostData);
+  justify-content: space-between;
+}
+
+.commentData {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 4px;
+  font-weight: 400px;
+}
+
+.commentNumbers {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.reply {
+  cursor: pointer;
+  font-size: 13px;
+}

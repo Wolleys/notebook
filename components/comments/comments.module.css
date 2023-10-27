@@ -6,3 +6,9 @@
   margin-bottom: 30px;
   color: var(--featuredPostHeader);
 }
+
+.comments {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
