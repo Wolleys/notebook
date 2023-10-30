@@ -23,9 +23,9 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
   const { username, date, content, likes, comments } = comment;
   const { value: isReplying, toggle: toggleReply } = useToggle(false);
 
-  const handleReplyClick = () => toggleReply();
+  const handleToggle = () => toggleReply();
 
-  const handlePostReply = (text: string) => {
+  const handleReply = (text: string) => {
     // Todo: Handle the logic for posting the reply (e.g., send data to the server)
     console.log(`Replying with text: ${text}`);
     toggleReply();
@@ -59,8 +59,8 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
           </span>
         </div>
         <>
-          <span className={styles.reply} onClick={handleReplyClick}>
-            Reply
+          <span className={styles.reply} onClick={handleToggle}>
+            {isReplying ? "Cancle" : "Reply"}
           </span>
         </>
       </div>
@@ -68,8 +68,8 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
         <div className={styles.replyTextArea}>
           <TextArea
             isReply={true}
+            onPost={handleReply}
             replyingToUser={username}
-            onPost={handlePostReply}
           />
         </div>
       )}
