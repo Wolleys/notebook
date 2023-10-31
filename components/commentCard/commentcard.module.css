@@ -81,3 +81,7 @@
 .replyTextArea {
   margin-top: 8px;
 }
+
+.repliesContainer {
+  margin-left: 40px;
+}

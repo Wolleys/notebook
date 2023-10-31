@@ -13,6 +13,7 @@ interface Comment {
   content: string;
   likes: number;
   comments: number;
+  replies?: Comment[];
 }
 
 interface CommentCardProps {
@@ -20,7 +21,7 @@ interface CommentCardProps {
 }
 
 const CommentCard: FC<CommentCardProps> = ({ comment }) => {
-  const { username, date, content, likes, comments } = comment;
+  const { username, date, content, likes, comments, replies } = comment;
   const { value: isReplying, toggle: toggleReply } = useToggle(false);
 
   const handleToggle = () => toggleReply();
@@ -71,6 +72,13 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
             onPost={handleReply}
             replyingToUser={username}
           />
+        </div>
+      )}
+      {replies && replies.length > 0 && (
+        <div className={styles.repliesContainer}>
+          {replies.map((reply) => (
+            <CommentCard key={reply.id} comment={reply} />
+          ))}
         </div>
       )}
     </div>
