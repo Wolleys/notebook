@@ -83,5 +83,7 @@
 }
 
 .repliesContainer {
+  margin-top: 8px;
+  padding-top: 0px;
   margin-left: 40px;
 }
