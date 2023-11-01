@@ -5,19 +5,10 @@ import TextArea from "../textArea";
 import useToggle from "@/hooks/useToggle";
 import styles from "./commentcard.module.css";
 import userPic from "../../public/profile-pic.png";
-
-interface Comment {
-  id: number;
-  username: string;
-  date: string;
-  content: string;
-  likes: number;
-  comments: number;
-  replies?: Comment[];
-}
+import { Comment as CommentInterface } from "@/interfaces/comment";
 
 interface CommentCardProps {
-  comment: Comment;
+  comment: CommentInterface;
 }
 
 const CommentCard: FC<CommentCardProps> = ({ comment }) => {
