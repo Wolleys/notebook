@@ -4,6 +4,5 @@ export interface Comment {
   date: string;
   content: string;
   likes: number;
-  comments: number;
   replies?: Comment[];
 }

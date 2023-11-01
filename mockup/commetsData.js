@@ -6,7 +6,6 @@ const commentsData = [
     content:
       "This is a sample comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     likes: 30,
-    comments: 5,
     replies: [
       {
         id: 4,
@@ -14,7 +13,6 @@ const commentsData = [
         date: "Oct 28, 2023",
         content: "Reply to Jane's comment. Lorem ipsum dolor sit amet.",
         likes: 5,
-        comments: 2,
         replies: [
           {
             id: 7,
@@ -27,6 +25,15 @@ const commentsData = [
           },
         ],
       },
+      {
+        id: 2,
+        username: "Wolleys",
+        date: "Oct 28, 2023",
+        content:
+          "Another reply to Jane's comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        likes: 15,
+        replies: [],
+      },
     ],
   },
   {
@@ -36,7 +43,6 @@ const commentsData = [
     content:
       "Another comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     likes: 15,
-    comments: 2,
     replies: [],
   },
   {
@@ -46,7 +52,6 @@ const commentsData = [
     content:
       "Yet another comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     likes: 10,
-    comments: 3,
     replies: [],
   },
 ];
