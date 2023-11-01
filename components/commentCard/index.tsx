@@ -12,10 +12,12 @@ interface CommentCardProps {
 }
 
 const CommentCard: FC<CommentCardProps> = ({ comment }) => {
-  const { username, date, content, likes, comments, replies } = comment;
+  const { username, date, content, likes, replies } = comment;
   const { value: isReplying, toggle: toggleReply } = useToggle(false);
+  const { value: showReplies, toggle: toggleReplies } = useToggle(false);
 
-  const handleToggle = () => toggleReply();
+  const handleIsReplying = () => toggleReply();
+  const handleShowReplies = () => toggleReplies();
 
   const handleReply = (text: string) => {
     // Todo: Handle the logic for posting the reply (e.g., send data to the server)
@@ -44,15 +46,17 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
               <i className={`fa-regular fa-heart fa-fw ${styles["icons"]}`}></i>
               <span className={styles.commentNumbers}>{likes}</span>
             </span>
-            <span>
+            <span onClick={handleShowReplies}>
               <i
                 className={`fa-regular fa-comment-dots fa-fw ${styles["icons"]}`}
               ></i>
-              <span className={styles.commentNumbers}>{comments}</span>
+              <span className={styles.commentNumbers}>
+                {replies?.length || ""}
+              </span>
             </span>
           </div>
           <>
-            <span className={styles.reply} onClick={handleToggle}>
+            <span className={styles.reply} onClick={handleIsReplying}>
               {isReplying ? "Cancle" : "Reply"}
             </span>
           </>
@@ -67,7 +71,7 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
           </div>
         )}
       </div>
-      {replies && replies.length > 0 && (
+      {showReplies && replies && replies.length > 0 && (
         <div className={styles.repliesContainer}>
           {replies.map((reply) => (
             <CommentCard key={reply.id} comment={reply} />
