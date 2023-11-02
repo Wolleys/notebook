@@ -1,16 +1,16 @@
 import { FC } from "react";
 import Link from "next/link";
+import { chartIcon, eyeIcon } from "@/icons";
 import styles from "./mostpopular.module.css";
 import mostPopular from "../../mockup/mostPopular";
 import { hyphenateString } from "@/utils/hyphenateString";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const MostPopular: FC = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
-        <span className={styles.titleIcon}>
-          <i className="fa-solid fa-chart-line fa-fw"></i>
-        </span>
+        <FontAwesomeIcon icon={chartIcon} customClass={styles.titleIcon} />
         Trending on Notebook
       </h2>
 
@@ -26,7 +26,8 @@ const MostPopular: FC = () => {
               <Link href={`/@${item.username}`}>{item.author}</Link>
             </span>
             <span className={styles.detailIcon}>
-              <i className="fa-regular fa-eye fa-fw"></i> {item.views}
+              <FontAwesomeIcon icon={eyeIcon} customClass={styles.detailIcon} />
+              {item.views}
             </span>
           </div>
         </div>

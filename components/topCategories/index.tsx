@@ -1,15 +1,15 @@
 import { FC } from "react";
 import Link from "next/link";
+import { plusIcon } from "@/icons";
 import styles from "./topcategories.module.css";
 import topCategories from "../../mockup/topCategories";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const TopCategories: FC = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
-        <span className={styles.titleIcon}>
-          <i className="fa-solid fa-plus fa-fw"></i>
-        </span>
+        <FontAwesomeIcon icon={plusIcon} customClass={styles.titleIcon} />
         Top Categories
       </h2>
 

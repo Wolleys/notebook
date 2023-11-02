@@ -1,17 +1,17 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { magicIcon } from "@/icons";
 import styles from "./featuredwriters.module.css";
 import writerPic from "../../public/profile-pic.png";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import featuredWriters from "../../mockup/featuredWriters";
 
 const FeaturedWriters: FC = () => {
   return (
     <section className={styles.container}>
       <h2 className={styles.title}>
-        <span className={styles.titleIcon}>
-          <i className="fa-solid fa-wand-magic-sparkles fa-fw"></i>
-        </span>
+        <FontAwesomeIcon icon={magicIcon} customClass={styles.titleIcon} />
         Featured Writers
       </h2>
 
