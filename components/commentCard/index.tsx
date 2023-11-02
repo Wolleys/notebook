@@ -49,11 +49,11 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
         <div className={styles.dataContainer}>
           <div className={styles.commentData}>
             <span>
-              <FontAwesomeIcon iconProps={heartIcon} />
+              <FontAwesomeIcon icon={heartIcon} />
               <span className={styles.commentNumbers}>{likes}</span>
             </span>
             <span onClick={handleShowReplies}>
-              <FontAwesomeIcon iconProps={commentIcon} />
+              <FontAwesomeIcon icon={commentIcon} />
               <span className={styles.commentNumbers}>
                 {replies?.length || ""}
               </span>

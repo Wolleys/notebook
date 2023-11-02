@@ -40,20 +40,20 @@ const Slug: FC = () => {
         <div className={styles.socialContainer}>
           <div className={styles.postData}>
             <span>
-              <FontAwesomeIcon iconProps={heartIcon} />
+              <FontAwesomeIcon icon={heartIcon} />
               <span className={styles.postNumbers}>200</span>
             </span>
             <span>
-              <FontAwesomeIcon iconProps={commentIcon} />
+              <FontAwesomeIcon icon={commentIcon} />
               <span className={styles.postNumbers}>350</span>
             </span>
           </div>
           <div className={styles.postData}>
             <span>
-              <FontAwesomeIcon iconProps={bookmarkIcon} />
+              <FontAwesomeIcon icon={bookmarkIcon} />
             </span>
             <span>
-              <FontAwesomeIcon iconProps={shareIcon} />
+              <FontAwesomeIcon icon={shareIcon} />
             </span>
           </div>
         </div>

@@ -29,3 +29,8 @@ export const bellIcon: IconProps = {
   iconName: "bell",
   iconType: "fa-regular",
 };
+
+export const searchIcon: IconProps = {
+  iconName: "magnifying-glass",
+  iconType: "fa-solid",
+};

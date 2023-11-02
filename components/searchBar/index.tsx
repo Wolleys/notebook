@@ -3,6 +3,8 @@
 import { FC, FormEvent, ChangeEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./searchbar.module.css";
+import { searchIcon } from "@/icons";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const SearchBar: FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -27,9 +29,7 @@ const SearchBar: FC = () => {
         placeholder="Search Notebook"
       />
       <button type="submit">
-        <i
-          className={`fa-solid fa-magnifying-glass fa-fw ${styles["searchBarIcon"]}`}
-        ></i>
+        <FontAwesomeIcon icon={searchIcon} customClass={styles.searchBarIcon} />
       </button>
     </form>
   );

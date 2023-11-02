@@ -53,7 +53,7 @@ const Header: FC = () => {
                   <span className={styles.write}>
                     <Link href="/new-post">
                       <FontAwesomeIcon
-                        iconProps={penIcon}
+                        icon={penIcon}
                         customClass={styles.linksIcon}
                       />
                       &nbsp;Write
@@ -63,7 +63,7 @@ const Header: FC = () => {
                 <li>
                   <Link href="/me/notifications">
                     <FontAwesomeIcon
-                      iconProps={bellIcon}
+                      icon={bellIcon}
                       customClass={styles.linksIcon}
                     />
                   </Link>
