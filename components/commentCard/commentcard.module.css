@@ -83,13 +83,6 @@
   justify-content: space-between;
 }
 
-.icons {
-  cursor: pointer;
-  font-size: 15px;
-  margin-right: 4px;
-  font-weight: 400px;
-}
-
 .commentNumbers {
   cursor: pointer;
   font-size: 12px;
