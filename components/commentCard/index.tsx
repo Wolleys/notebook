@@ -4,8 +4,8 @@ import Image from "next/image";
 import TextArea from "../textArea";
 import useToggle from "@/hooks/useToggle";
 import styles from "./commentcard.module.css";
+import { CommentInterface } from "@/interfaces";
 import userPic from "../../public/profile-pic.png";
-import { Comment as CommentInterface } from "@/interfaces/comment";
 
 interface CommentCardProps {
   comment: CommentInterface;
