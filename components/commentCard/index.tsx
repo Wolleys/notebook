@@ -5,7 +5,9 @@ import TextArea from "../textArea";
 import useToggle from "@/hooks/useToggle";
 import styles from "./commentcard.module.css";
 import { CommentInterface } from "@/interfaces";
+import { heartIcon, commentIcon } from "@/icons";
 import userPic from "../../public/profile-pic.png";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 interface CommentCardProps {
   comment: CommentInterface;
@@ -47,13 +49,11 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
         <div className={styles.dataContainer}>
           <div className={styles.commentData}>
             <span>
-              <i className={`fa-regular fa-heart fa-fw ${styles["icons"]}`}></i>
+              <FontAwesomeIcon iconProps={heartIcon} />
               <span className={styles.commentNumbers}>{likes}</span>
             </span>
             <span onClick={handleShowReplies}>
-              <i
-                className={`fa-regular fa-comment-dots fa-fw ${styles["icons"]}`}
-              ></i>
+              <FontAwesomeIcon iconProps={commentIcon} />
               <span className={styles.commentNumbers}>
                 {replies?.length || ""}
               </span>

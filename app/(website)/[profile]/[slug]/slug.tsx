@@ -4,7 +4,9 @@ import Image from "next/image";
 import styles from "./slug.module.css";
 import Comments from "@/components/comments";
 import AuthorCard from "@/components/authorCard";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import postPic from "../../../../public/imgs/featured.webp";
+import { heartIcon, commentIcon, bookmarkIcon, shareIcon } from "@/icons";
 
 const categories = { cats: ["Inspiration"] };
 
@@ -38,26 +40,20 @@ const Slug: FC = () => {
         <div className={styles.socialContainer}>
           <div className={styles.postData}>
             <span>
-              <i className={`fa-regular fa-heart fa-fw ${styles["icons"]}`}></i>
+              <FontAwesomeIcon iconProps={heartIcon} />
               <span className={styles.postNumbers}>200</span>
             </span>
             <span>
-              <i
-                className={`fa-regular fa-comment-dots fa-fw ${styles["icons"]}`}
-              ></i>
+              <FontAwesomeIcon iconProps={commentIcon} />
               <span className={styles.postNumbers}>350</span>
             </span>
           </div>
           <div className={styles.postData}>
             <span>
-              <i
-                className={`fa-regular fa-bookmark fa-fw ${styles["icons"]}`}
-              ></i>
+              <FontAwesomeIcon iconProps={bookmarkIcon} />
             </span>
             <span>
-              <i
-                className={`fa-solid fa-arrow-up-from-bracket fa-fw ${styles["icons"]}`}
-              ></i>
+              <FontAwesomeIcon iconProps={shareIcon} />
             </span>
           </div>
         </div>
