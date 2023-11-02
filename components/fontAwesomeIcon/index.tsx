@@ -2,12 +2,12 @@ import { FC } from "react";
 import styles from "./faicons.module.css";
 import { IconProps } from "@/interfaces";
 
-interface FAIProps {
+interface FAIconProps {
   icon: IconProps;
   customClass?: string; // Allow custom class name from styles
 }
 
-const FontAwesomeIcon: FC<FAIProps> = ({ icon, customClass }) => {
+const FontAwesomeIcon: FC<FAIconProps> = ({ icon, customClass }) => {
   const { className, iconName, iconType } = icon;
   // Use custom class name if provided, otherwise, use the default class from styles
   const dynamicClassName = customClass || styles.icons;
