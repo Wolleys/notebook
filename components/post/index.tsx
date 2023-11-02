@@ -1,11 +1,13 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { bookmarkIcon } from "@/icons";
 import styles from "./post.module.css";
 import { PostProps } from "@/interfaces";
 import authorPic from "../../public/profile-pic.png";
 import postPic from "../../public/imgs/featured.webp";
 import { hyphenateString } from "@/utils/hyphenateString";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const Post: FC<PostProps> = ({ posts }) => {
   return (
@@ -52,8 +54,11 @@ const Post: FC<PostProps> = ({ posts }) => {
                   </ul>
                 )}
               </span>
-              <span className={styles.footerIcons}>
-                <i className="fa-regular fa-bookmark fa-fw"></i>
+              <span>
+                <FontAwesomeIcon
+                  icon={bookmarkIcon}
+                  customClass={styles.footerIcons}
+                />
               </span>
             </div>
           </div>
