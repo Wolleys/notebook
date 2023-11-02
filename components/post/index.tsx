@@ -2,23 +2,10 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./post.module.css";
+import { PostProps } from "@/interfaces";
 import authorPic from "../../public/profile-pic.png";
 import postPic from "../../public/imgs/featured.webp";
 import { hyphenateString } from "@/utils/hyphenateString";
-
-interface PostProps {
-  posts: {
-    id: number;
-    slug: string;
-    author: string;
-    updatedDate: string;
-    title: string;
-    desc: string;
-    categories: string | string[];
-    imageUrl: string;
-    username: string;
-  }[];
-}
 
 const Post: FC<PostProps> = ({ posts }) => {
   return (
