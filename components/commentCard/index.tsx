@@ -25,9 +25,13 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
     toggleReply();
   };
 
+  const hasReplies = replies && replies.length > 0;
+
   return (
     <>
-      <div className={styles.comment}>
+      <div
+        className={`${styles.comment} ${hasReplies ? styles.hasReplies : ""}`}
+      >
         <div className={styles.userDetails}>
           <div className={styles.userAvatar}>
             <Image width={46} height={46} alt="user" src={userPic} />
@@ -70,14 +74,14 @@ const CommentCard: FC<CommentCardProps> = ({ comment }) => {
             />
           </div>
         )}
+        {showReplies && replies && replies.length > 0 && (
+          <div className={styles.repliesContainer}>
+            {replies.map((reply) => (
+              <CommentCard key={reply.id} comment={reply} />
+            ))}
+          </div>
+        )}
       </div>
-      {showReplies && replies && replies.length > 0 && (
-        <div className={styles.repliesContainer}>
-          {replies.map((reply) => (
-            <CommentCard key={reply.id} comment={reply} />
-          ))}
-        </div>
-      )}
     </>
   );
 };
