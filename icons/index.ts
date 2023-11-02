@@ -34,3 +34,23 @@ export const searchIcon: IconProps = {
   iconName: "magnifying-glass",
   iconType: "fa-solid",
 };
+
+export const chartIcon: IconProps = {
+  iconName: "chart-line",
+  iconType: "fa-solid",
+};
+
+export const eyeIcon: IconProps = {
+  iconName: "eye",
+  iconType: "fa-regular",
+};
+
+export const plusIcon: IconProps = {
+  iconName: "plus",
+  iconType: "fa-solid",
+};
+
+export const magicIcon: IconProps = {
+  iconName: "wand-magic-sparkles",
+  iconType: "fa-solid",
+};
