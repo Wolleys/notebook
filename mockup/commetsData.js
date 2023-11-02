@@ -27,7 +27,7 @@ const commentsData = [
       },
       {
         id: 2,
-        username: "Wolleys",
+        username: "Junior",
         date: "Oct 28, 2023",
         content:
           "Another reply to Jane's comment. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
