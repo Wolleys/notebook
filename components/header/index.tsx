@@ -4,6 +4,8 @@ import SearchBar from "../searchBar";
 import SearchIcon from "../searchIcon";
 import styles from "./header.module.css";
 import HeaderAvatar from "../headerAvatar";
+import { penIcon, bellIcon } from "@/icons";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const Header: FC = () => {
   const status = true;
@@ -50,18 +52,20 @@ const Header: FC = () => {
                 <li>
                   <span className={styles.write}>
                     <Link href="/new-post">
-                      <span className={styles.linksIcon}>
-                        <i className="fa-regular fa-pen-to-square fa-fw"></i>
-                      </span>
+                      <FontAwesomeIcon
+                        iconProps={penIcon}
+                        customClass={styles.linksIcon}
+                      />
                       &nbsp;Write
                     </Link>
                   </span>
                 </li>
                 <li>
                   <Link href="/me/notifications">
-                    <span className={styles.linksIcon}>
-                      <i className="fa-regular fa-bell fa-fw"></i>
-                    </span>
+                    <FontAwesomeIcon
+                      iconProps={bellIcon}
+                      customClass={styles.linksIcon}
+                    />
                   </Link>
                 </li>
                 <li>
