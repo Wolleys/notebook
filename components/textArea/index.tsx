@@ -29,9 +29,7 @@ const TextArea: FC<TextAreaProps> = ({ isReply, replyingToUser, onPost }) => {
   };
 
   return (
-    <div
-      className={`${styles.container} ${isReply ? styles.noMarginBottom : ""}`}
-    >
+    <div className={`${styles.container} ${isReply ? styles.isReplying : ""}`}>
       <textarea
         value={text}
         onChange={handleChange}

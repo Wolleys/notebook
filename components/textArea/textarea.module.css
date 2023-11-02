@@ -4,9 +4,9 @@
   flex-direction: column;
 }
 
-.noMarginBottom {
+.isReplying {
   display: flex;
-  margin-bottom: 2px;
+  margin: 0 0 2px 40px;
   flex-direction: column;
 }
 
@@ -20,8 +20,8 @@
   padding: 8px 12px;
   max-height: 300px;
   border-radius: 6px;
-  background-color: inherit;
   color: var(--authorBio);
+  background-color: inherit;
   border: 1px solid var(--navBarBorderColor);
 }
 
