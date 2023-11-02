@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./incons.module.css";
+import styles from "./faicons.module.css";
 import { IconProps } from "@/interfaces";
 
 interface FAIProps {
