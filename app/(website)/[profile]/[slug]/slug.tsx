@@ -63,8 +63,7 @@ const Slug: FC = () => {
         </div>
         <figure className={styles.imageContainer}>
           <Image
-            alt=""
-            priority
+            alt="post-image"
             width={780}
             height={454}
             quality={100}
