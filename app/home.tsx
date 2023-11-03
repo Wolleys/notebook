@@ -1,5 +1,6 @@
 import { FC } from "react";
 import PostsList from "@/components/postsList";
+import mostPopular from "../mockup/mostPopular";
 import SideBarMenu from "@/components/sideBarMenu";
 import MostPopular from "@/components/mostPopular";
 import TopCategories from "@/components/topCategories";
@@ -8,7 +9,7 @@ import ParentContainer from "@/containers/parentContainer";
 
 const Home: FC = () => {
   const sections = [
-    <MostPopular key="mostPopular" />,
+    <MostPopular key="mostPopular" mostPopular={mostPopular} />,
     <TopCategories key="topCategories" />,
   ];
 

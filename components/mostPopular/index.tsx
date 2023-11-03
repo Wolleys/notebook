@@ -3,11 +3,11 @@ import Link from "next/link";
 import { chartIcon, eyeIcon } from "@/icons";
 import TitleWithIcon from "../titleWithIcon";
 import styles from "./mostpopular.module.css";
-import mostPopular from "../../mockup/mostPopular";
+import { MostPopularProps } from "@/interfaces";
 import { hyphenateString } from "@/utils/hyphenateString";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
-const MostPopular: FC = () => {
+const MostPopular: FC<MostPopularProps> = ({ mostPopular }) => {
   return (
     <div className={styles.container}>
       <TitleWithIcon
