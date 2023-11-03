@@ -1,5 +1,5 @@
 export interface Icon {
   iconName: string;
-  iconType?: string;
+  iconType: string;
   className?: string;
 }
