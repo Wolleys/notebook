@@ -8,6 +8,7 @@ import SideBarMenu from "@/components/sideBarMenu";
 import { formatProfileTabs } from "@/utils/formatTabs";
 import ParentContainer from "@/containers/parentContainer";
 import FeaturedWriters from "@/components/featuredWriters";
+import featuredWriters from "../../../../mockup/featuredWriters";
 
 const Lists: FC = () => {
   var { profile } = useParams();
@@ -20,7 +21,7 @@ const Lists: FC = () => {
         <h3>{profile} Lists Page</h3>
       </NavTabs>
       <SideBarMenu>
-        <FeaturedWriters />
+        <FeaturedWriters featuredWriters={featuredWriters} />
       </SideBarMenu>
     </ParentContainer>
   );
