@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./faicons.module.css";
+import styles from "./faicon.module.css";
 import { FAIconProps } from "@/interfaces";
 
 const FontAwesomeIcon: FC<FAIconProps> = ({ icon, customClass }) => {
