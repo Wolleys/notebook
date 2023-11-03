@@ -54,3 +54,8 @@ export const magicIcon: IconProps = {
   iconName: "wand-magic-sparkles",
   iconType: "fa-solid",
 };
+
+export const closeIcon: IconProps = {
+  iconName: "xmark",
+  iconType: "fa-solid",
+};
