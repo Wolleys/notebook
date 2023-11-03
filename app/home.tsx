@@ -5,6 +5,7 @@ import SideBarMenu from "@/components/sideBarMenu";
 import MostPopular from "@/components/mostPopular";
 import topCategories from "../mockup/topCategories";
 import TopCategories from "@/components/topCategories";
+import featuredWriters from "../mockup/featuredWriters";
 import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
 
@@ -18,7 +19,7 @@ const Home: FC = () => {
     <ParentContainer showFeatured={true}>
       <PostsList />
       <SideBarMenu sidebarSections={sections}>
-        <FeaturedWriters />
+        <FeaturedWriters featuredWriters={featuredWriters} />
       </SideBarMenu>
     </ParentContainer>
   );
