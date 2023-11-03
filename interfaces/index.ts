@@ -7,9 +7,11 @@ import { MostPopularProps } from "./mostPopular";
 import { TopCategoriesProps } from "./topCategory";
 import { TextArea as TextAreaProps } from "./textArea";
 import { FeaturedWritersProps } from "./featuredWriter";
+import { TitleWithIcon as TWIconProps } from "./titleWithIcon";
 
 export type { PostProps };
 export type { IconProps };
+export type { TWIconProps };
 export type { CommentProps };
 export type { TextAreaProps };
 export type { FeaturedProps };

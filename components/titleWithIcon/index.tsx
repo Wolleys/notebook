@@ -1,13 +1,7 @@
 import { FC } from "react";
-import { IconProps } from "@/interfaces";
+import { TWIconProps } from "@/interfaces";
 import styles from "./titlewithicon.module.css";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
-
-interface TWIconProps {
-  icon: IconProps;
-  title: string;
-  iconClassName?: string; // Allow custom class name for the icon
-}
 
 const TitleWithIcon: FC<TWIconProps> = ({ icon, title, iconClassName }) => {
   return (
