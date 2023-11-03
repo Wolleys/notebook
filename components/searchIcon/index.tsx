@@ -4,7 +4,9 @@ import { FC, useRef } from "react";
 import SearchBar from "../searchBar";
 import useToggle from "@/hooks/useToggle";
 import styles from "./searchicon.module.css";
+import { searchIcon, closeIcon } from "@/icons";
 import useClickOutside from "@/hooks/useClickOutside";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const SearchIcon: FC = () => {
   const searchIconRef = useRef(null);
@@ -19,14 +21,13 @@ const SearchIcon: FC = () => {
 
   return (
     <span ref={searchIconRef}>
-      <i
-        className={
-          value
-            ? `fa-solid fa-xmark fa-fw ${styles["icon"]}`
-            : `fa-solid fa-magnifying-glass fa-fw ${styles["icon"]}`
-        }
-        onClick={toggle}
-      ></i>
+      <span onClick={toggle}>
+        {value ? (
+          <FontAwesomeIcon icon={closeIcon} customClass={styles.icon} />
+        ) : (
+          <FontAwesomeIcon icon={searchIcon} customClass={styles.icon} />
+        )}
+      </span>
       {value && (
         <div className={styles.content}>
           <SearchBar />
