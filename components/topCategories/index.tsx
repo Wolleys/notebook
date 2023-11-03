@@ -3,9 +3,9 @@ import Link from "next/link";
 import { plusIcon } from "@/icons";
 import TitleWithIcon from "../titleWithIcon";
 import styles from "./topcategories.module.css";
-import topCategories from "../../mockup/topCategories";
+import { TopCategoriesProps } from "@/interfaces";
 
-const TopCategories: FC = () => {
+const TopCategories: FC<TopCategoriesProps> = ({ topCategories }) => {
   return (
     <div className={styles.container}>
       <TitleWithIcon
