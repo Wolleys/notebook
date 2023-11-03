@@ -2,9 +2,11 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./authorcard.module.css";
+import { AuthorCardProps } from "@/interfaces";
 import authorPic from "../../public/profile-pic.png";
 
-const AuthorCard: FC = () => {
+const AuthorCard: FC<AuthorCardProps> = ({ authorData }) => {
+  const { name, username, bio, followers } = authorData;
   return (
     <div className={styles.container}>
       <div className={styles.authorDetails}>
@@ -13,27 +15,22 @@ const AuthorCard: FC = () => {
         </div>
         <div className={styles.authorInfo}>
           <h4 className={styles.author}>The Author</h4>
-          <p className={styles.authorName}>Joshua Wood</p>
+          <p className={styles.authorName}>{name}</p>
           <div className={styles.follow}>
             <button>Follow</button>
           </div>
         </div>
         <button className={styles.button}>Follow</button>
       </div>
-      <div className={styles.authorBio}>
-        Joshua is a Microsoft Azure Certified Cloud Professional and a Google
-        Certified Associate Cloud Engineer. A Data Analytics at Acme,
-        specializing in the use of cloud infrastructure for Machine Learning and
-        Deep Learning operation at scale.
-      </div>
+      <div className={styles.authorBio}>{bio}</div>
       <div className={styles.containerFooter}>
         <span>
-          <Link href={`/@joshua`} className="seeMore">
-            More from Joshua Wood
+          <Link href={`/@${username}`} className="seeMore">
+            More from {name}
           </Link>
           <span className={styles.ball}>•</span>
           <Link href="/" className="seeMore">
-            413 Followers
+            {followers} Followers
           </Link>
         </span>
       </div>

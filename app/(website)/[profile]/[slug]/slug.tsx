@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./slug.module.css";
 import Comments from "@/components/comments";
 import AuthorCard from "@/components/authorCard";
+import authorData from "../../../../mockup/authorData";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import postPic from "../../../../public/imgs/featured.webp";
 import { heartIcon, commentIcon, bookmarkIcon, shareIcon } from "@/icons";
@@ -101,7 +102,7 @@ const Slug: FC = () => {
           <br />
         </div>
       </article>
-      <AuthorCard />
+      <AuthorCard authorData={authorData} />
       <Comments />
     </div>
   );
