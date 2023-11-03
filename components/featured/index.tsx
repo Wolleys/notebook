@@ -2,12 +2,12 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./featured.module.css";
+import { FeaturedProps } from "@/interfaces";
 import authorPic from "../../public/profile-pic.png";
-import featuredPosts from "../../mockup/featuredPosts";
 import { hyphenateString } from "@/utils/hyphenateString";
 import featuredPostPic from "../../public/imgs/featured1.webp";
 
-const Featured: FC = () => {
+const Featured: FC<FeaturedProps> = ({ featuredPosts }) => {
   return (
     <div className={styles.container}>
       {featuredPosts.map((item) => (

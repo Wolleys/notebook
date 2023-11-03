@@ -7,6 +7,7 @@ const featuredPosts = [
     author: "Kotryna D",
     updatedDate: "Sep 29, 2023",
     username: "kotryna",
+    imageUrl: "",
   },
 ];
 
