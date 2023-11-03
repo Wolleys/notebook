@@ -1,4 +1,4 @@
-import { Post as PostProps } from "./post";
+import { PostProps } from "./post";
 import { Icon as IconProps } from "./icon";
 import { FeaturedProps } from "./featuredPost";
 import { Comment as CommentInterface } from "./comment";
