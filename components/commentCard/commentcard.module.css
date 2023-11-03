@@ -64,13 +64,13 @@
 
 .desc {
   font-size: 16px;
-  margin: 8px 0 8px 40px;
+  margin: 8px 0 8px 20px;
   color: var(--singlePostDesc);
 }
 
 .dataContainer {
   display: flex;
-  margin-left: 40px;
+  margin-left: 20px;
   align-items: center;
   color: var(--slugPostData);
   justify-content: space-between;
@@ -99,6 +99,27 @@
 
 .repliesContainer {
   padding-top: 15px;
-  margin: 8px 0 0 40px;
+  margin: 8px 0 0 20px;
   border-top: 1px solid var(--postBorder);
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .desc {
+    margin: 8px 0 8px 30px;
+  }
+  .dataContainer {
+    margin-left: 30px;
+  }
+  .repliesContainer {
+    margin: 8px 0 0 30px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
