@@ -1,0 +1,12 @@
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--featuredPostHeader);
+}
+
+.titleIcon {
+  font-size: 14px;
+  margin-right: 8px;
+  color: var(--featuredPostHeader);
+}
