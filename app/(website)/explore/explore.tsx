@@ -6,14 +6,17 @@ import NavTabs from "@/components/navTabs";
 import { feedsTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
 import MostPopular from "@/components/mostPopular";
+import mostPopular from "../../../mockup/mostPopular";
 import TopCategories from "@/components/topCategories";
+import topCategories from "../../../mockup/topCategories";
 import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
+import featuredWriters from "../../../mockup/featuredWriters";
 
 const Explore: FC = async () => {
   const sections = [
-    <MostPopular key="mostPopular" />,
-    <TopCategories key="topCategories" />,
+    <MostPopular key="mostPopular" mostPopular={mostPopular} />,
+    <TopCategories key="topCategories" topCategories={topCategories} />,
   ];
   // const postsData: Promise<Post[]> = GetAllPosts();
   // const posts = await postsData;
@@ -31,7 +34,7 @@ const Explore: FC = async () => {
         <br />
       </NavTabs>
       <SideBarMenu sidebarSections={sections}>
-        <FeaturedWriters />
+        <FeaturedWriters featuredWriters={featuredWriters} />
       </SideBarMenu>
     </ParentContainer>
   );
