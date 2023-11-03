@@ -1,17 +1,18 @@
 import { FC } from "react";
 import Link from "next/link";
 import { plusIcon } from "@/icons";
+import TitleWithIcon from "../titleWithIcon";
 import styles from "./topcategories.module.css";
 import topCategories from "../../mockup/topCategories";
-import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const TopCategories: FC = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>
-        <FontAwesomeIcon icon={plusIcon} customClass={styles.titleIcon} />
-        Top Categories
-      </h2>
+      <TitleWithIcon
+        icon={plusIcon}
+        title="Top Categories"
+        iconClassName={styles.titleIcon}
+      />
 
       <div className={styles.list}>
         <ul>

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import { chartIcon, eyeIcon } from "@/icons";
+import TitleWithIcon from "../titleWithIcon";
 import styles from "./mostpopular.module.css";
 import mostPopular from "../../mockup/mostPopular";
 import { hyphenateString } from "@/utils/hyphenateString";
@@ -9,10 +10,11 @@ import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 const MostPopular: FC = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>
-        <FontAwesomeIcon icon={chartIcon} customClass={styles.titleIcon} />
-        Trending on Notebook
-      </h2>
+      <TitleWithIcon
+        icon={chartIcon}
+        title="Trending on Notebook"
+        iconClassName={styles.titleIcon}
+      />
 
       {mostPopular.slice(0, 5).map((item) => (
         <div className={styles.textContainer} key={item.id}>
