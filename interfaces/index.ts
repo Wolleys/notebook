@@ -8,9 +8,11 @@ import { TopCategoriesProps } from "./topCategory";
 import { TextArea as TextAreaProps } from "./textArea";
 import { FeaturedWritersProps } from "./featuredWriter";
 import { TitleWithIcon as TWIconProps } from "./titleWithIcon";
+import { FontAwesomeIcon as FAIconProps } from "./fontAwesomeIcon";
 
 export type { PostProps };
 export type { IconProps };
+export type { FAIconProps };
 export type { TWIconProps };
 export type { CommentProps };
 export type { TextAreaProps };
