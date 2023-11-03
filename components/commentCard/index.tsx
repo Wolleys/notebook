@@ -3,17 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import TextArea from "../textArea";
 import useToggle from "@/hooks/useToggle";
+import { CommentProps } from "@/interfaces";
 import styles from "./commentcard.module.css";
-import { CommentInterface } from "@/interfaces";
 import { heartIcon, commentIcon } from "@/icons";
 import userPic from "../../public/profile-pic.png";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
-interface CommentCardProps {
-  comment: CommentInterface;
-}
-
-const CommentCard: FC<CommentCardProps> = ({ comment }) => {
+const CommentCard: FC<CommentProps> = ({ comment }) => {
   const { username, date, content, likes, replies } = comment;
   const { value: isReplying, toggle: toggleReply } = useToggle(false);
   const { value: showReplies, toggle: toggleReplies } = useToggle(false);
