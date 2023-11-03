@@ -6,13 +6,16 @@ import recentPosts from "@/mockup/recentPosts";
 import SideBarMenu from "@/components/sideBarMenu";
 import MostPopular from "@/components/mostPopular";
 import TopCategories from "@/components/topCategories";
+import mostPopular from "../../../../mockup/mostPopular";
 import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
+import topCategories from "../../../../mockup/topCategories";
+import featuredWriters from "../../../../mockup/featuredWriters";
 
 const Following: FC = () => {
   const sections = [
-    <MostPopular key="mostPopular" />,
-    <TopCategories key="topCategories" />,
+    <MostPopular key="mostPopular" mostPopular={mostPopular} />,
+    <TopCategories key="topCategories" topCategories={topCategories} />,
   ];
 
   return (
@@ -21,7 +24,7 @@ const Following: FC = () => {
         <Post posts={recentPosts} />
       </NavTabs>
       <SideBarMenu sidebarSections={sections}>
-        <FeaturedWriters />
+        <FeaturedWriters featuredWriters={featuredWriters} />
       </SideBarMenu>
     </ParentContainer>
   );
