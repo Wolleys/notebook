@@ -1,7 +1,17 @@
 .container {
-  flex: 1;
-  margin: auto;
+  display: flex;
   margin-top: 24px;
   padding-top: 5rem;
-  overflow-wrap: break-word;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
