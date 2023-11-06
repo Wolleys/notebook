@@ -20,7 +20,7 @@ const Following: FC = () => {
 
   return (
     <ParentContainer>
-      <NavTabs activeTab="/feed/following" navItems={feedsTabs}>
+      <NavTabs activeTab="/feed/following" tabs={feedsTabs}>
         <Post posts={recentPosts} />
       </NavTabs>
       <SideBarMenu sidebarSections={sections}>
