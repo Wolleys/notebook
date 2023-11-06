@@ -1,10 +1,11 @@
 import { FC } from "react";
+import styles from "./contact.module.css";
 
 const Contact: FC = () => {
   return (
-    <section>
+    <div className={styles.container}>
       <h3>Contact Page</h3>
-    </section>
+    </div>
   );
 };
 
