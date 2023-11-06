@@ -1,15 +1,11 @@
 import { FC, ReactNode } from "react";
 import Link from "next/link";
+import { TabProps } from "@/interfaces";
 import styles from "./navtabs.module.css";
-
-interface NavItem {
-  path: string;
-  label: string;
-}
 
 interface NavTabsProps {
   activeTab: string;
-  navItems: NavItem[];
+  navItems: TabProps[];
   children: ReactNode;
 }
 
