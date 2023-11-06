@@ -6,7 +6,7 @@ export const feedsTabs: TabProps[] = [
   { path: "/explore", label: "Explore" },
 ];
 
-export const profileTabs: TabProps[] = [
+export const profileNavTabs: TabProps[] = [
   { path: "/[profile]", label: "Home" },
   { path: "/[profile]/lists", label: "Lists" },
   { path: "/[profile]/about", label: "About" },

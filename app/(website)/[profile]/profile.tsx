@@ -3,10 +3,10 @@
 import { FC } from "react";
 import NavTabs from "@/components/navTabs";
 import { useParams } from "next/navigation";
-import { profileTabs } from "@/utils/navItems";
 import { ProfileTabsProps } from "@/interfaces";
+import { profileTabs } from "@/utils/formatTabs";
+import { profileNavTabs } from "@/utils/navItems";
 import SideBarMenu from "@/components/sideBarMenu";
-import { formatProfileTabs } from "@/utils/formatTabs";
 import ParentContainer from "@/containers/parentContainer";
 import FeaturedWriters from "@/components/featuredWriters";
 import featuredWriters from "../../../mockup/featuredWriters";
@@ -17,9 +17,9 @@ const Profile: FC = () => {
 
   const props: ProfileTabsProps = {
     profile,
-    tabs: profileTabs,
+    tabs: profileNavTabs,
   };
-  const tabs = formatProfileTabs(props);
+  const tabs = profileTabs(props);
 
   return (
     <ParentContainer>
