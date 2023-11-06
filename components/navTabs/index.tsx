@@ -5,16 +5,16 @@ import styles from "./navtabs.module.css";
 
 interface NavTabsProps {
   activeTab: string;
-  navItems: TabProps[];
+  tabs: TabProps[];
   children: ReactNode;
 }
 
-const NavTabs: FC<NavTabsProps> = ({ activeTab, navItems, children }) => {
+const NavTabs: FC<NavTabsProps> = ({ activeTab, tabs, children }) => {
   return (
     <div className={styles.container}>
       <div className={styles.tabs}>
         <ul>
-          {navItems.map((item, index) => (
+          {tabs.map((item, index) => (
             <li key={index}>
               <Link
                 className={`${activeTab === item.path ? styles.active : ""}`}

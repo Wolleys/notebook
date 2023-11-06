@@ -23,7 +23,7 @@ const Lists: FC = () => {
 
   return (
     <ParentContainer>
-      <NavTabs activeTab={`/${profile}/lists`} navItems={tabs}>
+      <NavTabs activeTab={`/${profile}/lists`} tabs={tabs}>
         <h3>{profile} Lists Page</h3>
       </NavTabs>
       <SideBarMenu>

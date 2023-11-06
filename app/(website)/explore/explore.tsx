@@ -23,7 +23,7 @@ const Explore: FC = async () => {
 
   return (
     <ParentContainer>
-      <NavTabs activeTab="/explore" navItems={feedsTabs}>
+      <NavTabs activeTab="/explore" tabs={feedsTabs}>
         <h4>Explore Posts</h4>
 
         {/* {posts.map((item) => (

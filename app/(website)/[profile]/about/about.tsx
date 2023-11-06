@@ -23,7 +23,7 @@ const About: FC = () => {
 
   return (
     <ParentContainer>
-      <NavTabs activeTab={`/${profile}/about`} navItems={tabs}>
+      <NavTabs activeTab={`/${profile}/about`} tabs={tabs}>
         <h3>{profile} About Page</h3>
       </NavTabs>
       <SideBarMenu>
