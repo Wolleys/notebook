@@ -1,10 +1,12 @@
-export const feedsTabs = [
+import { TabProps } from "@/interfaces";
+
+export const feedsTabs: TabProps[] = [
   { path: "/feed", label: "For you" },
   { path: "/feed/following", label: "Following" },
   { path: "/explore", label: "Explore" },
 ];
 
-export const profileTabs = [
+export const profileTabs: TabProps[] = [
   { path: "/[profile]", label: "Home" },
   { path: "/[profile]/lists", label: "Lists" },
   { path: "/[profile]/about", label: "About" },

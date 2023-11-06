@@ -1,4 +1,5 @@
 import { PostProps } from "./post";
+import { Tab as TabProps } from "./tab";
 import { CommentProps } from "./comment";
 import { Icon as IconProps } from "./icon";
 import { AuthorCardProps } from "./authorData";
@@ -10,6 +11,7 @@ import { FeaturedWritersProps } from "./featuredWriter";
 import { TitleWithIcon as TWIconProps } from "./titleWithIcon";
 import { FontAwesomeIcon as FAIconProps } from "./fontAwesomeIcon";
 
+export type { TabProps };
 export type { PostProps };
 export type { IconProps };
 export type { FAIconProps };
