@@ -4,6 +4,7 @@ import { FC } from "react";
 import NavTabs from "@/components/navTabs";
 import { useParams } from "next/navigation";
 import { profileTabs } from "@/utils/navItems";
+import { ProfileTabsProps } from "@/interfaces";
 import SideBarMenu from "@/components/sideBarMenu";
 import { formatProfileTabs } from "@/utils/formatTabs";
 import ParentContainer from "@/containers/parentContainer";
@@ -13,7 +14,12 @@ import featuredWriters from "../../../mockup/featuredWriters";
 const Profile: FC = () => {
   var { profile } = useParams();
   profile = decodeURIComponent(profile.toString());
-  const tabs = formatProfileTabs(profile, profileTabs);
+
+  const props: ProfileTabsProps = {
+    profile,
+    tabs: profileTabs,
+  };
+  const tabs = formatProfileTabs(props);
 
   return (
     <ParentContainer>
