@@ -18,7 +18,16 @@ const Login: FC = () => {
             className={styles.input}
             placeholder="name@example.com"
           />
-          <button className={styles.button}> Sign In with Email</button>
+          <button className={styles.button}>Sign In with Email</button>
+        </div>
+        <div className={styles.divider}>
+          <div className={styles.line}></div>
+          <span className={styles.text}>Or continue with</span>
+          <div className={styles.line}></div>
+        </div>
+        <div className={styles.socialContainer}>
+          <button className={styles.button}>Google</button>
+          <button className={styles.button}>Facebook</button>
         </div>
       </div>
     </section>
