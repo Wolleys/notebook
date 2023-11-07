@@ -1,7 +1,77 @@
 .container {
+  margin: auto;
   display: flex;
-  margin-top: 24px;
-  padding-top: 5rem;
+  max-width: 500px;
+  margin-top: 75px;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 75px);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textContainer h1 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+}
+
+.textContainer p {
+  margin: 0.5rem 0 0;
+  color: #70707a;
+}
+
+.formContainer {
+  gap: 6px;
+  width: 100%;
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+.formContainer .input {
+  height: 2rem;
+  outline: none;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  background-color: inherit;
+  border: 1px solid #d6d3d1;
+}
+
+.formContainer .input:focus {
+  border: 1px solid #1c1917;
+}
+
+.formContainer .button {
+  height: 2rem;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  color: #e8e5e3;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #1c1917;
+  border: 1px solid #1c1917;
+  animation-duration: .2s;
+  transition-duration: .2s;
+}
+
+.formContainer .button:hover {
+  color: #000000;
+  background-color: hsl(20 6% 94%);
 }
 
 @media (min-width: 576px) {
