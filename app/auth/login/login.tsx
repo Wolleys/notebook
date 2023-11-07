@@ -1,10 +1,11 @@
 import { FC } from "react";
+import styles from "./login.module.css";
 
 const Login: FC = () => {
   return (
-    <section>
-      <h3>Login Page</h3>
-    </section>
+    <div className={styles.container}>
+      <h3>Sign In to Notebook</h3>
+    </div>
   );
 };
 
