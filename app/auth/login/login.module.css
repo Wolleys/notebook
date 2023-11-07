@@ -50,28 +50,76 @@
   border: 1px solid #1c1917;
 }
 
-.formContainer .button {
+/* Common button styles */
+.button {
   height: 2rem;
   outline: none;
   display: flex;
   cursor: pointer;
   font-weight: 500;
-  color: #e8e5e3;
   font-size: 0.875rem;
   line-height: 1.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 0.375rem;
+  animation-duration: 0.2s;
+  transition-duration: 0.2s;
   padding: 0.375rem 0.75rem;
+}
+
+/* Styles specific to .formContainer .button */
+.formContainer .button {
+  color: #e8e5e3;
   background-color: #1c1917;
   border: 1px solid #1c1917;
-  animation-duration: .2s;
-  transition-duration: .2s;
 }
 
 .formContainer .button:hover {
   color: #000000;
-  background-color: hsl(20 6% 94%);
+  background-color: #f2f0f0;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #d6d3d1;
+}
+
+.text {
+  display: flex;
+  color: #70707a;
+  padding: 0 0.5rem;
+  line-height: 1rem;
+  font-size: 0.73rem;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #fafafa;
+}
+
+.socialContainer {
+  gap: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles specific to .socialContainer .button */
+.socialContainer .button {
+  color: #000000;
+  background-color: #fafafa;
+  border: 1px solid #d6d3d1;
+}
+
+.socialContainer .button:hover {
+  color: #e8e5e3;
+  background-color: #1c1917;
 }
 
 @media (min-width: 576px) {
