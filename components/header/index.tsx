@@ -8,7 +8,7 @@ import { penIcon, bellIcon } from "@/icons";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const Header: FC = () => {
-  const status = true;
+  const status = false;
 
   return (
     <div className={styles.container}>
