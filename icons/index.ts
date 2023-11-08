@@ -69,3 +69,13 @@ export const facebookIcon: IconProps = {
   iconName: "facebook",
   iconType: "fa-brands",
 };
+
+export const xIcon: IconProps = {
+  iconName: "x-twitter",
+  iconType: "fa-brands",
+};
+
+export const appleIcon: IconProps = {
+  iconName: "apple",
+  iconType: "fa-brands",
+};
