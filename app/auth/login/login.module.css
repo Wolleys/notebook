@@ -17,7 +17,8 @@
 
 .textContainer h1 {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 25px;
+  text-align: center;
   line-height: 2.25rem;
   letter-spacing: -0.025em;
 }
@@ -84,6 +85,7 @@
   display: flex;
   margin: 25px 0;
   align-items: center;
+  justify-content: center;
 }
 
 .line {
@@ -94,13 +96,13 @@
 
 .text {
   display: flex;
-  color: #70707a;
+  color: #71717a;
   padding: 0 0.5rem;
   line-height: 1rem;
   font-size: 0.73rem;
   align-items: center;
   text-transform: uppercase;
-  background-color: #fafafa;
+  background-color: #fafaf9;
 }
 
 .socialContainer {
@@ -127,6 +129,11 @@
   padding: 0 8px;
   flex: 0 0 100px;
   align-items: center;
+}
+
+.link {
+  cursor: pointer;
+  color: #000000;
 }
 
 @media (min-width: 576px) {

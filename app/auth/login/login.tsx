@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 import styles from "./login.module.css";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
@@ -48,6 +49,14 @@ const Login: FC = () => {
               <FontAwesomeIcon icon={appleIcon} /> Apple
             </span>
           </button>
+        </div>
+        <div className={styles.divider}>
+          <span className={styles.text}>
+            Not been here before? Just
+            <Link className={styles.link} href="/auth/register">
+              &nbsp;Sign Up
+            </Link>
+          </span>
         </div>
       </div>
     </section>
