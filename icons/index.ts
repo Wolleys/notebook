@@ -59,3 +59,13 @@ export const closeIcon: IconProps = {
   iconName: "xmark",
   iconType: "fa-solid",
 };
+
+export const googleIcon: IconProps = {
+  iconName: "google",
+  iconType: "fa-brands",
+};
+
+export const facebookIcon: IconProps = {
+  iconName: "facebook",
+  iconType: "fa-brands",
+};
