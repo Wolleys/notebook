@@ -1,5 +1,7 @@
 import { FC } from "react";
 import styles from "./login.module.css";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
+import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
 const Login: FC = () => {
   return (
@@ -26,8 +28,26 @@ const Login: FC = () => {
           <div className={styles.line}></div>
         </div>
         <div className={styles.socialContainer}>
-          <button className={styles.button}>Google</button>
-          <button className={styles.button}>Facebook</button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={googleIcon} /> Google
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={facebookIcon} /> Facebook
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={xIcon} /> Twitter
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={appleIcon} /> Apple
+            </span>
+          </button>
         </div>
       </div>
     </section>
