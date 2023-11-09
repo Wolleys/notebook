@@ -139,7 +139,7 @@
 
 .link {
   cursor: pointer;
-  color: #000000;
+  color: var(--socialBtn);
 }
 
 @media (min-width: 576px) {
