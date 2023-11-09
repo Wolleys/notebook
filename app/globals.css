@@ -166,6 +166,18 @@
   --authFormBtnhoverCol-dark: #e6edf3;
   --authFormBtnhoverCol-light: #242424;
   --authFormBtnhoverCol: var(--authFormBtnhoverCol-light);
+  /* auth line */
+  --authLine-dark: #374151;
+  --authLine-light: #d6d3d1;
+  --authLine: var(--authLine-light);
+  /* auth text background */
+  --authTextBg-dark: #1b1e2e;
+  --authTextBg-light: #fafaf9;
+  --authTextBg: var(--authTextBg-light);
+  /* auth text color */
+  --authText-dark: #7e869a;
+  --authText-light: #71717a;
+  --authText: var(--authText-light);
 }
 
 [data-theme="dark"] {
@@ -210,6 +222,9 @@
   --authFormBtnCol: var(--authFormBtnCol-dark);
   --authFormBtnhoverBg: var(--authFormBtnhoverBg-dark);
   --authFormBtnhoverCol: var(--authFormBtnhoverCol-dark);
+  --authLine: var(--authLine-dark);
+  --authTextBg: var(--authTextBg-dark);
+  --authText: var(--authText-dark);
 }
 
 * {
