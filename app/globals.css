@@ -142,6 +142,30 @@
   --authorBio-dark: #999999;
   --authorBio-light: #737373;
   --authorBio: var(--authorBio-light);
+  /* auth input*/
+  --authInputBorder-dark: #374151;
+  --authInputBorder-light: #d6d3d1;
+  --authInputBorder: var(--authInputBorder-light);
+  /* auth input focus */
+  --authInputFocus-dark: #30363d;
+  --authInputFocus-light: #1c1917;
+  --authInputFocus: var(--authInputFocus-light);
+  /* auth form button */
+  --authFormBtn-dark: #1b1e2e;
+  --authFormBtn-light: #1c1917;
+  --authFormBtn: var(--authFormBtn-light);
+  /* auth form button color */
+  --authFormBtnCol-dark: #c9d1d9;
+  --authFormBtnCol-light: #e8e5e3;
+  --authFormBtnCol: var(--authFormBtnCol-light);
+  /* auth form button hover */
+  --authFormBtnhoverBg-dark: #0f172a;
+  --authFormBtnhoverBg-light: #f2f0f0;
+  --authFormBtnhoverBg: var(--authFormBtnhoverBg-light);
+  /* auth form button hover color */
+  --authFormBtnhoverCol-dark: #e6edf3;
+  --authFormBtnhoverCol-light: #242424;
+  --authFormBtnhoverCol: var(--authFormBtnhoverCol-light);
 }
 
 [data-theme="dark"] {
@@ -180,6 +204,12 @@
   --authorCardBg: var(--authorCardBg-dark);
   --theAuthor: var(--theAuthor-dark);
   --authorBio: var(--authorBio-dark);
+  --authInputBorder: var(--authInputBorder-dark);
+  --authInputFocus: var(--authInputFocus-dark);
+  --authFormBtn: var(--authFormBtn-dark);
+  --authFormBtnCol: var(--authFormBtnCol-dark);
+  --authFormBtnhoverBg: var(--authFormBtnhoverBg-dark);
+  --authFormBtnhoverCol: var(--authFormBtnhoverCol-dark);
 }
 
 * {
