@@ -120,14 +120,14 @@
 
 /* Styles specific to .socialContainer .button */
 .socialContainer .button {
-  color: #000000;
-  background-color: #fafafa;
-  border: 1px solid #d6d3d1;
+  color: var(--socialBtn);
+  background-color: inherit;
+  border: 1px solid var(--socialBtnBg);
 }
 
 .socialContainer .button:hover {
   color: #e8e5e3;
-  background-color: #1c1917;
+  background-color: var(--socialBtnHover);
 }
 
 .button .span {
