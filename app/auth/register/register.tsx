@@ -1,5 +1,7 @@
 import { FC } from "react";
 import styles from "./register.module.css";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
+import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
 const Register: FC = () => {
   return (
@@ -36,6 +38,34 @@ const Register: FC = () => {
             className={styles.input}
             placeholder="name@example.com"
           />
+          <button className={styles.button}>Sign Up with Email</button>
+        </div>
+        <div className={styles.divider}>
+          <div className={styles.line}></div>
+          <span className={styles.text}>Or continue with</span>
+          <div className={styles.line}></div>
+        </div>
+        <div className={styles.socialContainer}>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={googleIcon} /> Google
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={facebookIcon} /> Facebook
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={xIcon} /> Twitter
+            </span>
+          </button>
+          <button className={styles.button}>
+            <span className={styles.span}>
+              <FontAwesomeIcon icon={appleIcon} /> Apple
+            </span>
+          </button>
         </div>
       </div>
     </section>
