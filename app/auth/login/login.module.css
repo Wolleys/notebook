@@ -97,18 +97,18 @@
 .line {
   flex: 1;
   height: 1px;
-  background-color: #d6d3d1;
+  background-color: var(--authLine);
 }
 
 .text {
   display: flex;
-  color: #71717a;
   padding: 0 0.5rem;
   line-height: 1rem;
   font-size: 0.73rem;
   align-items: center;
+  color: var(--authText);
   text-transform: uppercase;
-  background-color: #fafaf9;
+  background-color: var(--authTextBg);
 }
 
 .socialContainer {
