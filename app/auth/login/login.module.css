@@ -44,11 +44,17 @@
   padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;
   background-color: inherit;
-  border: 1px solid #d6d3d1;
+  color: var(--searchBarColor);
+  border: 1px solid var(--authInputBorder);
 }
 
 .formContainer .input:focus {
-  border: 1px solid #1c1917;
+  border: 1px solid var(--authInputFocus);
+}
+
+.formContainer input::placeholder {
+  opacity: 0.9;
+  color: var(--searchBarPlaceholder);
 }
 
 /* Common button styles */
@@ -70,14 +76,14 @@
 
 /* Styles specific to .formContainer .button */
 .formContainer .button {
-  color: #e8e5e3;
-  background-color: #1c1917;
-  border: 1px solid #1c1917;
+  color: var(--authFormBtnCol);
+  background-color: var(--authFormBtn);
+  border: 1px solid var(--authFormBtn);
 }
 
 .formContainer .button:hover {
-  color: #000000;
-  background-color: #f2f0f0;
+  color: var(--authFormBtnhoverCol);
+  background-color: var(--authFormBtnhoverBg);
 }
 
 .divider {
