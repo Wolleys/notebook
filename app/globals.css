@@ -178,6 +178,18 @@
   --authText-dark: #7e869a;
   --authText-light: #71717a;
   --authText: var(--authText-light);
+  /* social button bg*/
+  --socialBtnBg-dark: #374151;
+  --socialBtnBg-light: #d6d3d1;
+  --socialBtnBg: var(--socialBtnBg-light);
+  /* social button color*/
+  --socialBtn-dark: #c9d1d9;
+  --socialBtn-light: #242424;
+  --socialBtn: var(--socialBtn-light);
+  /* social button hover bg*/
+  --socialBtnHover-dark: #1b1e2e;
+  --socialBtnHover-light: #1c1917;
+  --socialBtnHover: var(--socialBtnHover-light);
 }
 
 [data-theme="dark"] {
@@ -225,6 +237,9 @@
   --authLine: var(--authLine-dark);
   --authTextBg: var(--authTextBg-dark);
   --authText: var(--authText-dark);
+  --socialBtnBg: var(--socialBtnBg-dark);
+  --socialBtn: var(--socialBtn-dark);
+  --socialBtnHover: var(--socialBtnHover-dark);
 }
 
 * {
