@@ -1,12 +1,9 @@
 import { FC, InputHTMLAttributes } from "react";
 import styles from "./authinput.module.css";
+import { InputProps } from "@/interfaces";
 
 interface AuthInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  inputProps: {
-    type: string;
-    name: string;
-    placeholder?: string;
-  };
+  inputProps: InputProps;
 }
 
 const AuthInput: FC<AuthInputProps> = ({ inputProps }) => {
