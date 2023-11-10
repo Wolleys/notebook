@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import Input from "@/components/input";
+import Button from "@/components/button";
 import styles from "./register.module.css";
 import { email, firstName, lastName } from "@/inputs";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
@@ -20,7 +21,7 @@ const Register: FC = () => {
             <Input input={lastName} />
           </div>
           <Input input={email} />
-          <button className={styles.button}>Sign Up with Email</button>
+          <Button variant="auth">Sign Up with Email</Button>
         </div>
         <div className={styles.divider}>
           <div className={styles.line}></div>
@@ -28,26 +29,18 @@ const Register: FC = () => {
           <div className={styles.line}></div>
         </div>
         <div className={styles.socialContainer}>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={googleIcon} /> Google
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={facebookIcon} /> Facebook
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={xIcon} /> Twitter
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={appleIcon} /> Apple
-            </span>
-          </button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={googleIcon} /> Google
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={facebookIcon} /> Facebook
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={xIcon} /> Twitter
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={appleIcon} /> Apple
+          </Button>
         </div>
         <div className={styles.divider}>
           <span className={styles.text}>
