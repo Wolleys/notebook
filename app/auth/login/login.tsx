@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import { email } from "@/inputs";
 import styles from "./login.module.css";
-import AuthInput from "@/components/authInput";
+import Input from "@/components/input";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
@@ -15,7 +15,7 @@ const Login: FC = () => {
           <p>Enter your email below to sign in</p>
         </div>
         <div className={styles.formContainer}>
-          <AuthInput input={email} />
+          <Input input={email} />
           <button className={styles.button}>Sign In with Email</button>
         </div>
         <div className={styles.divider}>

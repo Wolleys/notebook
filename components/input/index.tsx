@@ -1,12 +1,12 @@
 import { FC, InputHTMLAttributes } from "react";
-import styles from "./authinput.module.css";
+import styles from "./input.module.css";
 import { InputProps } from "@/interfaces";
 
-interface AuthInputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface InputInterface extends InputHTMLAttributes<HTMLInputElement> {
   input: InputProps;
 }
 
-const AuthInput: FC<AuthInputProps> = ({ input }) => {
+const Input: FC<InputInterface> = ({ input }) => {
   const { type, name, placeholder } = input;
   return (
     <input
@@ -15,9 +15,9 @@ const AuthInput: FC<AuthInputProps> = ({ input }) => {
       autoCorrect="off"
       autoComplete="off"
       className={styles.input}
-      placeholder={placeholder || "name@example.com"}
+      placeholder={placeholder}
     />
   );
 };
 
-export default AuthInput;
+export default Input;
