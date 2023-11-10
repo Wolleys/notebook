@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
 import { email } from "@/inputs";
-import styles from "./login.module.css";
 import Input from "@/components/input";
+import styles from "./login.module.css";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 

@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
+import Input from "@/components/input";
 import styles from "./register.module.css";
+import { email, firstName, lastName } from "@/inputs";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
@@ -14,31 +16,10 @@ const Register: FC = () => {
         </div>
         <div className={styles.formContainer}>
           <div className={styles.nameFields}>
-            <input
-              type="text"
-              name="fname"
-              autoCorrect="off"
-              autoComplete="off"
-              className={styles.input}
-              placeholder="John"
-            />
-            <input
-              type="text"
-              name="lname"
-              autoCorrect="off"
-              autoComplete="off"
-              className={styles.input}
-              placeholder="Doe"
-            />
+            <Input input={firstName} />
+            <Input input={lastName} />
           </div>
-          <input
-            type="email"
-            name="email"
-            autoCorrect="off"
-            autoComplete="off"
-            className={styles.input}
-            placeholder="name@example.com"
-          />
+          <Input input={email} />
           <button className={styles.button}>Sign Up with Email</button>
         </div>
         <div className={styles.divider}>
