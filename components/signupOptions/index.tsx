@@ -1,24 +1,29 @@
 import { FC } from "react";
+import { IconProps } from "@/interfaces";
+import SignUpButton from "../signUpButton";
 import styles from "./signupoptions.module.css";
-import Button from "@/components/button";
-import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
+
+interface SocialButton {
+  icon: IconProps;
+  label: string;
+}
+
+const socialButtons: SocialButton[] = [
+  { icon: googleIcon, label: "Google" },
+  { icon: facebookIcon, label: "Facebook" },
+  { icon: xIcon, label: "Twitter" },
+  { icon: appleIcon, label: "Apple" },
+];
 
 const SignUpOptions: FC = () => {
   return (
     <div className={styles.socialContainer}>
-      <Button variant="social">
-        <FontAwesomeIcon icon={googleIcon} /> Google
-      </Button>
-      <Button variant="social">
-        <FontAwesomeIcon icon={facebookIcon} /> Facebook
-      </Button>
-      <Button variant="social">
-        <FontAwesomeIcon icon={xIcon} /> Twitter
-      </Button>
-      <Button variant="social">
-        <FontAwesomeIcon icon={appleIcon} /> Apple
-      </Button>
+      {socialButtons.map((button, index) => (
+        <SignUpButton key={index} icon={button.icon}>
+          {button.label}
+        </SignUpButton>
+      ))}
     </div>
   );
 };
