@@ -1,0 +1,84 @@
+.container {
+  margin: auto;
+  display: flex;
+  max-width: 500px;
+  margin-top: 75px;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 75px);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textContainer h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+}
+
+.textContainer p {
+  color: #70707a;
+  margin: 0.5rem 0 0;
+}
+
+.formContainer {
+  gap: 6px;
+  width: 100%;
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+.formContainer .nameFields {
+  gap: 6px;
+  display: flex;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--authLine);
+}
+
+.text {
+  display: flex;
+  padding: 0 0.5rem;
+  line-height: 1rem;
+  font-size: 0.73rem;
+  align-items: center;
+  color: var(--authText);
+  text-transform: uppercase;
+  background-color: var(--authTextBg);
+}
+
+.link {
+  cursor: pointer;
+  color: var(--socialBtn);
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
