@@ -3,11 +3,11 @@ import styles from "./authinput.module.css";
 import { InputProps } from "@/interfaces";
 
 interface AuthInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  inputProps: InputProps;
+  input: InputProps;
 }
 
-const AuthInput: FC<AuthInputProps> = ({ inputProps }) => {
-  const { type, name, placeholder } = inputProps;
+const AuthInput: FC<AuthInputProps> = ({ input }) => {
+  const { type, name, placeholder } = input;
   return (
     <input
       type={type}
