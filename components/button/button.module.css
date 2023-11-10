@@ -1,0 +1,47 @@
+/* Common button styles */
+.button {
+  height: 2rem;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  animation-duration: 0.2s;
+  transition-duration: 0.2s;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Auth button styles */
+.authButton {
+  color: var(--authFormBtnCol);
+  background-color: var(--authFormBtn);
+  border: 1px solid var(--authFormBtn);
+}
+
+.authButton:hover {
+  color: var(--authFormBtnhoverCol);
+  background-color: var(--authFormBtnhoverBg);
+}
+
+/* Social button styles */
+.socialButton {
+  color: var(--socialBtn);
+  background-color: inherit;
+  border: 1px solid var(--socialBtnBg);
+}
+
+.socialButton:hover {
+  color: #e8e5e3;
+  background-color: var(--socialBtnHover);
+}
+
+.span {
+  display: flex;
+  padding: 0 8px;
+  flex: 0 0 100px;
+  align-items: center;
+}
