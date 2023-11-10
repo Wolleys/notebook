@@ -3,6 +3,7 @@ import Link from "next/link";
 import { email } from "@/inputs";
 import Input from "@/components/input";
 import styles from "./login.module.css";
+import Button from "@/components/button";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
@@ -16,7 +17,7 @@ const Login: FC = () => {
         </div>
         <div className={styles.formContainer}>
           <Input input={email} />
-          <button className={styles.button}>Sign In with Email</button>
+          <Button variant="auth">Sign In with Email</Button>
         </div>
         <div className={styles.divider}>
           <div className={styles.line}></div>
@@ -24,26 +25,18 @@ const Login: FC = () => {
           <div className={styles.line}></div>
         </div>
         <div className={styles.socialContainer}>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={googleIcon} /> Google
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={facebookIcon} /> Facebook
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={xIcon} /> Twitter
-            </span>
-          </button>
-          <button className={styles.button}>
-            <span className={styles.span}>
-              <FontAwesomeIcon icon={appleIcon} /> Apple
-            </span>
-          </button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={googleIcon} /> Google
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={facebookIcon} /> Facebook
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={xIcon} /> Twitter
+          </Button>
+          <Button variant="social">
+            <FontAwesomeIcon icon={appleIcon} /> Apple
+          </Button>
         </div>
         <div className={styles.divider}>
           <span className={styles.text}>
