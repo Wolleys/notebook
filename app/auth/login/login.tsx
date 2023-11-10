@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import styles from "./login.module.css";
+import AuthInput from "@/components/authInput";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
 
@@ -13,13 +14,11 @@ const Login: FC = () => {
           <p>Enter your email below to sign in</p>
         </div>
         <div className={styles.formContainer}>
-          <input
-            type="email"
-            name="email"
-            autoCorrect="off"
-            autoComplete="off"
-            className={styles.input}
-            placeholder="name@example.com"
+          <AuthInput
+            inputProps={{
+              type: "email",
+              name: "email",
+            }}
           />
           <button className={styles.button}>Sign In with Email</button>
         </div>
