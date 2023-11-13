@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, FormEvent } from "react";
 import Link from "next/link";
 import styles from "./auth.module.css";
 import SignUpOptions from "@/components/signupOptions";
@@ -11,11 +11,13 @@ interface AuthContainerProps {
     nameFields?: ReactNode[];
     bottomText: string;
     bottomLink: { href: string; text: string };
+    onSubmit?: (e: FormEvent<HTMLFormElement>) => void;
   };
 }
 
 const AuthContainer: FC<AuthContainerProps> = ({ props }) => {
-  const { title, desc, fields, bottomText, bottomLink, nameFields } = props;
+  const { title, desc, fields, bottomText, bottomLink, nameFields, onSubmit } =
+    props;
 
   return (
     <section className={styles.container}>
@@ -24,10 +26,10 @@ const AuthContainer: FC<AuthContainerProps> = ({ props }) => {
           <h1>{title}</h1>
           <p>{desc}</p>
         </div>
-        <div className={styles.formContainer}>
+        <form onSubmit={onSubmit} className={styles.formContainer}>
           <div className={styles.nameFields}>{nameFields}</div>
           {fields}
-        </div>
+        </form>
         <div className={styles.divider}>
           <div className={styles.line}></div>
           <span className={styles.text}>Or continue with</span>
