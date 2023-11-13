@@ -1,6 +1,6 @@
 "use client";
 
-import { FC } from "react";
+import { FC, FormEvent } from "react";
 import { email } from "@/inputs";
 import Input from "@/components/input";
 import Button from "@/components/button";
@@ -13,7 +13,10 @@ const Login: FC = () => {
     initialValues: initialFormState,
   });
 
-  console.log(values.email);
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form values:", values);
+  };
 
   const fields = [
     <Input key="email" input={email} onChange={handleInputChange} />,
@@ -31,6 +34,7 @@ const Login: FC = () => {
       href: "/auth/register",
       text: "Sign Up",
     },
+    onSubmit: handleSubmit,
   };
 
   return <AuthContainer props={loginProps} />;
