@@ -15,7 +15,7 @@ const Login: FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form values:", values);
+    console.log("Login form values:", values);
   };
 
   const fields = [
