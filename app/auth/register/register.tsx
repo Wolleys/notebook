@@ -15,7 +15,7 @@ const Register: FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form values:", values);
+    console.log("Register form values:", values);
   };
 
   const nameFields = [
