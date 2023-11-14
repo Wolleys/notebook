@@ -1,10 +1,15 @@
-import { FC } from "react";
+"use client";
+
+import { FC, useState } from "react";
+import Editor from "@/components/editor";
 import styles from "./newpost.module.css";
 
 const NewPost: FC = () => {
+  const [value, setValue] = useState("");
+
   return (
     <div className={styles.container}>
-      <h3>Write a new post page</h3>
+      <Editor value={value} onChange={setValue} />
     </div>
   );
 };
