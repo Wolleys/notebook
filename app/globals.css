@@ -282,6 +282,17 @@ img {
   text-decoration: underline;
 }
 
+/* Quill editor */
+.ql-toolbar {
+  background-color: inherit;
+  border: 1px solid var(--navBarBorderColor) !important;
+}
+
+.ql-container {
+  border: 1px solid var(--navBarBorderColor) !important;
+  border-top: none !important;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
