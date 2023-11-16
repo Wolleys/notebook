@@ -282,10 +282,62 @@ img {
   text-decoration: underline;
 }
 
-/* Quill editor */
+/* quill editor custom styles */
 .ql-toolbar {
   background-color: inherit;
   border: 1px solid var(--navBarBorderColor) !important;
+}
+
+.ql-toolbar .ql-stroke {
+  fill: none;
+  stroke: var(--slugPostData) !important;
+}
+
+.ql-toolbar .ql-fill {
+  fill: var(--slugPostData) !important;
+  stroke: none;
+}
+
+.ql-toolbar button:hover .ql-stroke,
+.ql-picker-label:hover .ql-stroke {
+  fill: none;
+  stroke: #4595d0 !important;
+}
+
+.ql-active .ql-stroke {
+  fill: none;
+  stroke: #4595d0 !important;
+}
+
+.ql-toolbar button:hover .ql-fill,
+.ql-picker-label:hover .ql-fill {
+  fill: #4595d0 !important;
+  stroke: none;
+}
+
+.ql-active .ql-fill {
+  fill: #4595d0 !important;
+  stroke: none;
+}
+
+.ql-toolbar .ql-picker {
+  color: var(--slugPostData) !important;
+}
+
+.ql-toolbar .ql-picker-label:hover {
+  color: #4595d0 !important;
+}
+
+.ql-toolbar .ql-picker-item:hover {
+  color: #4595d0 !important;
+}
+
+.ql-toolbar .ql-picker-item.ql-selected {
+  color: #4595d0 !important;
+}
+
+.ql-toolbar .ql-picker-label.ql-active {
+  color: #4595d0 !important;
 }
 
 .ql-container {
