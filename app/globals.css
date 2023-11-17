@@ -340,6 +340,16 @@ img {
   color: #4595d0 !important;
 }
 
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: var(--slugPostData) !important;
+  border-color: var(--navBarBorderColor) !important;
+}
+
+.ql-picker.ql-expanded .ql-picker-options {
+  border-color: var(--navBarBorderColor) !important;
+  background-color: var(--navBarBgColor) !important;
+}
+
 .ql-container {
   border: 1px solid var(--navBarBorderColor) !important;
   border-top: none !important;
