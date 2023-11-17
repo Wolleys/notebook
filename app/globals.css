@@ -286,6 +286,9 @@ img {
 .ql-toolbar {
   border: 0 !important;
   background-color: inherit;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-top: 1px solid var(--navBarBorderColor) !important;
   border-bottom: 1px solid var(--navBarBorderColor) !important;
 }
 
