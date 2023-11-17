@@ -284,8 +284,9 @@ img {
 
 /* quill editor custom styles */
 .ql-toolbar {
+  border: 0 !important;
   background-color: inherit;
-  border: 1px solid var(--navBarBorderColor) !important;
+  border-bottom: 1px solid var(--navBarBorderColor) !important;
 }
 
 .ql-toolbar .ql-stroke {
@@ -351,8 +352,26 @@ img {
 }
 
 .ql-container {
-  border: 1px solid var(--navBarBorderColor) !important;
+  font-weight: 400;
+  line-height: 1.42;
+  letter-spacing: -0.003em;
+  font-size: 16px !important;
+  border: 0px solid var(--navBarBorderColor) !important;
   border-top: none !important;
+  color: var(--singlePostDesc) !important;
+}
+
+.ql-editor {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.ql-editor.ql-blank::before {
+  width: 100%;
+  opacity: 0.9;
+  font-style: normal !important;
+  margin-left: -15px !important;
+  color: var(--searchBarPlaceholder) !important;
 }
 
 @media (min-width: 576px) {
