@@ -34,6 +34,7 @@ const Editor: FC<EditorProps> = ({ value, onChange }) => {
         modules={modules}
         onChange={onChange}
         className={styles.editor}
+        placeholder="Write your notes..."
       />
     </div>
   );
