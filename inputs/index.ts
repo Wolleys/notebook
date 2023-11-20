@@ -17,3 +17,9 @@ export const lastName: InputProps = {
   name: "lastName",
   placeholder: "Last name",
 };
+
+export const postTitle: InputProps = {
+  type: "text",
+  name: "postTitle",
+  placeholder: "Title",
+};
