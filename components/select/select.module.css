@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container select {
+  width: auto;
+  outline: none;
+  padding: 3px 0;
+  font-size: 14px;
+  background-color: inherit;
+  color: var(--slugPostData);
+  border: 0px solid #e5e7eb;
+}
+
+.container option {
+  padding: 5px 0;
+  background-color: var(--bodyBgColor);
+}
