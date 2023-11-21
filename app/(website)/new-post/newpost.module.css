@@ -8,9 +8,8 @@
 }
 
 .wrapper {
-  gap: 6px;
   display: flex;
-  margin: 0 0 10px 0;
+  margin: 0 0 0px 0;
   flex-direction: column;
 }
 
@@ -22,18 +21,14 @@
   padding: 0.5rem 0;
   background-color: inherit;
   color: var(--searchBarColor);
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--navBarBorderColor);
 }
 
 .split {
   display: flex;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
   justify-content: space-between;
-}
-
-.select {
-  width: max-content;
 }
 
 @media (min-width: 576px) {
