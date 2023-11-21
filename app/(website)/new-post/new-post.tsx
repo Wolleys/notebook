@@ -12,7 +12,7 @@ const NewPost: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <Input input={postTitle} />
+        <Input input={postTitle} customClass={styles.input} />
         <div className={styles.split}>
           <select className={styles.select}>
             <option>Select Cartegory</option>
