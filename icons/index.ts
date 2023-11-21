@@ -79,3 +79,8 @@ export const appleIcon: IconProps = {
   iconName: "apple",
   iconType: "fa-brands",
 };
+
+export const imageIcon: IconProps = {
+  iconName: "image",
+  iconType: "fa-regular",
+};

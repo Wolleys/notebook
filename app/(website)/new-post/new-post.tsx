@@ -2,11 +2,13 @@
 
 import { FC, useState, ChangeEvent } from "react";
 import Image from "next/image";
+import { imageIcon } from "@/icons";
 import { postTitle } from "@/inputs";
 import Input from "@/components/input";
 import Editor from "@/components/editor";
 import Select from "@/components/select";
 import styles from "./newpost.module.css";
+import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const NewPost: FC = () => {
   const [value, setValue] = useState("");
@@ -39,7 +41,11 @@ const NewPost: FC = () => {
         <Input input={postTitle} customClass={styles.input} />
         <div className={styles.split}>
           <Select options={categories} />
-          <label htmlFor="postImage">Add Image</label>
+          <label htmlFor="postImage">
+            <span className={styles.spanIcon}>
+              <FontAwesomeIcon icon={imageIcon} /> Post Image
+            </span>
+          </label>
           <input
             type="file"
             id="postImage"

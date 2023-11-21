@@ -31,6 +31,12 @@
   justify-content: space-between;
 }
 
+.spanIcon {
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--slugPostData);
+}
+
 .imageContainer {
   display: flex;
   padding: 3px 0;
@@ -41,6 +47,7 @@
 
 .imageContainer img {
   width: 100%;
+  cursor: pointer;
   height: inherit;
   aspect-ratio: auto 720 / 200;
 }
