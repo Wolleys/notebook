@@ -8,6 +8,7 @@ import Input from "@/components/input";
 import Editor from "@/components/editor";
 import Select from "@/components/select";
 import styles from "./newpost.module.css";
+import ImagePreview from "@/components/imagePreview";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const NewPost: FC = () => {
@@ -56,15 +57,12 @@ const NewPost: FC = () => {
         </div>
         {imagePreview && (
           <label htmlFor="postImage">
-            <figure className={styles.imageContainer}>
-              <Image
-                alt="Preview"
-                width={720}
-                height={200}
-                src={imagePreview}
-                className={styles.image}
-              />
-            </figure>
+            <ImagePreview
+              width={720}
+              height={200}
+              alt="Preview"
+              src={imagePreview}
+            />
           </label>
         )}
       </div>
