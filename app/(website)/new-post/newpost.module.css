@@ -37,26 +37,6 @@
   color: var(--slugPostData);
 }
 
-.imageContainer {
-  display: flex;
-  padding: 3px 0;
-  max-height: 200px;
-  justify-content: center;
-  border-top: 1px solid var(--authInputBorder);
-}
-
-.imageContainer img {
-  width: 100%;
-  cursor: pointer;
-  height: inherit;
-  aspect-ratio: auto 720 / 200;
-}
-
-.image {
-  max-width: 100%;
-  object-fit: cover;
-}
-
 @media (min-width: 576px) {
 }
 
