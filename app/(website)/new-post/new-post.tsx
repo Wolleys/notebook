@@ -1,7 +1,6 @@
 "use client";
 
 import { FC, useState, ChangeEvent } from "react";
-import Image from "next/image";
 import { imageIcon } from "@/icons";
 import { postTitle } from "@/inputs";
 import Input from "@/components/input";
