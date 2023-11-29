@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useState } from "react";
+import { imageIcon } from "@/icons";
 import { postTitle } from "@/inputs";
 import Input from "@/components/input";
 import Editor from "@/components/editor";
@@ -36,10 +37,14 @@ const NewPost: FC = () => {
         <Input input={postTitle} customClass={styles.input} />
         <div className={styles.split}>
           <Select options={categories} />
-          <FileInput onChange={handleImageChange} />
+          <FileInput
+            icon={imageIcon}
+            label="Post Image"
+            onChange={handleImageChange}
+          />
         </div>
         {imagePreview && (
-          <label htmlFor="postImage">
+          <label htmlFor="imageLabel">
             <ImagePreview
               width={720}
               height={200}
