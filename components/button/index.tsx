@@ -1,11 +1,6 @@
-import { FC, ReactNode, ButtonHTMLAttributes, MouseEvent } from "react";
+import { FC } from "react";
 import styles from "./button.module.css";
-
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-  variant?: "auth" | "social";
-  onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
-}
+import { ButtonProps } from "./ButtonProps";
 
 const Button: FC<ButtonProps> = ({ children, variant, onClick }) => {
   const btnStyle = variant === "auth" ? styles.authButton : styles.socialButton;
