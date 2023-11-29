@@ -6,8 +6,6 @@ interface AuthorData {
   avatarSrc: string;
 }
 
-export default AuthorData;
-
 export interface AuthorCardProps {
   authorData: AuthorData;
 }

@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./authorcard.module.css";
-import { AuthorCardProps } from "@/interfaces";
+import { AuthorCardProps } from "./AuthorCardProps";
 import authorPic from "../../public/profile-pic.png";
 
 const AuthorCard: FC<AuthorCardProps> = ({ authorData }) => {
