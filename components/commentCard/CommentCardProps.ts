@@ -7,8 +7,6 @@ interface Comment {
   replies?: Comment[];
 }
 
-export default Comment;
-
 export interface CommentProps {
   comment: Comment;
 }

@@ -1,6 +1,5 @@
 import { PostProps } from "./post";
 import { Tab as TabProps } from "./tab";
-import { CommentProps } from "./comment";
 import { Icon as IconProps } from "./icon";
 import { Input as InputProps } from "./input";
 import { FeaturedProps } from "./featuredPost";
@@ -18,7 +17,6 @@ export type { IconProps };
 export type { InputProps };
 export type { FAIconProps };
 export type { TWIconProps };
-export type { CommentProps };
 export type { TextAreaProps };
 export type { FeaturedProps };
 export type { ProfileTabsProps };
