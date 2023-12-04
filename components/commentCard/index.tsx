@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import TextArea from "../textArea";
 import useToggle from "@/hooks/useToggle";
-import { CommentProps } from "@/interfaces";
 import styles from "./commentcard.module.css";
 import { heartIcon, commentIcon } from "@/icons";
+import { CommentProps } from "./CommentCardProps";
 import userPic from "../../public/profile-pic.png";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
