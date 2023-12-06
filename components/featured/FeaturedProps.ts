@@ -9,8 +9,6 @@ interface FeaturedPost {
   imageUrl: string;
 }
 
-export default FeaturedPost;
-
 export interface FeaturedProps {
   featuredPosts: FeaturedPost[];
 }
