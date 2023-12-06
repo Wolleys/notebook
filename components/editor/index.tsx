@@ -2,11 +2,7 @@ import { FC } from "react";
 import ReactQuill from "react-quill";
 import styles from "./editor.module.css";
 import "react-quill/dist/quill.snow.css";
-
-interface EditorProps {
-  value: string;
-  onChange: (value: string) => void;
-}
+import { EditorProps } from "./EditorProps";
 
 const Editor: FC<EditorProps> = ({ value, onChange }) => {
   const modules = {
