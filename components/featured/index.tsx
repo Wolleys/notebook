@@ -2,7 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./featured.module.css";
-import { FeaturedProps } from "@/interfaces";
+import { FeaturedProps } from "./FeaturedProps";
 import authorPic from "../../public/profile-pic.png";
 import { hyphenateString } from "@/utils/hyphenateString";
 import featuredPostPic from "../../public/imgs/featured1.webp";
