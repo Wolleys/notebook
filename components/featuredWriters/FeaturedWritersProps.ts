@@ -5,8 +5,6 @@ interface FeaturedWriter {
   username: string;
 }
 
-export default FeaturedWriter;
-
 export interface FeaturedWritersProps {
   featuredWriters: FeaturedWriter[];
 }

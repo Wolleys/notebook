@@ -6,7 +6,6 @@ import { ProfileTabsProps } from "./profileTab";
 import { MostPopularProps } from "./mostPopular";
 import { TopCategoriesProps } from "./topCategory";
 import { TextArea as TextAreaProps } from "./textArea";
-import { FeaturedWritersProps } from "./featuredWriter";
 import { TitleWithIcon as TWIconProps } from "./titleWithIcon";
 import { FontAwesomeIcon as FAIconProps } from "./fontAwesomeIcon";
 
@@ -20,4 +19,3 @@ export type { TextAreaProps };
 export type { ProfileTabsProps };
 export type { MostPopularProps };
 export type { TopCategoriesProps };
-export type { FeaturedWritersProps };
