@@ -4,8 +4,8 @@ import Image from "next/image";
 import { magicIcon } from "@/icons";
 import TitleWithIcon from "../titleWithIcon";
 import styles from "./featuredwriters.module.css";
-import { FeaturedWritersProps } from "@/interfaces";
 import writerPic from "../../public/profile-pic.png";
+import { FeaturedWritersProps } from "./FeaturedWritersProps";
 
 const FeaturedWriters: FC<FeaturedWritersProps> = ({ featuredWriters }) => {
   return (
