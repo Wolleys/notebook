@@ -1,15 +1,11 @@
 import { FC } from "react";
 import Image from "next/image";
 import styles from "./imagepreview.module.css";
+import { ImagePreviewProps } from "./ImagePreviewProps";
 
-interface ImagePreviewProps {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-}
+const ImagePreview: FC<ImagePreviewProps> = ({ imagePreview }) => {
+  const { src, alt, width, height } = imagePreview;
 
-const ImagePreview: FC<ImagePreviewProps> = ({ src, alt, width, height }) => {
   return (
     <figure className={styles.imageContainer}>
       <Image
