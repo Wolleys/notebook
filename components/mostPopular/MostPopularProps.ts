@@ -7,8 +7,6 @@ interface MostPopular {
   username: string;
 }
 
-export default MostPopular;
-
 export interface MostPopularProps {
   mostPopular: MostPopular[];
 }
