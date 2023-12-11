@@ -1,12 +1,8 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import ThemeSwitch from "../themeSwitch";
 import styles from "./sidebarmenu.module.css";
 import SideBarFooter from "../footer/sideBar";
-
-interface SideBarMenuProps {
-  children: ReactNode;
-  sidebarSections?: ReactNode[];
-}
+import { SideBarMenuProps } from "./SideBarMenuProps";
 
 const SideBarMenu: FC<SideBarMenuProps> = ({ children, sidebarSections }) => {
   return (
