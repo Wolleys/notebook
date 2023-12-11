@@ -10,8 +10,6 @@ interface Post {
   username: string;
 }
 
-export default Post;
-
 export interface PostProps {
   posts: Post[];
 }

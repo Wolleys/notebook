@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { bookmarkIcon } from "@/icons";
 import styles from "./post.module.css";
-import { PostProps } from "@/interfaces";
+import { PostProps } from "./PostProps";
 import authorPic from "../../public/profile-pic.png";
 import postPic from "../../public/imgs/featured.webp";
 import { hyphenateString } from "@/utils/hyphenateString";
