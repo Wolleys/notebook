@@ -1,9 +1,6 @@
-import { FC, SelectHTMLAttributes } from "react";
+import { FC } from "react";
 import styles from "./select.module.css";
-
-interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
-  options: string[];
-}
+import { SelectProps } from "./SelectProps";
 
 const Select: FC<SelectProps> = ({ options, ...rest }) => {
   return (
