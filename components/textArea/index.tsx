@@ -2,7 +2,7 @@
 
 import { FC, useState, ChangeEvent } from "react";
 import styles from "./textarea.module.css";
-import { TextAreaProps } from "@/interfaces";
+import { TextAreaProps } from "./TextAreaProps";
 
 const TextArea: FC<TextAreaProps> = ({ isReply, replyingToUser, onPost }) => {
   const [text, setText] = useState<string>("");
