@@ -1,19 +1,8 @@
-import { FC, ReactNode, FormEvent } from "react";
+import { FC } from "react";
 import Link from "next/link";
 import styles from "./auth.module.css";
 import SignUpOptions from "@/components/signupOptions";
-
-interface AuthContainerProps {
-  props: {
-    title: string;
-    desc: string;
-    fields: ReactNode[];
-    nameFields?: ReactNode[];
-    bottomText: string;
-    bottomLink: { href: string; text: string };
-    onSubmit?: (e: FormEvent<HTMLFormElement>) => void;
-  };
-}
+import { AuthContainerProps } from "./AuthContainerProps";
 
 const AuthContainer: FC<AuthContainerProps> = ({ props }) => {
   const { title, desc, fields, bottomText, bottomLink, nameFields, onSubmit } =
