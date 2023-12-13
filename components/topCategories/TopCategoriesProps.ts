@@ -3,8 +3,6 @@ interface TopCategory {
   name: string;
 }
 
-export default TopCategory;
-
 export interface TopCategoriesProps {
   topCategories: TopCategory[];
 }

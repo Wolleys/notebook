@@ -3,7 +3,7 @@ import Link from "next/link";
 import { plusIcon } from "@/icons";
 import TitleWithIcon from "../titleWithIcon";
 import styles from "./topcategories.module.css";
-import { TopCategoriesProps } from "@/interfaces";
+import { TopCategoriesProps } from "./TopCategoriesProps";
 
 const TopCategories: FC<TopCategoriesProps> = ({ topCategories }) => {
   return (
