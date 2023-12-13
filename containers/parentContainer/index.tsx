@@ -1,14 +1,13 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import styles from "./parent.module.css";
 import Featured from "@/components/featured";
 import featuredPosts from "../../mockup/featuredPosts";
+import { ParentContainerProps } from "./ParentContainerProps";
 
-interface PCProps {
-  children: ReactNode;
-  showFeatured?: boolean;
-}
-
-const ParentContainer: FC<PCProps> = ({ children, showFeatured }) => {
+const ParentContainer: FC<ParentContainerProps> = ({
+  children,
+  showFeatured,
+}) => {
   return (
     <div className={styles.container}>
       {showFeatured && <Featured featuredPosts={featuredPosts} />}
