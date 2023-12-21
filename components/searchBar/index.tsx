@@ -3,7 +3,7 @@
 import { FC, FormEvent, ChangeEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./searchbar.module.css";
-import { searchIcon } from "@/icons";
+import { searchIcon } from "@/icons/searchIcon";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const SearchBar: FC = () => {

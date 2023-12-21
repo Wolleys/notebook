@@ -4,7 +4,8 @@ import { FC, useRef } from "react";
 import SearchBar from "../searchBar";
 import useToggle from "@/hooks/useToggle";
 import styles from "./searchicon.module.css";
-import { searchIcon, closeIcon } from "@/icons";
+import { closeIcon } from "@/icons/closeIcon";
+import { searchIcon } from "@/icons/searchIcon";
 import useClickOutside from "@/hooks/useClickOutside";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 

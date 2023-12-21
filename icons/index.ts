@@ -30,10 +30,10 @@ import { IconProps } from "@/interfaces";
 //   iconType: "fa-regular",
 // };
 
-export const searchIcon: IconProps = {
-  iconName: "magnifying-glass",
-  iconType: "fa-solid",
-};
+// export const searchIcon: IconProps = {
+//   iconName: "magnifying-glass",
+//   iconType: "fa-solid",
+// };
 
 // export const chartIcon: IconProps = {
 //   iconName: "chart-line",
@@ -55,10 +55,10 @@ export const searchIcon: IconProps = {
 //   iconType: "fa-solid",
 // };
 
-export const closeIcon: IconProps = {
-  iconName: "xmark",
-  iconType: "fa-solid",
-};
+// export const closeIcon: IconProps = {
+//   iconName: "xmark",
+//   iconType: "fa-solid",
+// };
 
 export const googleIcon: IconProps = {
   iconName: "google",
