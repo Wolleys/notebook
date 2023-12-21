@@ -1,8 +1,11 @@
 import { FC, MouseEvent } from "react";
+import { xIcon } from "@/icons/xIcon";
 import { IconProps } from "@/interfaces";
 import SignUpButton from "../signUpButton";
+import { appleIcon } from "@/icons/appleIcon";
 import styles from "./signupoptions.module.css";
-import { googleIcon, facebookIcon, xIcon, appleIcon } from "@/icons";
+import { googleIcon } from "@/icons/googleIcon";
+import { facebookIcon } from "@/icons/facebookIcon";
 
 interface SocialButton {
   icon: IconProps;
