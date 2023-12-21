@@ -50,10 +50,10 @@ export const searchIcon: IconProps = {
 //   iconType: "fa-solid",
 // };
 
-export const magicIcon: IconProps = {
-  iconName: "wand-magic-sparkles",
-  iconType: "fa-solid",
-};
+// export const magicIcon: IconProps = {
+//   iconName: "wand-magic-sparkles",
+//   iconType: "fa-solid",
+// };
 
 export const closeIcon: IconProps = {
   iconName: "xmark",

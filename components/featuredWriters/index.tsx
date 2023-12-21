@@ -1,8 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { magicIcon } from "@/icons";
 import TitleWithIcon from "../titleWithIcon";
+import { magicIcon } from "@/icons/magicIcon";
 import styles from "./featuredwriters.module.css";
 import writerPic from "../../public/profile-pic.png";
 import { FeaturedWritersProps } from "./FeaturedWritersProps";
