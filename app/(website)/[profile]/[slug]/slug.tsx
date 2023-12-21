@@ -3,11 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./slug.module.css";
 import Comments from "@/components/comments";
+import { shareIcon } from "@/icons/shareIcon";
+import { heartIcon } from "@/icons/heartIcon";
 import AuthorCard from "@/components/authorCard";
+import { commentIcon } from "@/icons/commentIcon";
+import { bookmarkIcon } from "@/icons/bookmarkIcon";
 import authorData from "../../../../mockup/authorData";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 import postPic from "../../../../public/imgs/featured.webp";
-import { heartIcon, commentIcon, bookmarkIcon, shareIcon } from "@/icons";
 
 const categories = { cats: ["Inspiration"] };
 

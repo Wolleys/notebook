@@ -15,10 +15,10 @@ export const commentIcon: IconProps = {
 //   iconType: "fa-regular",
 // };
 
-export const shareIcon: IconProps = {
-  iconName: "arrow-up-from-bracket",
-  iconType: "fa-solid",
-};
+// export const shareIcon: IconProps = {
+//   iconName: "arrow-up-from-bracket",
+//   iconType: "fa-solid",
+// };
 
 // export const penIcon: IconProps = {
 //   iconName: "pen-to-square",
