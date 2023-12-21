@@ -20,15 +20,15 @@ export const shareIcon: IconProps = {
   iconType: "fa-solid",
 };
 
-export const penIcon: IconProps = {
-  iconName: "pen-to-square",
-  iconType: "fa-regular",
-};
+// export const penIcon: IconProps = {
+//   iconName: "pen-to-square",
+//   iconType: "fa-regular",
+// };
 
-export const bellIcon: IconProps = {
-  iconName: "bell",
-  iconType: "fa-regular",
-};
+// export const bellIcon: IconProps = {
+//   iconName: "bell",
+//   iconType: "fa-regular",
+// };
 
 export const searchIcon: IconProps = {
   iconName: "magnifying-glass",

@@ -3,8 +3,9 @@ import Link from "next/link";
 import SearchBar from "../searchBar";
 import SearchIcon from "../searchIcon";
 import styles from "./header.module.css";
+import { penIcon } from "@/icons/penIcon";
 import HeaderAvatar from "../headerAvatar";
-import { penIcon, bellIcon } from "@/icons";
+import { bellIcon } from "@/icons/bellIcon";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const Header: FC = () => {
