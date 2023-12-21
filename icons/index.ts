@@ -35,15 +35,15 @@ export const searchIcon: IconProps = {
   iconType: "fa-solid",
 };
 
-export const chartIcon: IconProps = {
-  iconName: "chart-line",
-  iconType: "fa-solid",
-};
+// export const chartIcon: IconProps = {
+//   iconName: "chart-line",
+//   iconType: "fa-solid",
+// };
 
-export const eyeIcon: IconProps = {
-  iconName: "eye",
-  iconType: "fa-regular",
-};
+// export const eyeIcon: IconProps = {
+//   iconName: "eye",
+//   iconType: "fa-regular",
+// };
 
 export const plusIcon: IconProps = {
   iconName: "plus",

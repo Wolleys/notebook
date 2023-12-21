@@ -1,7 +1,8 @@
 import { FC } from "react";
 import Link from "next/link";
-import { chartIcon, eyeIcon } from "@/icons";
+import { eyeIcon } from "@/icons/eyeIcon";
 import TitleWithIcon from "../titleWithIcon";
+import { chartIcon } from "@/icons/chartIcon";
 import styles from "./mostpopular.module.css";
 import { MostPopularProps } from "./MostPopularProps";
 import { hyphenateString } from "@/utils/hyphenateString";
