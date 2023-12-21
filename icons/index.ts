@@ -45,10 +45,10 @@ export const searchIcon: IconProps = {
 //   iconType: "fa-regular",
 // };
 
-export const plusIcon: IconProps = {
-  iconName: "plus",
-  iconType: "fa-solid",
-};
+// export const plusIcon: IconProps = {
+//   iconName: "plus",
+//   iconType: "fa-solid",
+// };
 
 export const magicIcon: IconProps = {
   iconName: "wand-magic-sparkles",

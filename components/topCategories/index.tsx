@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
-import { plusIcon } from "@/icons";
+import { plusIcon } from "@/icons/plusIcon";
 import TitleWithIcon from "../titleWithIcon";
 import styles from "./topcategories.module.css";
 import { TopCategoriesProps } from "./TopCategoriesProps";
