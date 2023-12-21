@@ -10,10 +10,10 @@ export const commentIcon: IconProps = {
   iconType: "fa-regular",
 };
 
-export const bookmarkIcon: IconProps = {
-  iconName: "bookmark",
-  iconType: "fa-regular",
-};
+// export const bookmarkIcon: IconProps = {
+//   iconName: "bookmark",
+//   iconType: "fa-regular",
+// };
 
 export const shareIcon: IconProps = {
   iconName: "arrow-up-from-bracket",
