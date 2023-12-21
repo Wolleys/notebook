@@ -80,7 +80,7 @@ export const appleIcon: IconProps = {
   iconType: "fa-brands",
 };
 
-export const imageIcon: IconProps = {
-  iconName: "image",
-  iconType: "fa-regular",
-};
+// export const imageIcon: IconProps = {
+//   iconName: "image",
+//   iconType: "fa-regular",
+// };
