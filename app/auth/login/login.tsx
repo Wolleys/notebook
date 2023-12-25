@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, FormEvent } from "react";
-import { email } from "@/inputs";
+import { email } from "@/inputs/email";
 import Input from "@/components/input";
 import Button from "@/components/button";
 import useInputChange from "@/hooks/useInputChange";

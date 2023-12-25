@@ -1,10 +1,10 @@
 import { InputProps } from "@/interfaces";
 
-export const email: InputProps = {
-  type: "email",
-  name: "email",
-  placeholder: "Enter your email",
-};
+// export const email: InputProps = {
+//   type: "email",
+//   name: "email",
+//   placeholder: "Enter your email",
+// };
 
 export const firstName: InputProps = {
   type: "text",
