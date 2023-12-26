@@ -2,9 +2,11 @@
 
 import { FC, FormEvent } from "react";
 import Input from "@/components/input";
+import { email } from "@/inputs/email";
 import Button from "@/components/button";
+import { lastName } from "@/inputs/lastName";
+import { firstName } from "@/inputs/firstName";
 import useInputChange from "@/hooks/useInputChange";
-import { email, firstName, lastName } from "@/inputs";
 import AuthContainer from "@/containers/authContainer";
 
 const Register: FC = () => {
