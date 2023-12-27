@@ -1,13 +1,13 @@
 "use client";
 
 import { FC, useState } from "react";
-import { postTitle } from "@/inputs";
 import Input from "@/components/input";
 import Editor from "@/components/editor";
 import Select from "@/components/select";
 import styles from "./newpost.module.css";
 import { imageIcon } from "@/icons/imageIcon";
 import FileInput from "@/components/fileInput";
+import { postTitle } from "@/inputs/postTitle";
 import ImagePreview from "@/components/imagePreview";
 
 const NewPost: FC = () => {
