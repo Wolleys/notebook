@@ -11,7 +11,7 @@ const ImagePreview: FC<ImagePreviewProps> = ({ imagePreview }) => {
       <Image
         src={src}
         alt={alt}
-        // width={width}
+        width={width}
         height={height}
         className={styles.image}
       />
