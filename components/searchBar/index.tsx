@@ -1,8 +1,10 @@
 "use client";
 
 import { FC, FormEvent, ChangeEvent, useState } from "react";
+import Input from "@/components/input";
 import { useRouter } from "next/navigation";
 import styles from "./searchbar.module.css";
+import { searchBar } from "@/inputs/searchBar";
 import { searchIcon } from "@/icons/searchIcon";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
@@ -21,12 +23,10 @@ const SearchBar: FC = () => {
 
   return (
     <form onSubmit={handleSearch} className={styles.searchBar}>
-      <input
-        type="text"
-        value={searchQuery}
+      <Input
+        input={searchBar}
         onChange={handleChange}
-        className={styles.input}
-        placeholder="Search Notebook"
+        customClass={styles.input}
       />
       <button type="submit">
         <FontAwesomeIcon icon={searchIcon} customClass={styles.searchBarIcon} />
