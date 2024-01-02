@@ -25,6 +25,7 @@ const SearchBar: FC = () => {
     <form onSubmit={handleSearch} className={styles.searchBar}>
       <Input
         input={searchBar}
+        value={searchQuery}
         onChange={handleChange}
         customClass={styles.input}
       />
