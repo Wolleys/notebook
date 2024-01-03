@@ -9,11 +9,11 @@ export interface FileInputProps {
    */
   label?: string;
   /**
-   * Input icon.
+   * Icon interface.
    */
   icon: IconProps;
   /**
-   * Onchange.
+   * onChange event listener.
    */
   onChange: (file: File) => void;
 }

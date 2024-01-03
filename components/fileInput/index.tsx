@@ -1,4 +1,6 @@
 import { FC, ChangeEvent } from "react";
+import { file } from "@/inputs/file";
+import Input from "@/components/input";
 import styles from "./fileinput.module.css";
 import { FileInputProps } from "./FileInputProps";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
@@ -19,11 +21,9 @@ const FileInput: FC<FileInputProps> = ({ label, icon, onChange }) => {
           <FontAwesomeIcon icon={icon} /> {label}
         </span>
       </label>
-      <input
-        type="file"
-        id="imageLabel"
-        accept="image/*"
-        className={styles.input}
+      <Input
+        input={file}
+        customClass={styles.input}
         onChange={handleImageChange}
       />
     </>
