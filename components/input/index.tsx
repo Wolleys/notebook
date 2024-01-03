@@ -3,18 +3,21 @@ import styles from "./input.module.css";
 import { InputProps } from "./InputProps";
 
 const Input: FC<InputProps> = ({ input, onChange, customClass }) => {
-  const { type, name, placeholder } = input;
+  const { type, name, id, value, accept, placeholder } = input;
   const inputClassName = customClass ? customClass : styles.input;
 
   return (
     <input
+      id={id}
       type={type}
       name={name}
+      value={value}
+      accept={accept}
       autoCorrect="off"
       autoComplete="off"
       onChange={onChange}
-      className={inputClassName}
       placeholder={placeholder}
+      className={inputClassName}
     />
   );
 };

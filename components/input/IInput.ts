@@ -9,9 +9,21 @@ export interface IInput {
   /**
    * Input name.
    */
-  name: string;
+  name?: string;
   /**
    * Input placehiolder.
    */
   placeholder?: string;
+  /**
+   * Input value.
+   */
+  value?: string;
+  /**
+   * Input id.
+   */
+  id?: string;
+  /**
+   * Input accepted file types.
+   */
+  accept?: string;
 }
