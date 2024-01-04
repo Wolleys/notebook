@@ -12,7 +12,7 @@ import ImagePreview from "@/components/imagePreview";
 
 const NewPost: FC = () => {
   const [value, setValue] = useState("");
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [image, setImage] = useState<string>("");
   const categories = [
     "Devotionals",
     "Bible Study",
@@ -25,10 +25,17 @@ const NewPost: FC = () => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-      setImagePreview(reader.result as string);
+      setImage(reader.result as string);
     };
 
     reader.readAsDataURL(file);
+  };
+
+  const imagePreviewProps = {
+    width: 720,
+    height: 200,
+    alt: "Preview",
+    src: image,
   };
 
   return (
@@ -43,14 +50,9 @@ const NewPost: FC = () => {
             onChange={handleImageChange}
           />
         </div>
-        {imagePreview && (
+        {image && (
           <label htmlFor="imageLabel">
-            <ImagePreview
-              width={720}
-              height={200}
-              alt="Preview"
-              src={imagePreview}
-            />
+            <ImagePreview imagePreview={imagePreviewProps} />
           </label>
         )}
       </div>
