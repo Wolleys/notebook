@@ -1,13 +1,8 @@
-import { ReactNode, FormEvent } from "react";
+import { IAuthContainer } from "./IAuthContainer";
 
 export interface AuthContainerProps {
-  props: {
-    title: string;
-    desc: string;
-    fields: ReactNode[];
-    nameFields?: ReactNode[];
-    bottomText: string;
-    bottomLink: { href: string; text: string };
-    onSubmit?: (e: FormEvent<HTMLFormElement>) => void;
-  };
+  /**
+   * Auth container interface.
+   */
+  props: IAuthContainer;
 }
