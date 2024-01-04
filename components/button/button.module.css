@@ -45,3 +45,15 @@
   flex: 0 0 100px;
   align-items: center;
 }
+
+/* Publish button styles */
+.publishButton {
+  color: #fff;
+  background-color: #1a8917;
+  border: 1px solid #1a8917;
+}
+
+.publishButton:hover {
+  color: #fff;
+  background-color: #0f730c;
+}
