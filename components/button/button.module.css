@@ -35,7 +35,7 @@
 }
 
 .socialButton:hover {
-  color: #e8e5e3;
+  color: var(--socialBtnhoverCol);
   background-color: var(--socialBtnHover);
 }
 
@@ -48,12 +48,11 @@
 
 /* Publish button styles */
 .publishButton {
-  color: #fff;
-  background-color: #1a8917;
-  border: 1px solid #1a8917;
+  color: var(--white);
+  background-color: var(--success);
+  border: 1px solid var(--success);
 }
 
 .publishButton:hover {
-  color: #fff;
-  background-color: #0f730c;
+  background-color: var(--successHover);
 }
