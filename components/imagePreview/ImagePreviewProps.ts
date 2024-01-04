@@ -1,10 +1,8 @@
-interface ImagePreview {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-}
+import { IImagePreview } from "./IImagePreview";
 
 export interface ImagePreviewProps {
-  imagePreview: ImagePreview;
+  /**
+   * Image preview interface.
+   */
+  imagePreview: IImagePreview;
 }
