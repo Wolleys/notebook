@@ -1,6 +1,6 @@
 import { FC } from "react";
-import styles from "./faicon.module.css";
-import { FontAwesomeIconProps } from "./fontAwesomeIconProps";
+import styles from "./fontAwesomeIcon.module.css";
+import { FontAwesomeIconProps } from "./FontAwesomeIconProps";
 
 const FontAwesomeIcon: FC<FontAwesomeIconProps> = ({ icon, customClass }) => {
   const { className, iconName, iconType } = icon;
