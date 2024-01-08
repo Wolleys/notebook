@@ -2,6 +2,7 @@
 
 import { FC } from "react";
 import Link from "next/link";
+import AuthLinks from "../authLinks";
 import SearchBar from "../searchBar";
 import SearchIcon from "../searchIcon";
 import styles from "./header.module.css";
@@ -39,14 +40,7 @@ const Header: FC = () => {
         <nav className={styles.nav}>
           <ul>
             {!status ? (
-              <>
-                <li>
-                  <Link href="/auth/login">Sign in</Link>
-                </li>
-                <li>
-                  <Link href="/auth/register">Sign up</Link>
-                </li>
-              </>
+              <AuthLinks />
             ) : (
               <>
                 <li>
