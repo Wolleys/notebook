@@ -1,11 +1,11 @@
-interface AuthorData {
-  name: string;
-  username: string;
-  bio: string;
-  followers: number;
-  avatarSrc: string;
-}
+import { IAuthorCard } from "./IAuthorCard";
 
+/**
+ * Author card props.
+ */
 export interface AuthorCardProps {
-  authorData: AuthorData;
+  /**
+   * Author card interface.
+   */
+  authorData: IAuthorCard;
 }
