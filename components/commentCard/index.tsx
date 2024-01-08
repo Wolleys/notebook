@@ -6,11 +6,11 @@ import useToggle from "@/hooks/useToggle";
 import styles from "./commentcard.module.css";
 import { heartIcon } from "@/icons/heartIcon";
 import { commentIcon } from "@/icons/commentIcon";
-import { CommentProps } from "./CommentCardProps";
 import userPic from "../../public/profile-pic.png";
+import { CommentCardProps } from "./CommentCardProps";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
-const CommentCard: FC<CommentProps> = ({ comment }) => {
+const CommentCard: FC<CommentCardProps> = ({ comment }) => {
   const { username, date, content, likes, replies } = comment;
   const { value: isReplying, toggle: toggleReply } = useToggle(false);
   const { value: showReplies, toggle: toggleReplies } = useToggle(false);

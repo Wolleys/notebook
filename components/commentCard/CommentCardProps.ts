@@ -1,12 +1,11 @@
-interface Comment {
-  id: number;
-  username: string;
-  date: string;
-  content: string;
-  likes: number;
-  replies?: Comment[];
-}
+import { ICommentCard } from "./ICommentCard";
 
-export interface CommentProps {
-  comment: Comment;
+/**
+ * Comment card props.
+ */
+export interface CommentCardProps {
+  /**
+   * Comment card interface.
+   */
+  comment: ICommentCard;
 }
