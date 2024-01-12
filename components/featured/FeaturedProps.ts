@@ -1,14 +1,11 @@
-interface FeaturedPost {
-  id: number;
-  slug: string;
-  title: string;
-  desc: string;
-  author: string;
-  updatedDate: string;
-  username: string;
-  imageUrl: string;
-}
+import { IFeatured } from "./IFeatured";
 
+/**
+ * Featured props.
+ */
 export interface FeaturedProps {
-  featuredPosts: FeaturedPost[];
+  /**
+   * Featured post interface.
+   */
+  featuredPosts: IFeatured[];
 }
