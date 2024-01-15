@@ -1,18 +1,14 @@
+import { FC } from "react";
 import Link from "next/link";
-import styles from "./authlinks.module.css";
+import { authlinks } from "./authlinks";
 
-const AuthLinks = () => {
-  const links = [
-    { href: "/auth/login", text: "Sign in", className: styles.link },
-    { href: "/auth/register", text: "Sign up", className: styles.link },
-  ];
-
+const AuthLinks: FC = () => {
   return (
     <>
-      {links.map((link, index) => (
+      {authlinks.map((link, index) => (
         <li key={index}>
-          <Link href={link.href} className={link.className}>
-            {link.text}
+          <Link href={link.path} className={link.className}>
+            {link.label}
           </Link>
         </li>
       ))}
