@@ -1,10 +1,11 @@
-interface FeaturedWriter {
-  id: number;
-  name: string;
-  church: string;
-  username: string;
-}
+import { IFeaturedWriters } from "./IFeaturedWriters";
 
+/**
+ * Featured writers props.
+ */
 export interface FeaturedWritersProps {
-  featuredWriters: FeaturedWriter[];
+  /**
+   * Featured writers interface.
+   */
+  featuredWriters: IFeaturedWriters[];
 }
