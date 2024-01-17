@@ -3,14 +3,25 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 
 const SideBarFooter: FC = () => {
+  const sideBarFooterlinks = [
+    { path: "/about", label: "About" },
+    { path: "/help", label: "Help" },
+    { path: "/contact", label: "Contact" },
+    { path: "/terms", label: "Terms" },
+    { path: "/privacy", label: "Privacy" },
+    { path: "/status", label: "Status" },
+  ];
+
   return (
     <div className={styles.sideBarFooter}>
       <div className={styles.sideBarFooterLinks}>
         <ul>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
+          {sideBarFooterlinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.path}>{link.label}</Link>
+            </li>
+          ))}
+          {/* <li>
             <Link href="/help">Help</Link>
           </li>
           <li>
@@ -24,7 +35,7 @@ const SideBarFooter: FC = () => {
           </li>
           <li>
             <Link href="/status">Status</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <p>© Notebook, Inc. All rights reserved.</p>
