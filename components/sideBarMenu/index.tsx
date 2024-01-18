@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ThemeSwitch from "../themeSwitch";
 import styles from "./sidebarmenu.module.css";
-import SideBarFooter from "../footer/sideBar";
+import SideBarFooter from "../footer/sideBarFooter";
 import { SideBarMenuProps } from "./SideBarMenuProps";
 
 const SideBarMenu: FC<SideBarMenuProps> = ({ children, sidebarSections }) => {
