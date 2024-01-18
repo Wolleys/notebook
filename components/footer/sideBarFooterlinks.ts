@@ -1,7 +1,7 @@
 /**
  * Sidebar footer links.
  */
-export const sideBarFooterlinks = [
+export const sideBarFooterLinks = [
   { path: "/about", label: "About" },
   { path: "/help", label: "Help" },
   { path: "/contact", label: "Contact" },
