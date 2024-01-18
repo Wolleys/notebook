@@ -1,7 +1,9 @@
+import { IFooterLinks } from "./IFooterLinks";
+
 /**
  * Sidebar footer links.
  */
-export const sideBarFooterLinks = [
+export const sideBarFooterLinks: IFooterLinks[] = [
   { path: "/about", label: "About" },
   { path: "/help", label: "Help" },
   { path: "/contact", label: "Contact" },
