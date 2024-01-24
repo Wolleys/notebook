@@ -1,12 +1,11 @@
-interface MostPopular {
-  id: number;
-  slug: string;
-  title: string;
-  author: string;
-  views: number;
-  username: string;
-}
+import { IMostPopular } from "./IMostPopular";
 
+/**
+ * Most popular props.
+ */
 export interface MostPopularProps {
-  mostPopular: MostPopular[];
+  /**
+   * Most popular interface.
+   */
+  mostPopular: IMostPopular[];
 }
