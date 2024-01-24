@@ -1,13 +1,7 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Link from "next/link";
-import { TabProps } from "@/interfaces";
 import styles from "./navtabs.module.css";
-
-interface NavTabsProps {
-  activeTab: string;
-  tabs: TabProps[];
-  children: ReactNode;
-}
+import { NavTabsProps } from "./NavTabsProps";
 
 const NavTabs: FC<NavTabsProps> = ({ activeTab, tabs, children }) => {
   return (
