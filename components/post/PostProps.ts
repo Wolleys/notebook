@@ -1,15 +1,11 @@
-interface Post {
-  id: number;
-  slug: string;
-  author: string;
-  updatedDate: string;
-  title: string;
-  desc: string;
-  categories: string | string[];
-  imageUrl: string;
-  username: string;
-}
+import { IPost } from "./IPost";
 
+/**
+ * Post props.
+ */
 export interface PostProps {
-  posts: Post[];
+  /**
+   * Post interface.
+   */
+  posts: IPost[];
 }
