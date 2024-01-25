@@ -8,21 +8,22 @@ import useClickOutside from "@/hooks/useClickOutside";
 
 const HeaderAvatar: FC = () => {
   const settingsMenuRef = useRef(null);
-  const { value, toggle } = useToggle(false);
+  const { value: openSettingsMenu, toggle: toggleSettingsMenu } =
+    useToggle(false);
 
   const closeSettingsMenu = (): void => {
-    if (value) {
-      toggle();
+    if (openSettingsMenu) {
+      toggleSettingsMenu();
     }
   };
   useClickOutside(settingsMenuRef, closeSettingsMenu);
 
   return (
     <span ref={settingsMenuRef}>
-      <div className={styles.profile} onClick={toggle}>
+      <div className={styles.profile} onClick={toggleSettingsMenu}>
         <Image src="/profile-pic.png" alt="profile" width={32} height={32} />
       </div>
-      {value && <div className={styles.settingsMenu}></div>}
+      {openSettingsMenu && <div className={styles.settingsMenu}></div>}
     </span>
   );
 };
