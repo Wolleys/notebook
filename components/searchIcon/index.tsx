@@ -11,25 +11,25 @@ import FontAwesomeIcon from "@/components/fontAwesomeIcon";
 
 const SearchIcon: FC = () => {
   const searchIconRef = useRef(null);
-  const { value, toggle } = useToggle(false);
+  const { value: openSearchBar, toggle: toggleSearchBar } = useToggle(false);
 
   const closeSearchBar = (): void => {
-    if (value) {
-      toggle();
+    if (openSearchBar) {
+      toggleSearchBar();
     }
   };
   useClickOutside(searchIconRef, closeSearchBar);
 
   return (
     <span ref={searchIconRef}>
-      <span onClick={toggle}>
-        {value ? (
+      <span onClick={toggleSearchBar}>
+        {openSearchBar ? (
           <FontAwesomeIcon icon={closeIcon} customClass={styles.icon} />
         ) : (
           <FontAwesomeIcon icon={searchIcon} customClass={styles.icon} />
         )}
       </span>
-      {value && (
+      {openSearchBar && (
         <div className={styles.content}>
           <SearchBar />
         </div>
