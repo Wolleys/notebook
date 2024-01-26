@@ -1,6 +1,9 @@
 import { InputHTMLAttributes, ChangeEvent } from "react";
 import { IInput } from "./IInput";
 
+/**
+ * Input props.
+ */
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Input interface.
