@@ -1,5 +1,8 @@
 import { IIcon } from "./IIcon";
 
+/**
+ * Font awesone icon props.
+ */
 export interface FontAwesomeIconProps {
   /**
    * Icon interface.
