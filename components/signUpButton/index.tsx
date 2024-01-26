@@ -1,13 +1,7 @@
-import { FC, ReactNode, MouseEvent } from "react";
+import { FC } from "react";
 import Button from "@/components/button";
-import { IconProps } from "@/interfaces";
+import { SignUpBtnProps } from "./SignUpBtnProps";
 import FontAwesomeIcon from "@/components/fontAwesomeIcon";
-
-interface SignUpBtnProps {
-  icon: IconProps;
-  children: ReactNode;
-  onClick: (e: MouseEvent<HTMLButtonElement>) => void;
-}
 
 const SignUpButton: FC<SignUpBtnProps> = ({ icon, children, onClick }) => {
   return (
