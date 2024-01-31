@@ -1,10 +1,7 @@
 import { useState, ChangeEvent } from "react";
+import { UseInputChangeProps } from "./useInputChangeprops";
 
-interface InputChangeOptions {
-  initialValues: Record<string, string>;
-}
-
-const useInputChange = ({ initialValues }: InputChangeOptions) => {
+const useInputChange = ({ initialValues }: UseInputChangeProps) => {
   const [values, setValues] = useState(initialValues);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
