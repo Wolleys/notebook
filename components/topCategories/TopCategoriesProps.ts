@@ -1,8 +1,11 @@
-interface TopCategory {
-  id: number;
-  name: string;
-}
+import { ITopCategories } from "./ITopCategories";
 
+/**
+ * Top categories props.
+ */
 export interface TopCategoriesProps {
-  topCategories: TopCategory[];
+  /**
+   * Top categories interface.
+   */
+  topCategories: ITopCategories[];
 }
