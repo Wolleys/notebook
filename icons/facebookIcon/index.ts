@@ -1,6 +1,12 @@
-import { IconProps } from "@/interfaces";
+import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
-export const facebookIcon: IconProps = {
+export const facebookIcon: IIcon = {
+  /**
+   * Icon name.
+   */
   iconName: "facebook",
+  /**
+   * Icon type.
+   */
   iconType: "fa-brands",
 };
