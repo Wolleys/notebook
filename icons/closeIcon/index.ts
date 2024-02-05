@@ -1,6 +1,12 @@
-import { IconProps } from "@/interfaces";
+import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
-export const closeIcon: IconProps = {
+export const closeIcon: IIcon = {
+  /**
+   * Icon name.
+   */
   iconName: "xmark",
+  /**
+   * Icon type.
+   */
   iconType: "fa-solid",
 };
