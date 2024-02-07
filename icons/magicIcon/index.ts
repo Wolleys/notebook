@@ -1,6 +1,12 @@
-import { IconProps } from "@/interfaces";
+import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
-export const magicIcon: IconProps = {
+export const magicIcon: IIcon = {
+  /**
+   * Icon name.
+   */
   iconName: "wand-magic-sparkles",
+  /**
+   * Icon type.
+   */
   iconType: "fa-solid",
 };
