@@ -1,6 +1,12 @@
-import { IconProps } from "@/interfaces";
+import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
-export const plusIcon: IconProps = {
+export const plusIcon: IIcon = {
+  /**
+   * Icon name.
+   */
   iconName: "plus",
+  /**
+   * Icon type.
+   */
   iconType: "fa-solid",
 };
