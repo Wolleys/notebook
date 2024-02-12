@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Bookmark Icon.
+ */
 export const bookmarkIcon: IIcon = {
   /**
    * Icon name.
