@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Eye Icon.
+ */
 export const eyeIcon: IIcon = {
   /**
    * Icon name.
