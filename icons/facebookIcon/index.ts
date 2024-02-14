@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Facebook Icon.
+ */
 export const facebookIcon: IIcon = {
   /**
    * Icon name.
