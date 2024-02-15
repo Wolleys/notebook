@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Google Icon.
+ */
 export const googleIcon: IIcon = {
   /**
    * Icon name.
