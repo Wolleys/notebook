@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Magic Icon.
+ */
 export const magicIcon: IIcon = {
   /**
    * Icon name.
