@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * Share Icon.
+ */
 export const shareIcon: IIcon = {
   /**
    * Icon name.
