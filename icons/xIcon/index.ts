@@ -1,5 +1,8 @@
 import { IIcon } from "@/components/fontAwesomeIcon/IIcon";
 
+/**
+ * X-twitter Icon.
+ */
 export const xIcon: IIcon = {
   /**
    * Icon name.
