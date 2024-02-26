@@ -1,3 +1,3 @@
-import { ProfileTabsProps } from "./profileTab";
+// import { ProfileTabsProps } from "./profileTab";
 
-export type { ProfileTabsProps };
+// export type { ProfileTabsProps };
