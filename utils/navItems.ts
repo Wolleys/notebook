@@ -6,7 +6,7 @@ export const feedsTabs: INavTabs[] = [
   { path: "/explore", label: "Explore" },
 ];
 
-export const profileNavTabs: INavTabs[] = [
+export const profileTabs: INavTabs[] = [
   { path: "/[profile]", label: "Home" },
   { path: "/[profile]/lists", label: "Lists" },
   { path: "/[profile]/about", label: "About" },
