@@ -7,6 +7,10 @@ import Button from "@/components/button";
 import useInputChange from "@/hooks/useInputChange";
 import AuthContainer from "@/containers/authContainer";
 
+/**
+ * Component which shows the login page.
+ * @returns The auth container that renders the login page component.
+ */
 const Login: FC = () => {
   const initialFormState = { email: "" };
   const { values, handleInputChange } = useInputChange({
