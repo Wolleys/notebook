@@ -9,6 +9,10 @@ import { firstName } from "@/inputs/firstName";
 import useInputChange from "@/hooks/useInputChange";
 import AuthContainer from "@/containers/authContainer";
 
+/**
+ * Component which shows the register page.
+ * @returns The auth container that renders the register page component.
+ */
 const Register: FC = () => {
   const initialFormState = { email: "", firstName: "", lastName: "" };
   const { values, handleInputChange } = useInputChange({
