@@ -14,6 +14,10 @@ import postPic from "../../../../public/imgs/featured.webp";
 
 const categories = { cats: ["Inspiration"] };
 
+/**
+ * Component which shows the slug page.
+ * @returns The slug page component.
+ */
 const Slug: FC = () => {
   return (
     <div className={styles.container}>
