@@ -11,6 +11,10 @@ import featuredWriters from "../../../../mockup/featuredWriters";
 import { profileNavTabs } from "@/components/tabs/profileNavTabs";
 import { ProfileNavTabsProps } from "@/components/tabs/ProfileNavTabsProps";
 
+/**
+ * Component which shows the about page.
+ * @returns The parent container that renders the about page component.
+ */
 const About: FC = () => {
   var { profile } = useParams();
   profile = decodeURIComponent(profile.toString());
