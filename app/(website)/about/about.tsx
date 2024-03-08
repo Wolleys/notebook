@@ -1,6 +1,10 @@
 import { FC } from "react";
 import styles from "./about.module.css";
 
+/**
+ * Component which shows the about page.
+ * @returns The parent container that renders the about page component.
+ */
 const About: FC = () => {
   return (
     <div className={styles.container}>
