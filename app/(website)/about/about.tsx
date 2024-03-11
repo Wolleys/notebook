@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 
 /**
  * Component which shows the about page.
- * @returns The parent container that renders the about page component.
+ * @returns The about page component.
  */
 const About: FC = () => {
   return (
