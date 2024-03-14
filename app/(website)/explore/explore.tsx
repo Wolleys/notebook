@@ -13,6 +13,10 @@ import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
 import featuredWriters from "../../../mockup/featuredWriters";
 
+/**
+ * Component which shows the explore page.
+ * @returns The parent container that renders the explore page component.
+ */
 const Explore: FC = async () => {
   const sections = [
     <MostPopular key="mostPopular" mostPopular={mostPopular} />,
