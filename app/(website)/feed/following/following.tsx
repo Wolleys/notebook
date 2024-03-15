@@ -12,6 +12,10 @@ import ParentContainer from "@/containers/parentContainer";
 import topCategories from "../../../../mockup/topCategories";
 import featuredWriters from "../../../../mockup/featuredWriters";
 
+/**
+ * Component which shows the following feed page.
+ * @returns The parent container that renders the following feed page component.
+ */
 const Following: FC = () => {
   const sections = [
     <MostPopular key="mostPopular" mostPopular={mostPopular} />,
