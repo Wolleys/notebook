@@ -10,6 +10,10 @@ import FileInput from "@/components/fileInput";
 import { postTitle } from "@/inputs/postTitle";
 import ImagePreview from "@/components/imagePreview";
 
+/**
+ * Component which shows the new post page.
+ * @returns The new post page component.
+ */
 const NewPost: FC = () => {
   const [value, setValue] = useState("");
   const [image, setImage] = useState<string>("");
