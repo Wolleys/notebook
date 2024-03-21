@@ -9,6 +9,10 @@ import featuredWriters from "../mockup/featuredWriters";
 import FeaturedWriters from "@/components/featuredWriters";
 import ParentContainer from "@/containers/parentContainer";
 
+/**
+ * Component which shows the home page.
+ * @returns The parent container that renders the home page component.
+ */
 const Home: FC = () => {
   const sections = [
     <MostPopular key="mostPopular" mostPopular={mostPopular} />,
