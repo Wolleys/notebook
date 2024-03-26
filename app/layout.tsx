@@ -1,13 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import "./globals.css";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Providers from "./providers";
 import type { Metadata } from "next";
 import Header from "@/components/header";
-
-interface RootLayoutProps {
-  children: ReactNode;
-}
+import { RootLayoutProps } from "./RootLayoutProps";
 
 export const metadata: Metadata = {
   title: "Notebook",
