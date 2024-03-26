@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   description: "Notebook app",
 };
 
+/**
+ * Component which shows the root layout for the app.
+ * @returns The root layout component.
+ */
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
