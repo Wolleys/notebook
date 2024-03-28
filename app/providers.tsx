@@ -1,12 +1,13 @@
 "use client";
 
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import { ThemeProvider } from "next-themes";
+import { ProvidersProps } from "./ProvidersProps";
 
-interface ProvidersProps {
-  children: ReactNode;
-}
-
+/**
+ * Component which shows providers.
+ * @returns The providers.
+ */
 const Providers: FC<ProvidersProps> = ({ children }) => {
   return (
     <ThemeProvider attribute="data-theme" defaultTheme="light">
