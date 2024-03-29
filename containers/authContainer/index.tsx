@@ -4,6 +4,10 @@ import styles from "./auth.module.css";
 import SignUpOptions from "@/components/signupOptions";
 import { AuthContainerProps } from "./AuthContainerProps";
 
+/**
+ * Component which shows the auth container.
+ * @returns The auth container.
+ */
 const AuthContainer: FC<AuthContainerProps> = ({ props }) => {
   const { title, desc, fields, bottomText, bottomLink, nameFields, onSubmit } =
     props;
