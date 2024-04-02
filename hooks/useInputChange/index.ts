@@ -1,10 +1,21 @@
 import { useState, ChangeEvent } from "react";
 import { UseInputChangeProps } from "./useInputChangeprops";
 
+/**
+ * Hook that manages form input changes and values.
+ * @param options - Options object containing initial form values.
+ * @param options.initialValues - Initial values for form inputs.
+ * @returns - Object containing current form values and input change handler.
+ */
 const useInputChange = ({ initialValues }: UseInputChangeProps) => {
   const [values, setValues] = useState(initialValues);
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  /**
+   * Handler function for input change events.
+   * @param - The change event object.
+   * @returns {void}
+   */
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
 
     setValues((prevFormData) => ({
